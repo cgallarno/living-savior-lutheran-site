@@ -1,38 +1,47 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
-    </div>
-
-  </div>
-
+<!-- Footer -->
+<footer>
+	<div class="footer1">
+		<div class="container">
+			<div class="col-md-8">
+				<img src="{{ '/images/logo-alt.png' | prepend: site.baseurl }}" class="img-responsive" alt=""/>
+			</div>
+			<div class="col-md-8">
+				<h6>Connect with us</h6>
+				<ul class="hb-social">
+					<li class="hb-fb"><a href="https://www.facebook.com/LSLCPS/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+					<li class="hb-tw"><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<!-- <li class="hb-plus"><a href="#"><i class="fa fa-plus"></i></a></li> -->
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="footer2">
+		<div class="container">
+			<div class="col-md-4 footer-widget">
+				<h5>Our church</h5>
+				<p>5500 Ox Road, <br>
+					Fairfax Station, VA 22039, USA
+				</p>
+				<p>Telephone: +1 703 352 1421<br>
+					Preschool: +1 703 352 4208
+				</p>
+			</div>
+			<div class="col-md-3 footer-widget fw2">
+				<h5>Worship Times</h5>
+				<p>Sunday early service<br>
+					 at 8:30am
+				</p>
+				<p>Sunday late service<br>
+					at 11:00am
+				</p>
+			</div>
+			<div class="col-md-9 footer-widget last">
+				<div class="footer-quote">All scripture is given by inspiration of God, and is profitable for doctrine,
+					for reproof, for correction, for instruction in righteousness:
+				</div>
+				<p class="copy">@ All rights reserved 2013</p>
+			</div>
+		</div>
+	</div>
 </footer>
+<!-- Footer -->

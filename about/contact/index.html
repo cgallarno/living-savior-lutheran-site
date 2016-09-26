@@ -1,0 +1,148 @@
+---
+layout: html
+---
+<body onload="LoadGmaps()" onunload="GUnload()" id="home2">
+
+<div class="body">
+	<div class="slider-wrap">
+
+		{% include header.html %}
+
+		<!-- Google Map -->
+		<div class="container">
+			<div class="col-md-16">
+				<div class="google-map">
+					<div id="MyGmaps" style="width:100%;height:410px;"></div>
+				</div>
+			</div>
+		</div>
+		<!-- Google Map -->
+	</div>
+	<div class="white-bg">
+		<div class="main-wrap">
+			<div class="container">
+
+				<!-- Contact form -->
+				<div class="col-md-12 contact-form-info">
+					<h5>Contact form</h5>
+					<p>Sed sem sem, malesuada quis arcu nec, bibendum tristique lacus. Nullam lacinia, augue id tempor faucibus, metus velit rutrum est, ut tincidunt tellus leo sit amet purus. Quisque vestibulum condimentum dui semper mollis. </p>
+					<div style="position:relative;">
+					<form class="comment-form" id="contactForm" action="https://formspree.io/cgallarno@gmail.com" method="post">
+						<div class="row">
+							<div class="col-md-8">
+								<input type="text" name="_fullname" id="senderName" placeholder="Full Name" required="required" />
+							</div>
+							<div class="col-md-8">
+								<input type="email" name="_replyto" id="senderEmail" placeholder="Email address" required="required"  />
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-16">
+								<input type="text" name="_subject" id="subject" placeholder="Subject of your message" required="required" />
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-16">
+								<textarea name="_message" id="message" rows="8" required="required" ></textarea>
+								<input type="text" name="_gotcha" id="gotcha" />
+								<input type="hidden" name="_format" value="plain" />
+								<input type="hidden" name="_next" value="http://localhost:4000/about/contact/" />
+								<button type="submit" id="sendMessage" class="c-btn pull-right">Submit</button>
+							</div>
+						</div>
+					</form>
+					<div id="successMessage" class="successmessage"><p><span class="success-ico"></span> Thanks for sending your message! We'll get back to you shortly.</p></div>
+					<div id="failureMessage" class="errormessage"><p><span class="error-ico"></span> There was a problem sending your message. Please try again.</p></div>
+					<div id="incompleteMessage" class="statusMessage"><p>Please complete all the fields in the form before sending.</p></div>
+					</div>
+					<div class="space60"></div>
+					<div class="row">
+						<div class="col-md-16 location-wrap">
+							<h5>Location &amp; Times</h5>
+							<div class="space40"></div>
+							<img src="{{ '/demo/contact/1.jpg' | prepend: site.baseurl }}" class="img-responsive" alt=""/>
+							<div class="location-info">
+								<h4>Living Savior Lutheran Church - Ox Road</h4>
+								<div class="location-meta">
+									<div class="row">
+										<div class="col-md-8">
+											<i class="fa fa-map-marker">
+											</i>
+											5500 Ox Rd
+											<br>
+											Fairfax Station, VA 22039
+										</div>
+										<div class="col-md-8">
+											<i class="fa fa-clock-o">
+											</i>
+											Sunday 8:30 & 11:00
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-16">
+											<i class="fa fa-mobile">
+											</i>
+											703-352-1421
+										</div>
+									</div>
+								</div>
+								<ul class="btns">
+									<li>
+										<a href="#">
+										Map it
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										View Events
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										Volunteer
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<aside class="col-md-4">
+					<div class="side-widget">
+						<h5>Search</h5>
+						<form class="search">
+							<input type="search" placeholder="Type and search">
+						</form>
+					</div>
+					<div class="space40"></div>
+					<div class="side-widget">
+						<h5>Departments</h5>
+						<ul class="categories">
+							<li><a href="#">Church Leaders</a></li>
+							<li><a href="#">Pastors</a></li>
+							<li><a href="#">Volunteers</a></li>
+							<li><a href="#">Other Stuff</a></li>
+						</ul>
+					</div>
+					<div class="side-widget">
+						<h5>Useful Pages</h5>
+						<ul class="categories">
+							<li><a href="#">Faq</a></li>
+							<li><a href="#">Knowledge Base</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Donations</a></li>
+						</ul>
+					</div>
+				</aside>
+				<!-- Contact form -->
+			</div>
+		</div>
+
+		<!-- Footer -->
+		{% include footer.html %}
+		<!-- Footer -->
+	</div>
+</div>
+
+
+</body>

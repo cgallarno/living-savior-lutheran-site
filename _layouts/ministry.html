@@ -1,0 +1,98 @@
+---
+layout: default
+---
+		<div class="main-wrap">
+			<div class="container">
+
+				<!-- Ministries Content -->
+				<div class="col-md-12">
+					<div class="ministries-single">
+						<img src="{{ '/demo/ministries/big.jpg' | prepend: site.baseurl }}" class="img-responsive" alt=""/>
+						<h4>{{ page.title }}</h4>
+						{{ page.content }}
+						<div class="space90"></div>
+						<div class="ministry-location">
+							<h3>Locations:</h3>
+							<div class="col-md-8">
+								<h5>Christian Faith Center</h5>
+								<br>
+								<p>20th Ave S.<br>
+									Federal Way, WA 214214
+								</p>
+							</div>
+							<div class="col-md-8">
+								<h5>Lake Houston</h5>
+								<br>
+								<p>20th Ave S.<br>
+									Federal Way, WA 214214
+								</p>
+							</div>
+						</div>
+						<div class="ministry-timings">
+							<h3>Service Times:</h3>
+							<div class="space30"></div>
+							<h5>Sunday Morning Services</h5>
+							<p>9:30am, 11:45am</p>
+							<div class="space20"></div>
+							<h5>Wednesday Night Services</h5>
+							<p>7:00pm - 8:30pm</p>
+						</div>
+					</div>
+				</div>
+				<aside class="col-md-4">
+					<div class="side-widget">
+						<h5>Upcoming Events</h5>
+						<ul class="events-list">
+							<li>
+								<div class="date-meta">25<span>Jan</span></div>
+								<h4><a href="#">High School Ministry</a></h4>
+								<p>12:30 pm - Bethlehem Church</p>
+							</li>
+							<li>
+								<div class="date-meta">27<span>Jan</span></div>
+								<h4><a href="#">Children Builds a House</a></h4>
+								<p>12:30 pm - Bethlehem Church</p>
+							</li>
+							<li>
+								<div class="date-meta">29<span>Jan</span></div>
+								<h4><a href="#">New hat for John</a></h4>
+								<p>12:30 pm - Bethlehem Church</p>
+							</li>
+							<li>
+								<div class="date-meta">2<span>Feb</span></div>
+								<h4><a href="#">High School Ministry</a></h4>
+								<p>12:30 pm - Bethlehem Church</p>
+							</li>
+							<li>
+								<div class="date-meta">9<span>Feb</span></div>
+								<h4><a href="#">Chlildren Meeting Parents</a></h4>
+								<p>12:30 pm - Bethlehem Church</p>
+							</li>
+							<li>
+								<div class="date-meta">15<span>Feb</span></div>
+								<h4><a href="#">High School Ministry</a></h4>
+								<p>12:30 pm - Bethlehem Church</p>
+							</li>
+							<li>
+								<div class="date-meta">21<span>Feb</span></div>
+								<h4><a href="#">High School Ministry</a></h4>
+								<p>12:30 pm - Bethlehem Church</p>
+							</li>
+						</ul>
+					</div>
+					<div class="space40"></div>
+					<div class="side-widget">
+						<h5>Other Ministries</h5>
+						<ul class="categories">
+							{% assign ministries = site.ministries | sort: 'sort' %}
+							{% for ministry in ministries | sort: 'sort' %}
+								{% if ministry.name != page.name %}
+								<li><a href="/ministries/{{ ministry.name }}/">{{ ministry.title }}</a></li>
+								{% endif %}
+							{% endfor %}
+						</ul>
+					</div>
+				</aside>
+				<!-- Ministries Content -->
+			</div>
+		</div>

@@ -10,7 +10,7 @@ html,body {
 body {
 	font-family: Bitter;
 	font-weight: 400;
-	background:#eee;
+	background:#f6f6f6;
 }
 
 p {
@@ -1120,6 +1120,13 @@ aside {
 	height: 150px;
 	text-align: left;
 	padding: 20px;
+}
+
+.comment-form #gotcha{
+	/*
+		To catch bots, if this field is filled out the submission is ignored
+	 */
+	display: none;
 }
 
 .c-btn {
@@ -2381,7 +2388,7 @@ aside {
 
 #home2 .slider-wrap {
 	height: 635px !important;
-	background: url(../demo/slide/1.jpg) no-repeat center;
+	background: url(../images/slide/3.jpg) no-repeat center;
 	background-size:100% auto;
 }
 
@@ -3597,11 +3604,11 @@ blockquote {
 	-moz-transition: all .5s;
 	transition: all .5s;
 	opacity: 1;
-	z-index: 0;
+	z-index: 1;
 	visibility: visible;
 }
 
-.has-sub-mega:hover .mega-menu1 {
+.has-sub-mega:hover .mega-menu--children {
 	margin-top: 12px;
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
@@ -3662,7 +3669,7 @@ blockquote {
 	left: 45px;
 }
 
-.mega-menu1:after {
+.mega-menu--children:after {
 	content: '';
 	position: absolute;
 	border-style: solid;

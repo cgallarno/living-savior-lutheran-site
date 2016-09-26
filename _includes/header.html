@@ -1,27 +1,182 @@
-<header class="site-header">
-
-  <div class="wrapper">
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
-
-      <div class="trigger">
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-          {% endif %}
-        {% endfor %}
-      </div>
-    </nav>
-
-  </div>
-
+<!-- Header -->
+<header class="container">
+	<div class="col-md-6">
+		<div class="nav-left">
+			<ul>
+				<li class="has-sub-mega">
+					<a href="/about/">About us</a>
+					<div class="mega-menu">
+						<div class="col-md-9 m1">
+							<h4>IM NEW</h4>
+							<p>Etiam lobortis libero in luctus tincidunt. Nullam a ligula iaculis, placerat purus ac, dapibus turpis. Quisque fringilla pharetra arcu, in tristique nibh vulputate a. Phasellus ullamcorper, erat et dapibus scelerisque, ipsum lacus iaculis quam.</p>
+							<p>Eleifend lobortis massa ligula at turpis. Quisque fringilla pharetra arcu, in tristique nibh.</p>
+							<div class="space30"></div>
+							<a class="menu-btn" href="/about/im-new/">Learn more</a>
+						</div>
+						<div class="col-md-4 m2">
+							<h5>PEOPLE / VOLUNTEERS</h5>
+							<a href="/about/people/">Church Leadership</a>
+							<div class="space25"></div>
+							<h5>About us</h5>
+							<a href="/about/im-new/">Im New</a>
+							<a href="/about/">About Us</a>
+							<a href="/about/contact/">Contact and Location</a>
+						</div>
+						<div class="col-md-3 m3">
+							<img src="{{ '/demo/8.jpg' | prepend: site.baseurl }}" class="img-responsive" alt=""/>
+							<div class="space40"></div>
+							<h6>Connect with us</h6>
+							<div class="m-social">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<!-- <a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-plus"></i></a> -->
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="has-sub-mega">
+					<a href="#">Children</a>
+					<div class="mega-menu mega-menu--children">
+						<div class="col-md-9 m1">
+							<img src="{{ '/demo/9.jpg' | prepend: site.baseurl }}" class="img-responsive" alt=""/>
+						</div>
+						<div class="col-md-4 m2">
+							<h5>Blog Pages</h5>
+							<a href="./blog.html">Blog Classic with Sidebar</a>
+							<a href="./blog-grid.html">Blog Grid View</a>
+							<a href="./blog_single.html">Blog Single Entry</a>
+							<div class="space25"></div>
+							<h5>Ministries</h5>
+							<a href="./ministries-grid.html">Ministries Grid View</a>
+							<a href="./ministries-list.html">Ministries List View</a>
+							<a href="./ministries-single.html">Single Ministry</a>
+							<div class="space25"></div>
+							<h5><a href="./timeline.html">Timeline</a></h5>
+						</div>
+						<div class="col-md-3 m3 m2">
+							<h5>Shop</h5>
+							<a href="./shop-grid.html">Shop - Grid</a>
+							<a href="./shop-list.html">Shop - List</a>
+							<a href="./shop-single.html">Shop Single</a>
+							<a href="./signin.html">Login</a>
+							<a href="./billingaddress.html">Shop - Checkout</a>
+							<a href="./shopping-cart.html">Shop- Cart</a>
+							<div class="space25"></div>
+							<h5><a href="./timeline.html">Timeline</a></h5>
+							<a href="./stories.html">Stories View</a>
+							<a href="./stories-single.html">Single Story</a>
+						</div>
+					</div>
+				</li>
+				<li class="has-sub">
+					<a href="/ministries/">Ministries</a>
+					<div class="subpage">
+						{% assign ministries = site.ministries | sort: 'sort' %}
+						{% for ministry in ministries | sort: 'sort' %}
+							<a href="/ministries/{{ ministry.name }}/">{{ ministry.title }}</a>
+						{% endfor %}
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="logo">
+			<a href="/"><img src="{{ '/images/logo-alt.png' | prepend: site.baseurl }}" class="img-responsive" alt=""/></a>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="nav-right">
+			<ul>
+				<li><a href="/sermons/">Sermons</a></li>
+				<li><a href="#">Events</a></li>
+				<li><a href="/about/contact/">Contact</a></li>
+			</ul>
+		</div>
+	</div>
 </header>
+<!-- Header -->
+
+<div class="nav-left nav-mobile">
+	<ul class="nav-mobile-ul">
+		<li class="has-sub-mega">
+			<a href="#">About us</a>
+				<div class="mega-menu">
+				<div class="col-md-9 m1">
+						<h4>IM NEW</h4>
+						<p>Etiam lobortis libero in luctus tincidunt. Nullam a ligula iaculis, placerat purus ac, dapibus turpis. Quisque fringilla pharetra arcu, in tristique nibh vulputate a. Phasellus ullamcorper, erat et dapibus scelerisque, ipsum lacus iaculis quam.</p>
+						<p>Eleifend lobortis massa ligula at turpis. Quisque fringilla pharetra arcu, in tristique nibh.</p>
+						<div class="space30"></div>
+						<a class="menu-btn" href="./im_new.html">Learn more</a>
+					</div>
+					<div class="col-md-4 m2">
+						<h5>PEOPLE / VOLUNTEERS</h5>
+						<a href="./people.html">People and Volunteers</a>
+						<a href="./people_single.html">People - Single</a>
+						<div class="space25"></div>
+						<h5>About us</h5>
+						<a href="./im_new.html">Im New</a>
+						<a href="./stories-single.html">About Us - Full Width</a>
+						<a href="./contact.html">Contact and Locations</a>
+						<div class="space25"></div>
+						<h5><a href="./timeline.html">Timeline</a></h5>
+					</div>
+					<div class="col-md-3 m3">
+						</div>
+				</div>
+			</li>
+			<li class="has-sub-mega">
+				<a href="#">Pages</a>
+				<div class="mega-menu mega-menu1">
+					<div class="col-md-9 m1">
+						<img src="{{ '/demo/9.jpg' | prepend: site.baseurl }}" class="img-responsive" alt=""/>
+					</div>
+					<div class="col-md-4 m2">
+						<h5>Blog Pages</h5>
+						<a href="./blog.html">Blog Classic with Sidebar</a>
+						<a href="./blog-grid.html">Blog Grid View</a>
+						<a href="./blog_single.html">Blog Single Entry</a>
+						<div class="space25"></div>
+						<h5>Ministries</h5>
+						<a href="./ministries-grid.html">Ministries Grid View</a>
+						<a href="./ministries-list.html">Ministries List View</a>
+						<a href="./ministries-single.html">Single Ministry</a>
+						<div class="space25"></div>
+						<h5><a href="./timeline.html">Timeline</a></h5>
+					</div>
+					<div class="col-md-3 m3 m2">
+						<h5>Shop</h5>
+						<a href="./shop-grid.html">Shop - Grid</a>
+						<a href="./shop-list.html">Shop - List</a>
+						<a href="./shop-single.html">Shop Single</a>
+						<a href="./signin.html">Login</a>
+						<a href="./billingaddress.html">Shop - Checkout</a>
+						<a href="./shopping-cart.html">Shop- Cart</a>
+						<div class="space25"></div>
+						<h5><a href="./timeline.html">Timeline</a></h5>
+						<a href="./stories.html">Stories View</a>
+						<a href="./stories-single.html">Single Story</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<a href="/sermons/">Sermons</a>
+			</li>
+				<li class="has-sub">
+				<a href="#">Events</a>
+				<div class="subpage">
+					<a href="./events.html">Events List Page</a>
+					<a href="./events-calendar.html">Events Calendar</a>
+					<a href="./events-single.html">Event Single</a>
+				</div>
+			</li>
+			<li class="has-sub">
+				<a href="#">Donations</a>
+				<div class="subpage">
+					<a href="./donatecause.html">Donate Cause</a>
+					<a href="./donate_single.html">Donate Single</a>
+				</div>
+			</li>
+			<li><a href="./contact.html">Contact</a></li>
+		</ul>
+	</div>

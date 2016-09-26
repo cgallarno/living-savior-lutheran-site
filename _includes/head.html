@@ -1,12 +1,44 @@
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="keywords" content="HTML5 Template" />
+	<meta name="description" content="Multipress - Responsive Multipurpose HTML5 Template">
+	<meta name="author" content="">
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+	<title>Living Savior Lutheran Church</title>
+
+	<!-- Mobile Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="{{ '/img/favicon.ico' | prepend: site.baseurl }}">
+	<link rel="apple-touch-icon" href="{{ '/img/apple-touch-icon.png' | prepend: site.baseurl }}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{{ '/img/apple-touch-icon-72x72.png' | prepend: site.baseurl }}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{{ '/img/apple-touch-icon-114x114.png' | prepend: site.baseurl }}">
+	<link rel="apple-touch-icon" sizes="144x144" href="{{ '/img/apple-touch-icon-144x144.png' | prepend: site.baseurl }}">
+
+	<!-- Web Fonts  -->
+	<link href='http://fonts.googleapis.com/css?family=Bitter:400,400italic,700' rel='stylesheet' type='text/css'>
+
+	<!--[if lt IE 9]>
+	<script src="/js/libs/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Bootstrap core CSS -->
+	<link href="{{ '/css/bootstrap.css' | prepend: site.baseurl }}" rel="stylesheet">
+
+	<!-- FontAwesome icons CSS -->
+	<link rel="stylesheet" href="{{ '/font-awesome/css/font-awesome.min.css' | prepend: site.baseurl }}">
+
+	<!-- Theme Styles CSS-->
+	<link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="{{ '/css/flexslider.css' | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="{{ '/js/owl-carousel/owl.carousel.css' | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="{{ '/js/owl-carousel/owl.theme.css' | prepend: site.baseurl }}">
+
+	<!--[if lt IE 9]>
+	<script src="/js/libs/html5.js"></script>
+	<![endif]-->
+
 </head>

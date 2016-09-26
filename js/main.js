@@ -193,7 +193,7 @@ pagination : false,
 singleItem : false
 
 // "singleItem:true" is a shortcut for:
-// items : 4, 
+// items : 4,
 // itemsDesktop : 4,
 // itemsDesktopSmall : 4,
 // itemsTablet: 4,
@@ -215,7 +215,7 @@ pagination : true,
 singleItem : true
 
 // "singleItem:true" is a shortcut for:
-// items : 1, 
+// items : 1,
 // itemsDesktop : false,
 // itemsDesktopSmall : false,
 // itemsTablet: false,
@@ -238,7 +238,7 @@ pagination : true,
 singleItem : true
 
 // "singleItem:true" is a shortcut for:
-// items : 1, 
+// items : 1,
 // itemsDesktop : false,
 // itemsDesktopSmall : false,
 // itemsTablet: false,
@@ -274,7 +274,7 @@ pagination : false,
 singleItem : true
 
 // "singleItem:true" is a shortcut for:
-// items : 1, 
+// items : 1,
 // itemsDesktop : false,
 // itemsDesktopSmall : false,
 // itemsTablet: false,
@@ -327,7 +327,7 @@ changeLayoutMode( $this, options );
 } else {
 // otherwise, apply new options
 $container.isotope( options );
-}    
+}
 return false;
 });
 });
@@ -351,30 +351,31 @@ $('.shop-accordion').accordion();
 "use strict";
 
 function LoadGmaps() {
-var myLatlng = new google.maps.LatLng(40.7143528,-74.0059731);
-var myOptions = {
-zoom: 16,
-center: myLatlng,
-disableDefaultUI: true,
-panControl: true,
-zoomControl: true,
-zoomControlOptions: {
-style: google.maps.ZoomControlStyle.DEFAULT
-},
+	var myLatlng = new google.maps.LatLng(38.808412,-77.327256);
+	var myOptions = {
+		zoom: 16,
+		center: myLatlng,
+		disableDefaultUI: true,
+		panControl: true,
+		zoomControl: true,
+		scrollwheel: false,
+		zoomControlOptions: {
+			style: google.maps.ZoomControlStyle.DEFAULT
+		},
 
-mapTypeControl: true,
-mapTypeControlOptions: {
-style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR
-},
-streetViewControl: true,
-mapTypeId: google.maps.MapTypeId.ROADMAP
-}
-var map = new google.maps.Map(document.getElementById("MyGmaps"), myOptions);
-var marker = new google.maps.Marker({
-position: myLatlng,
-map: map,
-title:"newyork"
-});
+		mapTypeControl: true,
+		mapTypeControlOptions: {
+			style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR
+		},
+		streetViewControl: true,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+	var map = new google.maps.Map(document.getElementById("MyGmaps"), myOptions);
+	var marker = new google.maps.Marker({
+		position: myLatlng,
+		map: map,
+		title:"Living Savior Lutheran Church"
+	});
 }
 
 // PARALLAX

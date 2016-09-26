@@ -1,20 +1,55 @@
-<!DOCTYPE html>
-<html>
+---
+layout: html
+---
+	<body id="pages">
+    <div class="body">
+  		<div class="slider-wrap">
 
-  {% include head.html %}
+    		{% include header.html %}
 
-  <body>
+    		<!-- Page Header -->
+    		<div class="page-header container">
+    			<div class="col-md-16">
 
-    {% include header.html %}
+    				{% assign url_parts = page.url | remove: 'index.html' | split:'/' %}
+    				{% assign previous="" %}
 
-    <div class="page-content">
-      <div class="wrapper">
+    				<ol class="breadcrumb">
+    					<li><a href="/"><img src="{{ '/images/home.png' | prepend: site.baseurl }}" alt=""/></a></li>
+    				  {% for part in url_parts offset:1 %}
+    				  	{% capture previous %}{{ previous }}/{{ part }}{% endcapture %}
+    				  	{% if forloop.last %}
+    				  	<li class="active">{{ part | replace: '-', ' ' | capitalize }}</li>
+    				  	{% else %}
+    				  	<li><a href="{{previous}}">{{ part | replace: '-', ' ' | capitalize }}</a></li>
+    				  	{% endif %}
+    					{% endfor %}
+    				</ol>
+
+    				{% if page.title %}
+    				<h3>{{ page.title }}</h3>
+    				{% endif %}
+    			</div>
+    		</div>
+    		<!-- Page Header -->
+
+  			<!-- Slider -->
+  			<div class="slider-wrapper theme-default">
+  				<div id="owl-homeslider" class="owl-carousel">
+  					<div class="item">
+  						<img alt="" class="img-responsive" src="{{ '/images/slide/3.jpg' | prepend: site.baseurl }}">
+  					</div>
+  				</div>
+  			</div>
+  			<!-- Slider -->
+
+  		</div>
+  		<div class="white-bg">
         {{ content }}
+
+    		{% include footer.html %}
       </div>
     </div>
 
-    {% include footer.html %}
 
   </body>
-
-</html>
