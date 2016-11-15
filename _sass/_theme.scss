@@ -10,7 +10,7 @@ html,body {
 body {
 	font-family: Bitter;
 	font-weight: 400;
-	background:#f6f6f6;
+	// background:#f6f6f6;
 }
 
 p {
@@ -3965,7 +3965,7 @@ width:auto !important;
 	position:absolute;
 	left:0px;
 	right:0px;
-	bottom:100px;
+	bottom:200px;
 	color:#fff;
 	display:table;
 	margin:0 auto;
@@ -3999,12 +3999,13 @@ color:#F3F8FF;
 }
 
 .nivo-caption p {
-	padding:5px;
+	padding:5px 25px;
 	margin:0;
 text-align:center;
 font-size:35px;
 font-family:Bitter;
-font-style:italic;
+// font-style:italic;
+line-height: 120%;
 text-shadow:3px 0px 0px rgba(0,0,0,0.60);
 color:#F3F8FF;
 }

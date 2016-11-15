@@ -27,7 +27,7 @@ layout: hero
 	</div>
 </div>
 
-<!-- Quote -->
+<!-- Quote
 <div class="container">
 	<div class="quote-wrap">
 		<div id="quote-slider" class="flexslider">
@@ -76,7 +76,7 @@ layout: hero
 		</div>
 	</div>
 </div>
-<!-- Quote -->
+ Quote -->
 
 <!-- Sermons Wrap -->
 <div class="home-wrap">
@@ -84,21 +84,22 @@ layout: hero
 		<div class="col-md-8 music-wrap">
 			<div class="row">
 				<div id="sermons-slider" class="owl-carousel">
+				{% for sermon in site.posts limit:1 %}
 					<div class="item">
 						<div class="col-md-8">
-							<img class="img-responsive" src="images/sermon-thumb.png" alt=""/>
+							<img class="img-responsive" src="images/sermon-preview.jpg" alt=""/>
 						</div>
 						<div class="col-md-8">
 							<h4>Latest Sermon</h4>
 							<div class="music-info">
-								<h5>What Sunday Is This!?!?</h5>
-								<p>Rev. Andrew C. Lissy / February 14, 2016 / <a href="#">Life issues</a></p>
+								<h5>{{ sermon.title }}</h5>
+								<p>{{ sermon.speaker }} / {{ sermon.date | date: "%B %-d, %Y" }}</p>
 							</div>
-<!-- 							<ul class="m-ico">
-								<li><a href="#" class="m-ico1"></a></li>
-								<li><a href="#" class="m-ico2"></a></li>
-								<li><a href="#" class="m-ico3"></a></li>
-							</ul> -->
+							<ul class="m-ico">
+								<!-- <li><a href="#" class="m-ico1"></a></li> -->
+								<li><a href="#" class="m-ico2" data-toggle="modal" data-target="#latestSermonModal"></a></li>
+								<!-- <li><a href="#" class="m-ico3"></a></li> -->
+							</ul>
 							<div class="line"></div>
 							<a href="/sermons/" class="hb-more">previous sermons</a>
 <!-- 							<ul class="hb-social">
@@ -108,6 +109,7 @@ layout: hero
 							</ul> -->
 						</div>
 					</div>
+				{% endfor %}
 				</div>
 			</div>
 		</div>
@@ -180,3 +182,27 @@ layout: hero
 		</div>
 	</div>
 </div>
+{% for sermon in site.posts limit:1 %}
+<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="latestSermonModal" id="latestSermonModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="gridSystemModalLabel">{{sermon.title}}</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-18">
+
+          	<iframe src="https://player.vimeo.com/video/{{ sermon.video }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="width: 100%; max-width:578px;min-height: 325px;"></iframe>
+          </div>
+        </div>
+      </div>
+<!--       <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+{% endfor %}

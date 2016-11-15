@@ -19,8 +19,9 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-paginate: 2
+paginate: 6
 paginate_path: "/sermons/:num/"
+total_pages: 5
 collections:
   ministries:
     output: true
