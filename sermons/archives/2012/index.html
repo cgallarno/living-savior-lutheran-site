@@ -1,0 +1,54 @@
+---
+layout: default
+title: Archives
+---
+		<!-- Main content -->
+		<div class="main-wrap">
+			<div class="container">
+			<h1>Archives for 2012</h1>
+				<div class="col-md-12">
+					<div class="row">
+					<ul>
+						{% for sermon in site.posts reversed %}
+							{% capture year %}{{ sermon.date | date: "%Y"}}{% endcapture %}
+							{% if year == '2012' %}
+								<li><a href="https://vimeo.com/{{ sermon.video }}" target="_blank">{{ sermon.date | date: "%B %-d, %Y" }} - {{ sermon.title | remove: "<h4>" | remove: "</h4>"}}</a></li>
+							{% endif %}
+						{% endfor %}
+					</ul>
+					</div>
+				</div>
+				<aside class="col-md-4">
+					<div class="side-widget">
+						<h5>Archives</h5>
+						<ul class="categories">
+							{% capture count %}0{% endcapture %}
+							{% for post in site.posts %}
+							{% capture count %}{{ count | plus: 1}}{% endcapture %}
+							{% capture year %}{{ post.date | date:'%Y' }}{% endcapture %}
+								{% unless post.previous %}
+									<li><a href="/sermons/archives/{{year}}/">{{ year }} ({{ count }})</a></li>
+								{% else %}
+									{% capture previousYear %}{{ post.previous.date | date:'%Y' }}{% endcapture %}
+									{% if year != previousYear %}
+										<li><a href="/sermons/archives/{{year}}/">{{ year }} ({{ count }})</a></li>
+										{% capture count %}0{% endcapture %}
+									{% endif %}
+								{% endunless %}
+							{% endfor %}
+						</ul>
+					</div>
+					<div class="space50"></div>
+					<div class="side-widget">
+						<h5>Sermon Occasions</h5>
+						<ul class="categories">
+							<li><a href="#">Christmas</a></li>
+							<li><a href="#">Easter</a></li>
+							<li><a href="#">Thanksgiving</a></li>
+						</ul>
+					</div>
+
+				</aside>
+			</div>
+			<!-- Main content -->
+		</div>
