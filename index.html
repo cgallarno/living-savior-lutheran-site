@@ -17,66 +17,14 @@ layout: hero
 		<div class="col-md-8">
 			<!-- <img src="demo/7.jpg" class="img-responsive" alt=""> -->
 			<h4>Whats New &amp; Announcements</h4>
-
-			<p class="col-md-2 text-right">9/18</p><p class="col-md-13">A new Church Directory is coming soon! Please contact the Church office if you have any changes or updates to your information - or would like to be listed!</p>
-			<p class="col-md-2 text-right">9/18</p><p class="col-md-13"><a href="">September 18th Bulletin</a></p>
-			<p class="col-md-2 text-right">9/11</p><p class="col-md-13">We're looking for photos! Submit pictures from church events to <a href="">LSLCphotos@gmail.com</a> to appear in newsletters and on the website.</p>
-			<p class="col-md-2 text-right">9/1</p><p class="col-md-13"><a href="">September 2016 Newsletter</a></p>
-			<p class="text-right"><a href="">More Newsletters ></a></p>
+			{% for announcement in site.data.announcements %}
+			<p class="col-md-2 text-right">{{ announcement.date }}</p><p class="col-md-13">{{ announcement.message }}</p>
+			{% endfor %}
+			<!-- <p class="text-right"><a href="">More Newsletters ></a></p> -->
 		</div>
 	</div>
 </div>
 
-<!-- Quote
-<div class="container">
-	<div class="quote-wrap">
-		<div id="quote-slider" class="flexslider">
-			<ul class="slides">
-				<li data-thumb="demo/quote/1.jpg">
-					<h5>PASTOR MICHALE MAIK</h5>
-					<p>Praesent sit amet rutrum odio. Nam vitae tortor ac mauris porttitor ultricies. Maecenas bibendum nibh vitae ultrices vulputate.</p>
-				</li>
-				<li data-thumb="demo/quote/2.jpg">
-					<h5>PASTOR MICHALE MAIK</h5>
-					<p>Praesent sit amet rutrum odio. Nam vitae tortor ac mauris porttitor ultricies. Maecenas bibendum nibh vitae ultrices vulputate.</p>
-				</li>
-				<li data-thumb="demo/quote/3.jpg">
-					<h5>PASTOR MICHALE MAIK</h5>
-					<p>Praesent sit amet rutrum odio. Nam vitae tortor ac mauris porttitor ultricies. Maecenas bibendum nibh vitae ultrices vulputate.</p>
-				</li>
-				<li data-thumb="demo/quote/4.jpg">
-					<h5>PASTOR MICHALE MAIK</h5>
-					<p>Praesent sit amet rutrum odio. Nam vitae tortor ac mauris porttitor ultricies. Maecenas bibendum nibh vitae ultrices vulputate.</p>
-				</li>
-				<li data-thumb="demo/quote/5.jpg">
-					<h5>PASTOR MICHALE MAIK</h5>
-					<p>Praesent sit amet rutrum odio. Nam vitae tortor ac mauris porttitor ultricies. Maecenas bibendum nibh vitae ultrices vulputate.</p>
-				</li>
-				<li data-thumb="demo/quote/6.jpg">
-					<h5>PASTOR MICHALE MAIK</h5>
-					<p>Praesent sit amet rutrum odio. Nam vitae tortor ac mauris porttitor ultricies. Maecenas bibendum nibh vitae ultrices vulputate.</p>
-				</li>
-				<li data-thumb="demo/quote/7.jpg">
-					<h5>PASTOR MICHALE MAIK</h5>
-					<p>Praesent sit amet rutrum odio. Nam vitae tortor ac mauris porttitor ultricies. Maecenas bibendum nibh vitae ultrices vulputate.</p>
-				</li>
-				<li data-thumb="demo/quote/8.jpg">
-					<h5>PASTOR MICHALE MAIK</h5>
-					<p>Praesent sit amet rutrum odio. Nam vitae tortor ac mauris porttitor ultricies. Maecenas bibendum nibh vitae ultrices vulputate.</p>
-				</li>
-				<li data-thumb="demo/quote/9.jpg">
-					<h5>PASTOR MICHALE MAIK</h5>
-					<p>Praesent sit amet rutrum odio. Nam vitae tortor ac mauris porttitor ultricies. Maecenas bibendum nibh vitae ultrices vulputate.</p>
-				</li>
-				<li data-thumb="demo/quote/10.jpg">
-					<h5>PASTOR MICHALE MAIK</h5>
-					<p>Praesent sit amet rutrum odio. Nam vitae tortor ac mauris porttitor ultricies. Maecenas bibendum nibh vitae ultrices vulputate.</p>
-				</li>
-			</ul>
-		</div>
-	</div>
-</div>
- Quote -->
 
 <!-- Sermons Wrap -->
 <div class="home-wrap">
@@ -101,12 +49,7 @@ layout: hero
 								<!-- <li><a href="#" class="m-ico3"></a></li> -->
 							</ul>
 							<div class="line"></div>
-							<a href="/sermons/" class="hb-more">previous sermons</a>
-<!-- 							<ul class="hb-social">
-								<li class="hb-fb"><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li class="hb-tw"><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li class="hb-plus"><a href="#"><i class="fa fa-plus"></i></a></li>
-							</ul> -->
+							<a href="/worship/sermons/" class="hb-more">previous sermons</a>
 						</div>
 					</div>
 				{% endfor %}
@@ -125,13 +68,6 @@ layout: hero
 							<h4>Student Ministries <span>High School Ministry</span></h4>
 							<div class="time">12:30 pm - Bethlehem Church</div>
 						</div>
-						<div class="col-md-4">
-							<ul class="hb-social">
-								<li class="hb-fb"><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li class="hb-tw"><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li class="hb-plus"><a href="#"><i class="fa fa-plus"></i></a></li>
-							</ul>
-						</div>
 					</div>
 				</li>
 				<li>
@@ -141,13 +77,6 @@ layout: hero
 							<h4>Church <span>Children's Building Open House</span></h4>
 							<div class="time">12:30 pm - Bethlehem Church</div>
 						</div>
-						<div class="col-md-4">
-							<ul class="hb-social">
-								<li class="hb-fb"><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li class="hb-tw"><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li class="hb-plus"><a href="#"><i class="fa fa-plus"></i></a></li>
-							</ul>
-						</div>
 					</div>
 				</li>
 				<li>
@@ -156,13 +85,6 @@ layout: hero
 							<div class="date">25<span>Aug</span></div>
 							<h4>Student Ministries <span>High School Ministry</span></h4>
 							<div class="time">12:30 pm - Bethlehem Church</div>
-						</div>
-						<div class="col-md-4">
-							<ul class="hb-social">
-								<li class="hb-fb"><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li class="hb-tw"><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li class="hb-plus"><a href="#"><i class="fa fa-plus"></i></a></li>
-							</ul>
 						</div>
 					</div>
 				</li>
@@ -198,10 +120,6 @@ layout: hero
           </div>
         </div>
       </div>
-<!--       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div> -->
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->

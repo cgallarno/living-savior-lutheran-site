@@ -18,6 +18,7 @@ $text-color:       #111;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
+$black-color: 		 #1a1a1a;
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
@@ -47,3 +48,39 @@ $on-laptop:        800px;
 @import "helpers";
 @import "theme";
 @import "slider";
+
+.nav-left, .nav-right{
+	&> ul {
+		// border-color: $grey-color-dark;
+
+		a {
+			// color: $grey-color-dark;
+			// text-shadow-color: none;
+		}
+	}
+}
+
+
+#slide-full .slider-wrap {
+	min-height: 480px;
+}
+
+#slide-full .slider-wrapper .owl-item .item {
+	width: 100%;
+	height: 480px;
+	background-image: url('/images/hero.jpeg');
+	background-size: cover;
+	background-position: center -150px;
+}
+
+.nivo-caption {
+	opacity: 1;
+	p {
+		// color: $black-color;
+		// text-shadow: none;
+	}
+}
+
+.home2_wrap1 {
+	padding-top: 20px;
+}

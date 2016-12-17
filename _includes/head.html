@@ -36,9 +36,10 @@
 	<link rel="stylesheet" href="{{ '/css/flexslider.css' | prepend: site.baseurl }}">
 	<link rel="stylesheet" href="{{ '/js/owl-carousel/owl.carousel.css' | prepend: site.baseurl }}">
 	<link rel="stylesheet" href="{{ '/js/owl-carousel/owl.theme.css' | prepend: site.baseurl }}">
+	{{ page.calendar_css | replace: "!PATH_TO_COMPONENTS!", "/components" | prepend: site.baseurl }}
 
 	<!--[if lt IE 9]>
 	<script src="/js/libs/html5.js"></script>
 	<![endif]-->
-
+	<script src="{{ '/js/jquery.js' | prepend: site.baseurl }}"></script>
 </head>
