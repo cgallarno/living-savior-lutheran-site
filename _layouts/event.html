@@ -81,16 +81,11 @@ title: Events
 							<li><a href="#">Classes(12)</a></li> -->
 						</ul>
 					</div>
-					<div class="space50"></div>
-					<div class="side-widget">
+<!--					<div class="space50"></div>
+ 					<div class="side-widget">
 						<h5>Sort by months</h5>
-						<ul class="categories">
-							{% assign groupedEvents = site.data.events | group_by_exp:"item","item.category | truncate: 3, \"\"" %}
-							{{ groupedEvents }}
-							{% for group in groupedEvents %}
-							<li><a href="#">{{ group.name }} ({{group.items | size}})</a></li>
-
-							{% endfor %}
+						<ul class="categories"> -->
+							<!-- TODO: use group_by_exp when availble -->
 							<!-- <li><a href="#">September 2016</a></li>
 							<li><a href="#">October 2016</a></li>
 							<li><a href="#">November 2016</a></li>
@@ -98,8 +93,8 @@ title: Events
 							<li><a href="#">January 2017</a></li>
 							<li><a href="#">February 2017</a></li>
 							<li><a href="#">March 2016</a></li> -->
-						</ul>
-					</div>
+<!-- 						</ul>
+					</div> -->
 				</aside>
 				<!-- Events content -->
 			</div>
