@@ -19,9 +19,6 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-paginate: 6
-paginate_path: "/worship/sermons/:num/"
-total_pages: 5
 collections:
   ministries:
     output: true
@@ -30,5 +27,3 @@ collections:
 
 # Devlopment settings
 livereload: true
-
-gems: [jekyll-paginate]

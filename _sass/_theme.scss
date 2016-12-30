@@ -1522,6 +1522,28 @@ aside {
 	border-bottom: 1px solid #3B7ACD;
 }
 
+.sermon-content .video-container {
+	position: relative;
+	background: black;
+
+	&:before {
+	  display: block;
+	  content: "";
+	  width: 100%;
+	  padding-top: (9 / 16) * 100%;
+	}
+
+	> iframe {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  width: 100%;
+	  height: 100%;
+	}
+}
+
 .sermon-content.lasts {
 	margin-bottom: 0;
 	padding-bottom: 15px;
