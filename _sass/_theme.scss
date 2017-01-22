@@ -422,6 +422,9 @@ header {
 .events-wrap .time {
 	color: #7f7e7a;
 	font-size: 14px;
+	white-space: nowrap;
+	overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .events-wrap ul li {
@@ -1704,6 +1707,7 @@ aside {
 .events-wrap-big .time {
 	color: #7f7e7a;
 	font-size: 16px;
+	margin-left: 129px;
 }
 
 .events-wrap-big ul li {

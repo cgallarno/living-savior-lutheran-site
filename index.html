@@ -58,37 +58,11 @@ layout: hero
 
 		<!-- Events Wrap -->
 		<div class="col-md-8 events-wrap">
-			<ul>
-				<li>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="date">25<span>Aug</span></div>
-							<h4>Student Ministries <span>High School Ministry</span></h4>
-							<div class="time">12:30 pm - Bethlehem Church</div>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="date">25<span>Aug</span></div>
-							<h4>Church <span>Children's Building Open House</span></h4>
-							<div class="time">12:30 pm - Bethlehem Church</div>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="date">25<span>Aug</span></div>
-							<h4>Student Ministries <span>High School Ministry</span></h4>
-							<div class="time">12:30 pm - Bethlehem Church</div>
-						</div>
-					</div>
-				</li>
+			<ul id="events-container">
+
 			</ul>
 			<div class="line"></div>
-			<a href="#" class="hb-more">See rest of events</a>
+			<a href="{{ '/events/' | prepend: site.baseurl }}" class="hb-more">See rest of events</a>
 		</div>
 		<!-- Events Wrap -->
 	</div>
@@ -123,10 +97,10 @@ layout: hero
 </div><!-- /.modal -->
 
 <script src="{{ '/js/sermons.js' | prepend: site.baseurl }}"></script>
+<script src="{{ '/js/calendar.js' | prepend: site.baseurl }}"></script>
 <script>
 	$(document).ready(function () {
 		sermonsRepo.get(1, function (videos) {
-			console.log(videos);
 			$sermonContainer = $('#sermons-slider');
 			var latestVideo = videos[0];
 
@@ -140,6 +114,29 @@ layout: hero
 			if(sermonsRepo.previewOffsets[latestVideo.uri]){
 				$("#latest-sermon__preview").css('margin-left', sermonsRepo.previewOffsets[latestVideo.uri]);
 			}
+		});
+
+		calendarRepo.get(3, function (events) {
+			$eventsContainer = $('#events-container');
+			var eventItems = [];
+			$.each(events, function (i, event) {
+				console.log(event.recurringEventId + " : " + event.title);
+
+				var eventLi = '<li><div class="row"><div class="col-md-16">';
+				eventLi += '<div class="date">' + event.date.day + '<span>' + event.date.month + '</span></div>';
+				eventLi += '<h4>' + event.category + '' + '<span>' + event.title + '</span></h4>';
+				eventLi += '<div class="time">' + event.date.time;
+				if(event.location){
+					eventLi += ' - ' + event.location;
+				}
+				eventLi += '</div>';
+				eventLi += '</div></div></li>';
+
+				eventItems.push(eventLi);
+			});
+			//debugger;
+
+			$eventsContainer.html(eventItems);
 		});
 	});
 </script>
