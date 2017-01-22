@@ -1,6 +1,7 @@
-var booksOfTheBible = ["Genesis", "Exodus", "Leviticus", "Numbers", "Deuteronomy", "Joshua", "Judges", "Ruth", "1 Samuel", "2 Samuel", "1 Kings", "2 Kings", "1 Chronicles", "2 Chronicles", "Ezra", "Nehemiah", "Esther", "Job", "Psalms", "Proverbs", "Ecclesiastes", "Song of Solomon", "Isaiah", "Jeremiah", "Lamentations", "Ezekiel", "Daniel", "Hosea", "Joel", "Amos", "Obadiah", "Jonah", "Micah", "Nahum", "Habakkuk", "Zephaniah", "Haggai", "Zechariah", "Malachi", "Matthew", "Mark", "Luke", "John", "Acts", "Romans", "1 Corinthians", "2 Corinthians", "Galatians", "Ephesians", "Philippians", "Colossians", "1 Thessalonians", "2 Thessalonians", "1 Timothy", "2 Timothy", "Titus", "Philemon", "Hebrews", "James", "1 Peter", "2 Peter", "1 John", "2 John", "3 John", "Jude", "Revelation"];
+//var booksOfTheBible = ["Genesis", "Exodus", "Leviticus", "Numbers", "Deuteronomy", "Joshua", "Judges", "Ruth", "1 Samuel", "2 Samuel", "1 Kings", "2 Kings", "1 Chronicles", "2 Chronicles", "Ezra", "Nehemiah", "Esther", "Job", "Psalms", "Proverbs", "Ecclesiastes", "Song of Solomon", "Isaiah", "Jeremiah", "Lamentations", "Ezekiel", "Daniel", "Hosea", "Joel", "Amos", "Obadiah", "Jonah", "Micah", "Nahum", "Habakkuk", "Zephaniah", "Haggai", "Zechariah", "Malachi", "Matthew", "Mark", "Luke", "John", "Acts", "Romans", "1 Corinthians", "2 Corinthians", "Galatians", "Ephesians", "Philippians", "Colossians", "1 Thessalonians", "2 Thessalonians", "1 Timothy", "2 Timothy", "Titus", "Philemon", "Hebrews", "James", "1 Peter", "2 Peter", "1 John", "2 John", "3 John", "Jude", "Revelation"];
 var sermonsRepo = {
 	corrections: {
+		'/videos/197813692' : '"How\'s Your Memory" By Rev. Andrew C. Lissy Paslm 25:6-7 01_01_2017',
 		'/videos/149568851' : '"He is Peace" By Vicar Aaron Bird Micah 5:2-5 12_20_2015',
 		'/videos/149996913' : '"A Mixed Up Day" By Rev. Andrew C. Lissy Luke 1:37-54 12_24_2015',
 		'/videos/183206935' : '"How Do We Measure Love" By Rev. Andrew C. Lissy Amos 8:4-7 09_18_2016',
@@ -9,7 +10,8 @@ var sermonsRepo = {
 	},
 	previewOffsets : {
 		'/videos/193259374' : -90,
-		'/videos/196183699' : -90
+		'/videos/196183699' : -90,
+		'/videos/198606175'	: -90
 	},
 	parseVideoProperties: function(video) {
 		var props = {}; // title, date, passageString, speaker
