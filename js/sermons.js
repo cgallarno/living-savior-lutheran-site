@@ -9,9 +9,12 @@ var sermonsRepo = {
 		'/videos/164014105' : '"Rev. Lannon Martin of Concordia Seminary, Ft. Wayne, IN" Rev. Lannon Martin'
 	},
 	previewOffsets : {
+		'/videos/203747965' : -45,
 		'/videos/193259374' : -90,
 		'/videos/196183699' : -90,
-		'/videos/198606175'	: -90
+		'/videos/198606175'	: -90,
+		'/videos/202657419' : -90,
+		'/videos/208022646' : -90,
 	},
 	parseVideoProperties: function(video) {
 		var props = {}; // title, date, passageString, speaker

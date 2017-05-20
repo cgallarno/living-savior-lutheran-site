@@ -17,7 +17,7 @@ p {
 	font-family: Bitter;
 	font-weight: 400;
 	font-size: 13px;
-	color: #686763;
+	color: #333;
 	line-height: 21px;
 }
 
@@ -2414,7 +2414,7 @@ aside {
 
 #home2 .slider-wrap {
 	height: 635px !important;
-	background: url(../images/hero.jpeg) no-repeat center;
+	background: url(../images/photos/nav-panaorama.jpg) no-repeat center;
 	background-size:100% auto;
 }
 
@@ -3490,7 +3490,7 @@ background:#436085;
 .home-blog-big p {
 	font-size: 16px;
 	line-height: 24px;
-	color: #686763;
+	color: #333;
 	margin-bottom: 45px;
 }
 
@@ -3932,15 +3932,19 @@ blockquote {
 }
 
 .nav-left li a:hover,.nav-right li a:hover {
-	color: #4889E0;
+	/*color: #4889E0;*/
+	// color: #2FD683;
+	color: #333;
 }
 
 .mega-menu .m2 a:hover, .mega-menu .m3 a:hover,.subpages a:hover {
-	color: #4889E0 !important;
+	/*color: #4889E0 !important; */
+	color: #2FD683 !important;
 }
 
 .menu-btn:hover {
-	background: #4889E0;
+	/* background: #4889E0;*/
+	background: #2FD683;
 	color: #fff !important;
 }
 
@@ -4907,6 +4911,22 @@ product-price a {
 	background: #fff;
 }
 
+}
+
+.news-bulletin.container{
+	max-width: 960px;
+
+	td{
+		padding: 0 5px;
+	}
+
+	th {
+		padding: 12px 5px 3px;
+	}
+
+	table{
+		margin-bottom: 10px;
+	}
 }
 
 /* #Mobile (Landscape)
