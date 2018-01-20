@@ -4,7 +4,7 @@
 		<div class="nav-left">
 			<ul>
 				<li class="has-sub-mega">
-					<a href="/about/" class="nowrap">About us</a>
+					<a href="{{ '/about' | prepend: site.baseurl }}" class="nowrap">About us</a>
 					<div class="mega-menu">
 						<div class="col-md-9 m1">
 							<h4>IM NEW</h4>
@@ -15,12 +15,12 @@
 						</div>
 						<div class="col-md-4 m2">
 							<!--<h5>PEOPLE / VOLUNTEERS</h5>
-							<a href="/about/people/">Church Leadership</a>
+							<a href="{{ '/about/people/' | prepend: site.baseurl }}">Church Leadership</a>
 							<div class="space25"></div> -->
 							<h5>About us</h5>
 							<!-- <a href="/about/im-new/">Im New</a> -->
-							<a href="/about/">About Us</a>
-							<a href="/about/contact/">Contact and Location</a>
+							<a href="{{ '/about/' | prepend: site.baseurl }}">About Us</a>
+							<a href="{{ '/about/contact/' | prepend: site.baseurl }}">Contact and Location</a>
 						</div>
 						<div class="col-md-3 m3">
 							<img src="{{ '/demo/8.jpg' | prepend: site.baseurl }}" class="img-responsive" alt=""/>
@@ -72,7 +72,7 @@
 					</div>
 				</li>
 				<li class="has-sub">
-					<a href="/ministries/">Ministries</a>
+					<a href="{{ '/ministries/' | prepend: site.baseurl }}">Ministries</a>
 <!-- 					<div class="subpage">
 						{% assign ministries = site.ministries | sort: 'sort' %}
 						{% for ministry in ministries | sort: 'sort' %}
@@ -85,7 +85,7 @@
 	</div>
 	<div class="col-md-4">
 		<div class="logo">
-			<a href="/"><img src="{{ '/images/logo-alt.png' | prepend: site.baseurl }}" class="img-responsive" alt=""/></a>
+			<a href="{{ '/' | prepend: site.baseurl }}"><img src="{{ '/images/logo-alt.png' | prepend: site.baseurl }}" class="img-responsive" alt=""/></a>
 		</div>
 	</div>
 	<div class="col-md-6">
@@ -93,14 +93,14 @@
 			<ul>
 				<!-- <li><a href="/sermons/">Sermons</a></li> -->
 				<li class="has-sub">
-					<a href="/worship/sermons/">Worship</a>
+					<a href="{{ '/worship/sermons/' | prepend: site.baseurl }}">Worship</a>
 					<div class="subpage">
-							<a href="/worship/sermons/">Sermons</a>
-							<a href="/worship/bible-studies/">Bible Studies</a>
+							<a href="{{ '/worship/sermons/' | prepend: site.baseurl }}">Sermons</a>
+							<a href="{{ '/worship/bible-studies/' | prepend: site.baseurl }}">Bible Studies</a>
 					</div>
 				</li>
-				<li><a href="/events/">Events</a></li>
-				<li><a href="/about/contact/">Contact</a></li>
+				<li><a href="{{ '/events/' | prepend: site.baseurl }}">Events</a></li>
+				<li><a href="{{ '/about/contact/' | prepend: site.baseurl }}">Contact</a></li>
 			</ul>
 		</div>
 	</div>
@@ -170,7 +170,7 @@
 				</div>
 			</li>
 			<li>
-				<a href="/sermons/">Sermons</a>
+				<a href="{{ '/sermons/' | prepend: site.baseurl }}">Sermons</a>
 			</li>
 				<li class="has-sub">
 				<a href="#">Events</a>

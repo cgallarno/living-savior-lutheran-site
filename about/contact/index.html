@@ -1,24 +1,26 @@
 ---
-layout: html
+layout: default
 ---
 <body onload="LoadGmaps()" onunload="GUnload()" id="home2">
 
 <div class="body">
 	<div class="slider-wrap">
 
-		{% include header.html %}
 
 		<!-- Google Map -->
 		<div class="container">
 			<div class="col-md-16">
-				<div class="google-map">
+				<div class="google-map" style="top: 50px">
 					<div id="MyGmaps" style="width:100%;height:410px;"></div>
 				</div>
 			</div>
 		</div>
 		<!-- Google Map -->
+
+
 	</div>
-	<div class="white-bg">
+
+	<div class="white-bg" style="margin-top: 300px;">
 		<div class="main-wrap">
 			<div class="container">
 
@@ -127,9 +129,9 @@ layout: html
 					<div class="side-widget">
 						<h5>Useful Pages</h5>
 						<ul class="categories">
-							<li><a href="/about">About Us</a></li>
+							<li><a href="{{ '/about' | prepend:site.baseurl }}">About Us</a></li>
 							<li><a href="http://www.livingsaviorlutheran.org/preschool/index.htm" target="_blank">Preschool</a></li>
-							<li><a href="/about/im-new/">I'm New</a></li>
+							<li><a href="{{ '/about/im-new/' | prepend:site.baseurl }}">I'm New</a></li>
 							<!-- <li><a href="#">Donations</a></li> -->
 						</ul>
 					</div>
@@ -139,7 +141,7 @@ layout: html
 		</div>
 
 		<!-- Footer -->
-		{% include footer.html %}
+
 		<!-- Footer -->
 	</div>
 </div>

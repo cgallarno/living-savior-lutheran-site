@@ -1,0 +1,17 @@
+$mid-blue-color    : #4889E0;//#445894;
+$light-blue-color  : lighten($mid-blue-color, 20%);
+$dark-blue-color   : darken($mid-blue-color, 20%); // feel free to tweak, currently unused. //#222; //363766
+
+$mid-green-color   : #07B767;
+$light-green-color : lighten($mid-green-color, 20%); //#8FD99B;
+$dark-green-color  : darken($mid-green-color, 10%);
+
+$text-color        : #111;
+$background-color  : #fdfdfd;
+$brand-color       : #2a7ae2;
+
+$black-color       : #1a1a1a;
+$white-color       : #fefefe;
+$grey-color        : #828282;
+$grey-color-light  : lighten($grey-color, 40%);
+$dark-gray-color   : #222

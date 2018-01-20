@@ -10,7 +10,7 @@ html,body {
 body {
 	font-family: Bitter;
 	font-weight: 400;
-	// background:#f6f6f6;
+	background:#fffff;
 }
 
 p {
@@ -25,6 +25,20 @@ p {
 
 .slider-wrap {
 	position: relative;
+
+	.gradient-cover{
+		position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.62+15,0+100 */
+		background: -moz-linear-gradient(top,  rgba(0,0,0,0.62) 0%, rgba(0,0,0,0.62) 15%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  rgba(0,0,0,0.62) 0%,rgba(0,0,0,0.62) 15%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  rgba(0,0,0,0.62) 0%,rgba(0,0,0,0.62) 15%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    z-index: 1;
+	}
 }
 
 .nav-left {
@@ -99,33 +113,33 @@ header {
 
 .hb-content h3 {
 	font-size: 35px;
-	color: #1a1a1a;
+	color: $dark-gray-color;
 	text-transform: uppercase;
 	margin: 5px 0 25px;
 	font-weight: 400;
 }
 
 .hb-content h3 a {
-	color: #1a1a1a;
+	color: $dark-gray-color;
 }
 
 .hb-content p {
 	padding: 30px 0 25px;
-	border-bottom: 2px solid #3B7ACD;
+	border-bottom: 2px solid $mid-blue-color;
 	margin: 0;
 }
 
 .hb-more {
 	font-size: 13px;
 	display: table;
-	color: #1a1a1a;
+	color: $dark-gray-color;
 	font-style: italic;
 	text-decoration: underline;
 	margin: 10px 0 0;
 }
 
 .hb-more:hover {
-	color: #4889E0;
+	color: $dark-green-color;
 	text-decoration: underline;
 }
 
@@ -167,7 +181,7 @@ header {
 }
 
 .hb-plus a:hover {
-	background: #1a1a1a;
+	background: $dark-gray-color;
 }
 
 .hb-sky a:hover {
@@ -175,7 +189,7 @@ header {
 }
 
 .hb-mail a:hover {
-	background: #4889E0;
+	background: $dark-green-color;
 }
 
 .home-blog .col-md-4 {
@@ -185,7 +199,7 @@ header {
 .archive-link {
 	height: 60px;
 	width: 100%;
-	background: #1a1a1a url(../images/a-link.png) no-repeat right center;
+	background: $dark-gray-color url(../images/a-link.png) no-repeat right center;
 	display: table;
 	line-height: 60px;
 	color: #fff;
@@ -197,7 +211,7 @@ header {
 }
 
 .archive-link:hover {
-	background-color: #4889E0;
+	background-color: $dark-green-color;
 	color: #fff;
 	text-shadow: 1px 2px rgba(2,3,3,.42);
 }
@@ -210,7 +224,7 @@ header {
 }
 
 #quote-slider h5 {
-	color: #4889E0;
+	color: $mid-blue-color;
 	font-size: 18px;
 	text-align: center;
 	position: relative;
@@ -260,7 +274,7 @@ header {
 
 .d-price {
 	font-size: 72px;
-	color: #4889E0;
+	color: $dark-gray-color;
 	text-shadow: 1px 2px rgba(2,3,3,.75);
 	text-align: center;
 	font-weight: 700;
@@ -280,7 +294,7 @@ header {
 	top: 0;
 	left: 0;
 	height: 100%;
-	background: #4889E0;
+	background: $dark-gray-color;
 	border-radius: 20px;
 }
 
@@ -292,7 +306,7 @@ header {
 }
 
 .d-btn {
-	background: #4889E0;
+	background: $dark-gray-color;
 	padding: 8px 70px 14px;
 	border-radius: 35px;
 	color: #fff;
@@ -313,7 +327,7 @@ header {
 }
 
 .music-info {
-	background: #1a1a1a;
+	background: $dark-gray-color;
 	padding: 20px 10px 15px 25px;
 	width: 145%;
 	position: relative;
@@ -358,7 +372,7 @@ header {
 .line {
 	width: 100%;
 	height: 2px;
-	background: #3B7ACD;
+	background: $mid-blue-color;
 }
 
 .home-wrap {
@@ -378,7 +392,7 @@ header {
 	color: #fff;
 	text-align: center;
 	font-size: 30px;
-	background: #1a1a1a;
+	background: $dark-gray-color;
 	border-radius: 50%;
 	padding-top: 4px;
 	margin-right: 15px;
@@ -410,13 +424,13 @@ header {
 .events-wrap h4 span {
 	font-size: 18px;
 	text-transform: none;
-	color: #1a1a1a;
+	color: $dark-gray-color;
 	display: block;
 	margin-top: 4px;
 }
 
 .events-wrap h4 span a {
-	color: #1a1a1a;
+	color: $dark-gray-color;
 }
 
 .events-wrap .time {
@@ -430,7 +444,7 @@ header {
 .events-wrap ul li {
 	padding-bottom: 10px;
 	margin-bottom: 15px;
-	border-bottom: 1px solid #3B7ACD;
+	border-bottom: 1px solid $mid-blue-color;
 }
 
 .events-wrap ul li:last-child {
@@ -452,7 +466,7 @@ header {
 
 .home-shop {
 	padding: 60px 0;
-	border-top: 1px solid #3B7ACD;
+	border-top: 1px solid $mid-blue-color;
 	background:#e0dccc;
 }
 
@@ -493,7 +507,7 @@ header {
 }
 
 .product-price {
-	background: #1a1a1a;
+	background: $dark-gray-color;
 	line-height: 37px;
 	height: 37px;
 	margin-top: 45px;
@@ -512,13 +526,13 @@ header {
 .home-shop .product-price a {
 	width: 25%;
 	float: right;
-	background: #4889E0 url(../images/cart1.png) no-repeat right;
+	background: $light-green-color url(../images/cart1.png) no-repeat right;
 	height: 37px;
 	position:relative;
 }
 
 .home-shop2 .product-price a {
-	background: #4889E0 url(../images/cart.png) no-repeat right;
+	background: $light-green-color url(../images/cart.png) no-repeat right;
 }
 
 
@@ -546,18 +560,18 @@ header {
 /* Footer */
 
 footer {
-	background: #1a1a1a;
+	background: $dark-gray-color;
 }
 
 .footer1 {
 	padding: 30px 0;
-	border-bottom: 1px solid #434343;
+	border-bottom: 1px solid $mid-blue-color;
 }
 
 .footer1 h6 {
 	margin: 0 0 5px;
 	font-size: 13px;
-	color: #4889E0;
+	color: $light-blue-color;
 	text-transform: uppercase;
 	font-weight: 400;
 	text-align: right;
@@ -580,7 +594,7 @@ footer {
 }
 
 .footer-widget {
-	border-right: 1px solid #434343;
+	border-right: 1px solid $mid-blue-color;
 	padding: 35px 0 15px;
 }
 
@@ -589,7 +603,7 @@ footer {
 }
 
 .footer-widget h5 {
-	color: #4889E0;
+	color: $light-blue-color;
 	text-transform: uppercase;
 	margin: 0 0 25px;
 }
@@ -690,7 +704,7 @@ article p {
 }
 
 article a {
-	color: #1a1a1a;
+	color: $dark-gray-color;
 }
 
 .white-bg {
@@ -702,7 +716,7 @@ article a {
 .comments-meta {
 	font-size: 13px;
 	display: table;
-	color: #1A1A1A;
+	color: $dark-gray-color;
 	font-style: italic;
 	margin: 10px 0 0;
 	float: right;
@@ -728,7 +742,7 @@ article a {
 }
 
 .side-widget h5 {
-	border-bottom: 2px solid #3B7ACD;
+	border-bottom: 2px solid $mid-blue-color;
 	font-size: 18px;
 	padding-bottom: 10px;
 	margin: 0 0 15px;
@@ -738,7 +752,7 @@ article a {
 	height: 37px;
 	width: 100%;
 	border-radius: 30px;
-	border: 1px solid #3B7ACD;
+	border: 1px solid $mid-blue-color;
 	padding: 0 15px;
 	color: #514e40;
 	font-size: 12px;
@@ -805,7 +819,7 @@ article a {
 .categories li {
 	line-height: 42px;
 	list-style: none;
-	border-bottom: 1px solid #3B7ACD;
+	border-bottom: 1px solid $mid-blue-color;
 }
 
 .categories li:last-child {
@@ -837,7 +851,7 @@ article a {
 }
 
 .fposts h4 a {
-	color: #1a1a1a;
+	color: $dark-gray-color;
 }
 
 .fposts {
@@ -865,9 +879,9 @@ aside {
 .l-comments li {
 	padding-bottom: 12px;
 	margin-bottom: 12px;
-	border-bottom: 1px solid #3B7ACD;
+	border-bottom: 1px solid $mid-blue-color;
 	font-size: 13px;
-	color: #1a1a1a;
+	color: $dark-gray-color;
 	list-style: none;
 }
 
@@ -895,7 +909,7 @@ aside {
 	display: table;
 	line-height: 35px;
 	color: #fff;
-	background: #4889E0;
+	background: $light-green-color;
 	padding: 0 7px;
 }
 
@@ -928,7 +942,7 @@ aside {
 }
 
 .page-nav li a:hover,.active a {
-	background: #1a1a1a !important;
+	background: $dark-gray-color !important;
 	color: #fff !important;
 	text-decoration: none;
 }
@@ -951,11 +965,11 @@ aside {
 }
 
 .page-nav-links a:hover {
-	color: #1a1a1a;
+	color: $dark-gray-color;
 }
 
 .page-meta {
-	border-top: 1px solid #3B7ACD;
+	border-top: 1px solid $mid-blue-color;
 	padding-top: 20px;
 	margin-bottom: -20px;
 	display: table;
@@ -969,7 +983,7 @@ aside {
 }
 
 .masonry-blog article {
-	border: 1px solid #3B7ACD;
+	border: 1px solid $mid-blue-color;
 }
 
 .masonry-blog .post-info {
@@ -986,7 +1000,7 @@ aside {
 
 .comments-content li {
 	list-style: none outside none;
-	border-bottom: 1px solid #3B7ACD;
+	border-bottom: 1px solid $mid-blue-color;
 	margin-bottom: 20px;
 	padding-bottom: 5px;
 }
@@ -1023,11 +1037,11 @@ aside {
 	font-size: 14px;
 	float: right;
 	font-style: normal;
-	color: #1a1a1a;
+	color: $dark-gray-color;
 }
 
 .comment_info .name em a {
-	color: #1a1a1a;
+	color: $dark-gray-color;
 }
 
 .comment-info p {
@@ -1050,8 +1064,8 @@ aside {
 .comment-wrap h5,.team2 h5 {
 	margin: 0 0 35px;
 	font-size: 18px;
-	color: #1a1a1a;
-	border-bottom: 2px solid #3B7ACD;
+	color: $dark-gray-color;
+	border-bottom: 2px solid $mid-blue-color;
 	padding-bottom: 10px;
 }
 
@@ -1060,7 +1074,7 @@ aside {
 	color: #fff;
 	display: table;
 	width: 100%;
-	background: #1a1a1a url(../images/border.png) no-repeat right;
+	background: $dark-gray-color url(../images/border.png) no-repeat right;
 	text-align: center;
 	font-size: 22px;
 	font-style: italic;
@@ -1069,7 +1083,7 @@ aside {
 }
 
 .comments-more:hover {
-	background-color: #4889E0;
+	background-color: $light-green-color;
 	color: #fff;
 	text-shadow: 1px 2px rgba(2,3,3,.42);
 }
@@ -1078,7 +1092,7 @@ aside {
 	height: 37px;
 	width: 100%;
 	border-radius: 30px;
-	border: 1px solid #3B7ACD;
+	border: 1px solid $mid-blue-color;
 	padding: 0 15px;
 	color: #514e40;
 	font-size: 13px;
@@ -1108,7 +1122,7 @@ aside {
 .comment-form textarea {
 	width: 100%;
 	border-radius: 15px;
-	border: 1px solid #3B7ACD;
+	border: 1px solid $mid-blue-color;
 	padding: 0 15px;
 	color: #ccc;
 	font-size: 36px;
@@ -1133,7 +1147,7 @@ aside {
 }
 
 .c-btn {
-	background: #4889E0;
+	background: $light-green-color;
 	padding: 13px 44px;
 	border-radius: 30px;
 	color: #fff;
@@ -1149,7 +1163,7 @@ aside {
 
 .welcome-wrap {
 	padding: 55px 0;
-	border-bottom: 1px solid #3B7ACD;
+	border-bottom: 1px solid $mid-blue-color;
 }
 
 .welcome-wrap h3 {
@@ -1232,7 +1246,7 @@ aside {
 .team-single-meta li a {
 	font-size: 13px;
 	font-weight: 700;
-	color: #1a1a1a;
+	color: $dark-gray-color;
 	line-height: 24px;
 }
 
@@ -1252,7 +1266,7 @@ aside {
 }
 
 .team-single-meta li a:hover span {
-	background: #4889E0;
+	background: $light-green-color;
 }
 
 .team-staff {
@@ -1299,7 +1313,7 @@ aside {
 .donation-inner li {
 	list-style: none;
 	margin-bottom: 35px;
-	border-bottom: 1px solid #3B7ACD;
+	border-bottom: 1px solid $mid-blue-color;
 	padding-bottom: 35px;
 	display: table;
 	width: 100%;
@@ -1324,7 +1338,7 @@ aside {
 
 .donation-progress-wrap .donation-amount {
 	font-size: 28px;
-	color: #4889E0;
+	color: $light-green-color;
 	font-weight: 700;
 	margin-bottom: 3px;
 }
@@ -1353,7 +1367,7 @@ aside {
 	left: 0;
 	height: 100%;
 	height: 9px;
-	background: #4889E0;
+	background: $light-green-color;
 	border-radius: 15px;
 }
 
@@ -1370,7 +1384,7 @@ aside {
 }
 
 .donation-wrap2 .donation-btn a {
-	background: none repeat scroll 0 0 #4889E0;
+	background: none repeat scroll 0 0 $light-green-color;
 	padding: 8px 40px;
 	text-align: center;
 	border-radius: 30px;
@@ -1392,7 +1406,7 @@ aside {
 	list-style: none;
 	margin-bottom: 18px;
 	padding-bottom: 13px;
-	border-bottom: 1px solid #3B7ACD;
+	border-bottom: 1px solid $mid-blue-color;
 	display: table;
 }
 
@@ -1406,7 +1420,7 @@ aside {
 }
 
 .causes li h4 a {
-	color: #1a1a1a;
+	color: $dark-gray-color;
 }
 
 .causes .donation-progress-wrap {
@@ -1420,7 +1434,7 @@ aside {
 
 .donation-progress-wrap-single .donation-amount {
 	font-size: 58px;
-	color: #4889E0;
+	color: $light-green-color;
 	font-weight: 700;
 }
 
@@ -1449,7 +1463,7 @@ aside {
 	left: 0;
 	height: 100%;
 	height: 15px;
-	background: #4889E0;
+	background: $light-green-color;
 	border-radius: 15px;
 }
 
@@ -1466,7 +1480,7 @@ aside {
 }
 
 .donation-wrap2-single .donation-btn a {
-	background: none repeat scroll 0 0 #4889E0;
+	background: none repeat scroll 0 0 $light-green-color;
 	padding: 11px 40px;
 	text-align: center;
 	border-radius: 30px;
@@ -1486,8 +1500,8 @@ aside {
 }
 
 .line2 {
-	border-top: 1px solid #3B7ACD;
-	border-bottom: 1px solid #3B7ACD;
+	border-top: 1px solid $mid-blue-color;
+	border-bottom: 1px solid $mid-blue-color;
 	display: table;
 	width: 100%;
 	padding: 10px 0 35px;
@@ -1522,7 +1536,7 @@ aside {
 .sermon-content {
 	margin-bottom: 17px;
 	padding-bottom: 15px;
-	border-bottom: 1px solid #3B7ACD;
+	border-bottom: 1px solid $mid-blue-color;
 }
 
 .sermon-content .video-container {
@@ -1594,7 +1608,7 @@ aside {
 }
 
 .sermon-list li {
-	border-bottom: 1px solid #3B7ACD;
+	border-bottom: 1px solid $mid-blue-color;
 	margin-bottom: 15px;
 	padding-bottom: 10px;
 }
@@ -1642,8 +1656,8 @@ aside {
 	width: 100%;
 	padding: 35px 0 20px;
 	margin-top: 40px;
-	border-top: 1px solid #3B7ACD;
-	border-bottom: 1px solid #3B7ACD;
+	border-top: 1px solid $mid-blue-color;
+	border-bottom: 1px solid $mid-blue-color;
 }
 
 .events-wrap-big {
@@ -1655,7 +1669,7 @@ aside {
 	color: #fff;
 	text-align: center;
 	font-size: 49px;
-	background: #1a1a1a;
+	background: $dark-gray-color;
 	border-radius: 50%;
 	padding-top: 7px;
 	margin-right: 25px;
@@ -1699,7 +1713,7 @@ aside {
 .events-wrap-big h4 span {
 	font-size: 30px;
 	text-transform: none;
-	color: #1a1a1a;
+	color: $dark-gray-color;
 	display: block;
 	margin-top: 5px;
 }
@@ -1711,7 +1725,7 @@ aside {
 }
 
 .events-wrap-big ul li {
-	border-bottom: 1px solid #3B7ACD;
+	border-bottom: 1px solid $mid-blue-color;
 }
 
 .events-wrap-big ul li:last-child {
@@ -1725,7 +1739,7 @@ aside {
 	height: 37px;
 	width: 100%;
 	border-radius: 30px;
-	border: 1px solid #3B7ACD;
+	border: 1px solid $mid-blue-color;
 	padding: 0 15px;
 	color: #514e40;
 	font-size: 12px;
@@ -1733,7 +1747,7 @@ aside {
 }
 
 .newsletter a {
-	background: #4889E0;
+	background: $light-green-color;
 	color: #fff;
 	padding: 5px 18px;
 	font-weight: 700;
@@ -1769,7 +1783,7 @@ aside {
 }
 
 .shop-item-big .product-price {
-	background: #1a1a1a;
+	background: $dark-gray-color;
 	line-height: 37px;
 	height: 37px;
 	margin-top: 15px;
@@ -1796,7 +1810,7 @@ aside {
 .shop-content,.ministries-head {
 	display: table;
 	width: 100%;
-	border-bottom: 1px solid #3B7ACD;
+	border-bottom: 1px solid $mid-blue-color;
 	margin-bottom: 25px;
 }
 
@@ -1816,7 +1830,7 @@ aside {
 }
 
 .list a i {
-	color: #1a1a1a;
+	color: $dark-gray-color;
 	font-size: 14px;
 }
 
@@ -1824,7 +1838,7 @@ aside {
 	font-weight: 700;
 	font-size: 13px;
 	border: none;
-	color: #1a1a1a;
+	color: $dark-gray-color;
 }
 
 .shop-content select option {
@@ -1844,7 +1858,7 @@ aside {
 
 .toggle-menu h3,.toggle-menu1 h3,.toggle-menu2 h3,.toggle-menu3 h3 {
 	color: #6a6969;
-	border-bottom: 1px solid #3B7ACD;
+	border-bottom: 1px solid $mid-blue-color;
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 42px;
@@ -1857,7 +1871,7 @@ aside {
 }
 
 .togglebox .content,.togglebox1 .content,.togglebox2 .content,.togglebox3 .content {
-	border-bottom: 1px solid #3B7ACD;
+	border-bottom: 1px solid $mid-blue-color;
 	padding: 12px 0;
 }
 
@@ -1876,7 +1890,7 @@ aside {
 
 .togglebox .content a:hover,.togglebox1 .content a:hover,.togglebox2 .content a:hover,.togglebox3 .content a:hover {
 	font-weight: 700;
-	color: #1a1a1a;
+	color: $dark-gray-color;
 }
 
 .shop-cart {
@@ -1888,7 +1902,7 @@ aside {
 	display: table;
 	width: 100%;
 	margin-bottom: 15px;
-	border-bottom: 1px solid #3B7ACD;
+	border-bottom: 1px solid $mid-blue-color;
 	padding-bottom: 7px;
 }
 
@@ -1905,7 +1919,7 @@ aside {
 .shop-cart li h4 em {
 	width: 60%;
 	font-size: 15px;
-	color: #1a1a1a;
+	color: $dark-gray-color;
 	font-weight: 400;
 	margin-left: 23px;
 	text-transform: uppercase;
@@ -1919,7 +1933,7 @@ aside {
 	width: auto;
 	float: right;
 	font-size: 15px;
-	color: #1a1a1a;
+	color: $dark-gray-color;
 	font-weight: 700;
 }
 
@@ -1943,7 +1957,7 @@ aside {
 .cart-total {
 	text-transform: uppercase;
 	font-size: 15px;
-	color: #1a1a1a;
+	color: $dark-gray-color;
 	margin-bottom: 17px;
 }
 
@@ -1954,7 +1968,7 @@ aside {
 
 .cart-btn {
 	height: 29px;
-	background: #1a1a1a;
+	background: $dark-gray-color;
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 13px;
@@ -1975,7 +1989,7 @@ aside {
 }
 
 .cart-btn span a {
-	background: #4889E0;
+	background: $light-green-color;
 	padding: 10px 30px;
 	border-radius: 25px;
 	text-shadow: 1px 1px rgba(2,3,3,.42);
@@ -2008,12 +2022,12 @@ aside {
 }
 
 #price1,#price2 {
-	color: #1a1a1a;
+	color: $dark-gray-color;
 	font-weight: 700;
 }
 
 .filter-btn {
-	background: #1a1a1a;
+	background: $dark-gray-color;
 	padding: 7px 25px;
 	font-size: 13px;
 	border-radius: 25px;
@@ -2025,7 +2039,7 @@ aside {
 }
 
 .filter-btn:hover {
-	background: #4889E0;
+	background: $light-green-color;
 	color: #fff;
 }
 
@@ -2048,7 +2062,7 @@ aside {
 	display: table;
 	width: 100%;
 	margin-bottom: 15px;
-	border-bottom: 1px solid #3B7ACD;
+	border-bottom: 1px solid $mid-blue-color;
 	padding-bottom: 15px;
 }
 
@@ -2073,7 +2087,7 @@ aside {
 .r-products li p {
 	font-size: 15px;
 	font-weight: 700;
-	color: #1a1a1a;
+	color: $dark-gray-color;
 	margin-left: 65px;
 }
 
@@ -2097,7 +2111,7 @@ aside {
 .shop-item-list {
 	padding-bottom: 30px;
 	margin-bottom: 30px;
-	border-bottom: 1px solid #3B7ACD;
+	border-bottom: 1px solid $mid-blue-color;
 }
 
 .shop-item-list .product-title {
@@ -2145,7 +2159,7 @@ aside {
 }
 
 .shop-item-list .product-price {
-	background: none repeat scroll 0 0 #1A1A1A;
+	background: none repeat scroll 0 0 $dark-gray-color;
 	line-height: 37px;
 	height: 37px;
 	margin-top: 0;
@@ -2181,8 +2195,8 @@ aside {
 	padding: 0;
 	display: table;
 	width: 100%;
-	border-top: 1px solid #3B7ACD;
-	border-bottom: 1px solid #3B7ACD;
+	border-top: 1px solid $mid-blue-color;
+	border-bottom: 1px solid $mid-blue-color;
 	padding: 35px 0;
 	margin-top: 60px;
 	margin-bottom: 20px;
@@ -2201,9 +2215,9 @@ aside {
 .product-btn2 input {
 	height: 37px;
 	border-radius: 30px;
-	border: 1px solid #3B7ACD;
+	border: 1px solid $mid-blue-color;
 	padding: 0 15px;
-	color: #1a1a1a;
+	color: $dark-gray-color;
 	font-size: 14px;
 	font-weight: 700;
 	text-align: center;
@@ -2219,7 +2233,7 @@ aside {
 }
 
 .shop-item-single .product-price {
-	background: none repeat scroll 0 0 #1A1A1A;
+	background: none repeat scroll 0 0 $dark-gray-color;
 	line-height: 37px;
 	height: 37px;
 	margin-top: 0;
@@ -2256,7 +2270,7 @@ aside {
 }
 
 .product-meta span a {
-	color: #1a1a1a;
+	color: $dark-gray-color;
 	text-decoration: underline;
 }
 
@@ -2286,12 +2300,12 @@ aside {
 	padding: 8px;
 	line-height: 1.42857;
 	vertical-align: top;
-	border: 1px solid #3B7ACD;
+	border: 1px solid $mid-blue-color;
 }
 
 .calendar > thead > tr > th,.table > tbody > tr > th {
-	background: #1a1a1a;
-	border: 1px solid #1a1a1a;
+	background: $dark-gray-color;
+	border: 1px solid $dark-gray-color;
 	color: #fff;
 	text-align: center;
 	font-weight: 400;
@@ -2321,7 +2335,7 @@ aside {
 .events-li li {
 	margin-bottom: 10px;
 	font-size: 13px;
-	color: #1a1a1a;
+	color: $dark-gray-color;
 	list-style: none;
 }
 
@@ -2348,7 +2362,7 @@ aside {
 
 .events-meta {
 	padding: 40px 0 0 !important;
-	border-bottom: 1px solid #3B7ACD;
+	border-bottom: 1px solid $mid-blue-color;
 	display: table;
 	width: 100%;
 }
@@ -2378,7 +2392,7 @@ aside {
 
 .about p a {
 	text-decoration: underline;
-	color: #1a1a1a;
+	color: $dark-gray-color;
 }
 
 .play-img {
@@ -2454,7 +2468,7 @@ aside {
 }
 
 .home2_about h3 {
-	color: #1a1a1a;
+	color: $dark-gray-color;
 	font-size: 30px;
 	text-align: center;
 	margin: 0;
@@ -2494,7 +2508,7 @@ aside {
 
 .home2_wrap1 {
 	padding: 60px 0;
-	border-bottom: 1px solid #3B7ACD;
+	border-bottom: 1px solid $mid-blue-color;
 }
 
 .home2_wrap1 h4 {
@@ -2508,7 +2522,7 @@ aside {
 
 .stats-wrap h3 {
 	font-size: 60px;
-	color: #4889E0;
+	color: $light-green-color;
 	margin: 0 0 5px;
 	text-align: center;
 }
@@ -2536,7 +2550,7 @@ aside {
 	height: 37px;
 	width: 100%;
 	border-radius: 30px;
-	border: 1px solid #3B7ACD;
+	border: 1px solid $mid-blue-color;
 	padding: 0 15px;
 	color: #514e40;
 	font-size: 12px;
@@ -2546,7 +2560,7 @@ aside {
 
 .l-btn {
 	text-transform: uppercase;
-	background: #4889E0;
+	background: $light-green-color;
 	padding: 10px 20px;
 	border-radius: 30px;
 	color: #fff;
@@ -2589,7 +2603,7 @@ aside {
 .line-sep {
 	width: 2px;
 	height: 100%;
-	background: #3B7ACD;
+	background: $mid-blue-color;
 	position: absolute;
 	right: -12px;
 	top: 0;
@@ -2608,7 +2622,7 @@ aside {
 
 .shop-accordion li h3 {
 	font-size: 24px;
-	color: #1a1a1a !important;
+	color: $dark-gray-color !important;
 	margin: 0 0 40px;
 }
 
@@ -2616,7 +2630,7 @@ aside {
 	height: 37px;
 	width: 100%;
 	border-radius: 30px;
-	border: 1px solid #3B7ACD;
+	border: 1px solid $mid-blue-color;
 	padding: 0 15px;
 	color: #514e40;
 	font-size: 13px;
@@ -2678,12 +2692,12 @@ aside {
 
 .shop-accordion li label.css-label a {
 	background: none !important;
-	color: #1a1a1a !important;
+	color: $dark-gray-color !important;
 	text-decoration: underline;
 }
 
 .shop-accordion li .c-btn {
-	background: #4889E0 !important;
+	background: $light-green-color !important;
 	padding: 10px 35px;
 	border-radius: 30px;
 	color: #FFF;
@@ -2715,7 +2729,7 @@ aside {
 
 .payment-info ul li {
 	height: 128px;
-	border: 2px solid #3B7ACD;
+	border: 2px solid $mid-blue-color;
 }
 
 .payment-info ul li img {
@@ -2725,7 +2739,7 @@ aside {
 
 .payment-info ul li:hover {
 	cursor: pointer;
-	border: 2px solid #4889E0;
+	border: 2px solid $light-green-color;
 }
 
 .shop-accordion li input[type=radio].css-radio {
@@ -2811,7 +2825,7 @@ aside {
 .order-comment textarea {
 	width: 100%;
 	border-radius: 20px;
-	border: 1px solid #3B7ACD;
+	border: 1px solid $mid-blue-color;
 	padding: 0 15px;
 	color: #999;
 	font-size: 36px;
@@ -2854,7 +2868,7 @@ aside {
 	font-size: 18px;
 	font-weight: 700;
 	padding-bottom: 5px;
-	border-bottom: 2px solid #3B7ACD;
+	border-bottom: 2px solid $mid-blue-color;
 	margin: 0 0 40px;
 }
 
@@ -2905,7 +2919,7 @@ aside {
 .order-total-details {
 	margin-top: 30px;
 	padding-top: 50px;
-	border-top: 1px solid #3B7ACD;
+	border-top: 1px solid $mid-blue-color;
 }
 
 .btns {
@@ -2937,7 +2951,7 @@ aside {
 .location-wrap {
 	padding-bottom: 30px;
 	margin-bottom: 30px;
-	border-bottom: 1px solid #3B7ACD;
+	border-bottom: 1px solid $mid-blue-color;
 }
 
 .location-wrap img {
@@ -2970,7 +2984,7 @@ aside {
 	float: left;
 	margin-top: 5px;
 	margin-right: 10px;
-	color: #1a1a1a;
+	color: $dark-gray-color;
 }
 
 #quote-slider .flex-prev {
@@ -3064,17 +3078,17 @@ font-size:10px;
 }
 
 #sermons-slider .owl-prev:hover {
-	border:2px solid #1a1a1a;
+	border:2px solid $dark-gray-color;
 }
 
 #sermons-slider .owl-prev:hover:before ,
 #sermons-slider .owl-next:hover:before {
 
-	color:#1a1a1a;
+	color:$dark-gray-color;
 }
 
 #sermons-slider .owl-next:hover {
-	border:2px solid #1a1a1a;
+	border:2px solid $dark-gray-color;
 }
 
 #sermons-slider .owl-controls .owl-buttons div {
@@ -3143,7 +3157,7 @@ font-size:10px;
 }
 
 #blogpost-slider .owl-page.active span {
-	background: #4889E0 !important;
+	background: $light-green-color !important;
 	opacity: 1 !important;
 }
 
@@ -3255,7 +3269,7 @@ background:#436085;
 
 .sub-title {
 	font-size: 18px;
-	border-bottom: 2px solid #3B7ACD;
+	border-bottom: 2px solid $mid-blue-color;
 	margin: 0 0 30px;
 	padding-bottom: 10px;
 }
@@ -3343,14 +3357,14 @@ background:#436085;
 }
 
 .ministries-grid h4 a {
-	color: #1a1a1a;
+	color: $dark-gray-color;
 	font-size: 18px;
 }
 
 .ministries-list {
 	padding-bottom: 25px;
 	margin-bottom: 25px;
-	border-bottom: 1px solid #3B7ACD;
+	border-bottom: 1px solid $mid-blue-color;
 }
 
 .ministries-list h4 {
@@ -3359,7 +3373,7 @@ background:#436085;
 }
 
 .ministries-list h4 a {
-	color: #1a1a1a;
+	color: $dark-gray-color;
 }
 
 .ministries-list p {
@@ -3444,7 +3458,7 @@ background:#436085;
 	list-style: none;
 	padding-bottom: 8px;
 	margin-bottom: 8px;
-	border-bottom: 1px solid #3B7ACD;
+	border-bottom: 1px solid $mid-blue-color;
 }
 
 .events-list li:last-child {
@@ -3461,7 +3475,7 @@ background:#436085;
 }
 
 .events-list li h4 a {
-	color: #1a1a1a;
+	color: $dark-gray-color;
 }
 
 .events-list li p {
@@ -3476,7 +3490,7 @@ background:#436085;
 
 .home-blog-big {
 	padding: 0 0 55px;
-	border-bottom: 1px solid #3B7ACD;
+	border-bottom: 1px solid $mid-blue-color;
 	margin-bottom: 40px;
 }
 
@@ -3496,7 +3510,7 @@ background:#436085;
 
 .home-blog-big p a {
 	text-decoration: underline;
-	color: #4889E0;
+	color: $light-green-color;
 }
 
 .home-blog-single h4 {
@@ -3573,11 +3587,11 @@ blockquote {
 }
 
 .direction-l .hb-content {
-	border: 1px solid #3B7ACD;
+	border: 1px solid $mid-blue-color;
 }
 
 .direction-r .hb-content {
-	border: 1px solid #3B7ACD;
+	border: 1px solid $mid-blue-color;
 }
 
 .hb-info {
@@ -3609,7 +3623,7 @@ blockquote {
 }
 
 .mega-menu {
-	background: #1a1a1a;
+	background: $dark-gray-color;
 	width: 1140px;
 	position: absolute;
 	left: 10px;
@@ -3643,7 +3657,7 @@ blockquote {
 }
 
 .subpage {
-	background: #1a1a1a;
+	background: $dark-gray-color;
 	width: 230px;
 	position: absolute;
 	margin-top: -15px;
@@ -3666,7 +3680,7 @@ blockquote {
 	position: absolute;
 	border-style: solid;
 	border-width: 0 24px 12px;
-	border-color: #1a1a1a transparent;
+	border-color: $dark-gray-color transparent;
 	display: block;
 	width: 0;
 	z-index: 1;
@@ -3687,7 +3701,7 @@ blockquote {
 	position: absolute;
 	border-style: solid;
 	border-width: 0 24px 12px;
-	border-color: #1a1a1a transparent;
+	border-color: $dark-gray-color transparent;
 	display: block;
 	width: 0;
 	z-index: 1;
@@ -3700,7 +3714,7 @@ blockquote {
 	position: absolute;
 	border-style: solid;
 	border-width: 0 24px 12px;
-	border-color: #1a1a1a transparent;
+	border-color: $dark-gray-color transparent;
 	display: block;
 	width: 0;
 	z-index: 1;
@@ -3805,7 +3819,7 @@ blockquote {
 
 .scart thead > tr > th {
 	border: none;
-	border-bottom: 2px solid #3B7ACD;
+	border-bottom: 2px solid $mid-blue-color;
 	font-size: 18px;
 	font-weight: 700;
 }
@@ -3815,7 +3829,7 @@ blockquote {
 }
 
 .scart tbody > tr {
-	border-bottom: 1px solid #3B7ACD;
+	border-bottom: 1px solid $mid-blue-color;
 }
 
 .scart tbody > tr > td:nth-child(1) {
@@ -3873,7 +3887,7 @@ blockquote {
 	height: 37px;
 	width: 85px;
 	border-radius: 30px;
-	border: 1px solid #3B7ACD;
+	border: 1px solid $mid-blue-color;
 	padding: 0 15px;
 	color: #514e40;
 	font-weight: 700;
@@ -3912,9 +3926,9 @@ blockquote {
 .cart-total-last {
 	text-transform: uppercase;
 	font-size: 15px;
-	color: #1a1a1a;
+	color: $dark-gray-color;
 	padding: 15px 0;
-	border-top: 1px solid #3B7ACD;
+	border-top: 1px solid $mid-blue-color;
 	line-height: 23px;
 }
 
@@ -3932,18 +3946,18 @@ blockquote {
 }
 
 .nav-left li a:hover,.nav-right li a:hover {
-	/*color: #4889E0;*/
-	// color: #2FD683;
-	color: #333;
+	/*color: $light-green-color;*/
+	color: $dark-gray-color; //#2FD683;
+	// color: $dark-green-color;
 }
 
 .mega-menu .m2 a:hover, .mega-menu .m3 a:hover,.subpages a:hover {
-	/*color: #4889E0 !important; */
+	/*color: $light-green-color !important; */
 	color: #2FD683 !important;
 }
 
 .menu-btn:hover {
-	/* background: #4889E0;*/
+	/* background: $light-green-color;*/
 	background: #2FD683;
 	color: #fff !important;
 }
@@ -3955,7 +3969,7 @@ blockquote {
 .cart-btn span a:hover,
 .l-btn:hover,
 .shop-accordion .c-btn:hover {
-background:#1a1a1a !important;
+background:$dark-gray-color !important;
 color:#fff;
 }
 
@@ -4170,7 +4184,7 @@ border-radius:0px;
 
 .select-menu option {
 	background:#fff;
-	color:#1a1a1a;
+	color:$dark-gray-color;
 	padding:3px;
 	font-weight:300;
 }
@@ -4608,7 +4622,7 @@ margin:0px auto;
 }
 
 .music-info {
-	background: #1a1a1a;
+	background: $dark-gray-color;
 	padding: 20px 10px 15px 25px;
 	width: 100%;
 	position: relative;
@@ -4740,7 +4754,7 @@ article h4 {
 .line-sep {
 	width: 100%;
 	height: 2px;
-	background: none repeat scroll 0 0 #3B7ACD;
+	background: none repeat scroll 0 0 $mid-blue-color;
 	position: absolute;
 	right: 0;
 	top: auto;
@@ -4761,7 +4775,7 @@ article h4 {
 
 .payment-info ul li {
 	height: 100px;
-	border: 2px solid #3B7ACD;
+	border: 2px solid $mid-blue-color;
 }
 
 .payment-info ul li img {

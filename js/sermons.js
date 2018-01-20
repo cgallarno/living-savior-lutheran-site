@@ -15,6 +15,7 @@ var sermonsRepo = {
 		'/videos/198606175'	: -90,
 		'/videos/202657419' : -90,
 		'/videos/208022646' : -90,
+		'/videos/235241861' : -90,
 	},
 	parseVideoProperties: function(video) {
 		var props = {}; // title, date, passageString, speaker

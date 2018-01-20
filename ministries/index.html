@@ -17,7 +17,7 @@ layout: default
 							<div class="row">
 								<div class="col-md-4"><img src="{{ '/demo/ministries/4.jpg' | prepend: site.baseurl }}" class="img-responsive" alt=""/></div>
 								<div class="col-md-12">
-									<h4><a href="/ministries/{{ ministry.name }}">{{ ministry.title }}</a></h4>
+									<h4><a href="{{ '/ministries/' | append: ministry.name | prepend: site.baseurl }}">{{ ministry.title }}</a></h4>
 									<p>{{ ministry.description }}</p>
 								</div>
 							</div>

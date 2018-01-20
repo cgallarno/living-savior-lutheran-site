@@ -80,7 +80,7 @@ layout: default
 							{% assign ministries = site.ministries | sort: 'sort' %}
 							{% for ministry in ministries | sort: 'sort' %}
 								{% if ministry.name != page.name %}
-								<li><a href="/ministries/{{ ministry.name }}/">{{ ministry.title }}</a></li>
+								<li><a href="{{ '/ministries/' | append: ministry.name | prepend: site.baseurl }}">{{ ministry.title }}</a></li>
 								{% endif %}
 							{% endfor %}
 						</ul>
