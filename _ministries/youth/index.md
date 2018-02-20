@@ -3,6 +3,7 @@ collection: ministries
 name: youth
 layout: ministry
 title: Youth
-description: Proin vitae dolor in nibh ornare scelerisque quis ac velit. Etiam sit amet diam varius, faucibus arcu eget, adipiscing est. Praesent vestibulum urna at volutpat ullamcorper. Mauris vulputate massa ut porta sodales. Nam interdum leo id consectetur bibendum. Proin imperdiet velit nec lectus ullamcorper aliquet. Maecenas suscipit tempus lorem, quis luctus neque lobortis eu.
-sort: 1
+leads: Jonathan and Sarah Loesch
+description: The Youth Ministry provides an opportunity for youth, grades 6 through 12, to socialize, try new experiences, and discuss things that are important in their lives.  We meet twice a month and have dinner, play games, and have a short discussion.  We also take trips to places such as Rebounderz, canoeing, rock climbing, and bowling.
+sort: 13
 ---
