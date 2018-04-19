@@ -61,8 +61,13 @@ a {
 }
 
 
+.mega-menu .m3 .m-social--facebook a:hover{
+	color: #fff!important;
+	background: #3B5998;
+}
+
 #slide-full .slider-wrap {
-	min-height: auto;
+	min-height: 404px;
 	background-color: #1a1a1a;
 }
 
@@ -83,5 +88,9 @@ a {
 }
 
 .home2_wrap1 {
-	padding-top: 20px;
+	padding-top: 0px;
+	padding-bottom: 30px!important;
+	h4 {
+		margin-top: 20px;
+	}
 }

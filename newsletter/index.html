@@ -1,16 +1,19 @@
 ---
 layout: default
+newsletter_title: 'April 2018'
+newsletter_file_name: '2018-04.pdf'
 ---
 
 	<div class="white-bg">
 		<div class="main-wrap">
 			<div class="container">
 				<!-- Ministries content -->
-				<div class="col-md-12">
+				<div class="col-md-16">
 					<div class="ministries-head">
-						<h5>Newsletters</h5>
+						<h5>Latest Newsletter | {{ page.newsletter_title }}</h5>
+						<a class="pull-right" href="{{ '/newsletter/files/' | prepend: site.url | append: page.newsletter_file_name }}">Download</a>
 					</div>
-					<iframe src="http://docs.google.com/gview?url=http://www.livingsaviorlutheran.org/2newsevents/2017-03.pdf&embedded=true" style="width:100%; height: 1000px; border: 1px solid #333" frameborder="0"></iframe>
+					<iframe src="http://docs.google.com/gview?url={{ '/newsletter/files/' | prepend: site.url | append: page.newsletter_file_name }}&embedded=true" style="width:100%; height: 1000px; border: 1px solid #333" frameborder="0"></iframe>
 
 
 
@@ -25,7 +28,7 @@ layout: default
 						</div> -->
 
 				</div>
-				<aside class="col-md-4">
+<!-- 				<aside class="col-md-4">
 					<div class="side-widget">
 						<h5>Previous Newsletters</h5>
 						<ul>
@@ -38,7 +41,7 @@ layout: default
 							</ul></li>
 						</ul>
 					</div>
-				</aside>
+				</aside> -->
 			</div>
 		</div>
 

@@ -55,6 +55,7 @@ var calendarRepo = {
 			},
 			dataType: 'json',
 			success: function (response) {
+				console.log(response);
 				var events = [];
 				$.each(response.items, function (i, event) {
 					events.push(_.merge({}, event, calendarRepo.parseEventProperties(event)));
@@ -63,6 +64,9 @@ var calendarRepo = {
 				if(callback){
 					callback(events);
 				}
+			},
+			error: function (res) {
+
 			}
 		});
 	}

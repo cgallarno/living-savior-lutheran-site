@@ -33,11 +33,11 @@ p {
     bottom: 0;
     left: 0;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.62+15,0+100 */
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0.62) 15%, transparent 100%);
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0.42) 15%, transparent 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0.62) 15%, transparent 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0.42) 15%, transparent 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0.62) 15%, transparent 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0.42) 15%, transparent 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e000000', endColorstr='#00000000',GradientType=0 );
     /* IE6-9 */
@@ -4143,8 +4143,12 @@ a {
   a:hover {
     color: #05864b; }
 
+.mega-menu .m3 .m-social--facebook a:hover {
+  color: #fff !important;
+  background: #3B5998; }
+
 #slide-full .slider-wrap {
-  min-height: auto;
+  min-height: 404px;
   background-color: #1a1a1a; }
 
 #slide-full .slider-wrapper .owl-item .item {
@@ -4158,4 +4162,7 @@ a {
   opacity: 1; }
 
 .home2_wrap1 {
-  padding-top: 20px; }
+  padding-top: 0px;
+  padding-bottom: 30px !important; }
+  .home2_wrap1 h4 {
+    margin-top: 20px; }

@@ -1,0 +1,9 @@
+---
+layout: page
+title: News Bulletin
+containerClass: news-bulletin
+bulletinFileName: 04 22 18.rtf
+---
+<!-- Dynamicaly determine height of iframe: (height of window - 250px) -->
+<!-- <img src="bulletin_latest.jpg" alt="" width="100%"> -->
+<iframe src="https://docs.google.com/gview?url={{ '/bulletin/' | prepend: site.url | append: page.bulletinFileName }}&embedded=true" style="width:100%; height:  853px; margin-top: 25px; border-top: 10px solid #ccc;" frameborder="0"></iframe>

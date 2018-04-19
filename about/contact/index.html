@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<body onload="LoadGmaps()" onunload="GUnload()" id="home2">
+<body id="home2">
 
 <div class="body">
 	<div class="slider-wrap">
@@ -11,7 +11,14 @@ layout: default
 		<div class="container">
 			<div class="col-md-16">
 				<div class="google-map" style="top: 50px">
-					<div id="MyGmaps" style="width:100%;height:410px;"></div>
+					<!-- <div id="MyGmaps" style="width:100%;height:410px;"></div> -->
+					<iframe
+					  width="100%"
+					  height="410px"
+					  frameborder="0" style="border:0"
+					  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCbuf7kjKTXspx2aV2c3egzM027q7JQSdU
+					    &q=Living%20Savior%20Lutheran%20Church%20Fairfax%20Station">
+					</iframe>
 				</div>
 			</div>
 		</div>
@@ -27,9 +34,10 @@ layout: default
 				<!-- Contact form -->
 				<div class="col-md-12 contact-form-info">
 					<h5>Contact form</h5>
-					<p>Sed sem sem, malesuada quis arcu nec, bibendum tristique lacus. Nullam lacinia, augue id tempor faucibus, metus velit rutrum est, ut tincidunt tellus leo sit amet purus. Quisque vestibulum condimentum dui semper mollis. </p>
+					<p>Please include your name, contact info, and a message. Your message will be recieved by the webmaster and secretary of Living Savior Lutheran Church and can be forwarded to other members or volunteers upon request.</p>
 					<div style="position:relative;">
-					<form class="comment-form" id="contactForm" action="https://formspree.io/cgallarno@gmail.com" method="post">
+					<!-- <input type="hidden" name="_cc" value="secretary@livingsaviorlutheran.org" /> -->
+					<form class="comment-form" id="contactForm" action="https://formspree.io/webmaster@livingsaviorlutheran.org" method="post">
 						<div class="row">
 							<div class="col-md-8">
 								<input type="text" name="_fullname" id="senderName" placeholder="Full Name" required="required" />
@@ -48,7 +56,7 @@ layout: default
 								<textarea name="_message" id="message" rows="8" required="required" ></textarea>
 								<input type="text" name="_gotcha" id="gotcha" />
 								<input type="hidden" name="_format" value="plain" />
-								<input type="hidden" name="_next" value="http://localhost:4000/about/contact/" />
+								<input type="hidden" name="_next" value="{{ '/about/contact/' | prepend: site.baseurl }}" />
 								<button type="submit" id="sendMessage" class="c-btn pull-right">Submit</button>
 							</div>
 						</div>
@@ -62,8 +70,8 @@ layout: default
 						<div class="col-md-16 location-wrap">
 							<h5>Location &amp; Times</h5>
 							<div class="space40"></div>
-							<img src="{{ '/demo/contact/1.jpg' | prepend: site.baseurl }}" class="img-responsive" alt=""/>
-							<div class="location-info">
+							<!-- <img src="{{ '/demo/contact/1.jpg' | prepend: site.baseurl }}" class="img-responsive" alt=""/> -->
+							<div class="location-info" style="margin-left:0">
 								<h4>Living Savior Lutheran Church - Ox Road</h4>
 								<div class="location-meta">
 									<div class="row">
@@ -94,11 +102,11 @@ layout: default
 										Map it
 										</a>
 									</li>
-									<li>
+<!-- 									<li>
 										<a href="#">
 										View Events
 										</a>
-									</li>
+									</li> -->
 <!-- 									<li>
 										<a href="#">
 										Volunteer
@@ -145,6 +153,10 @@ layout: default
 		<!-- Footer -->
 	</div>
 </div>
-
+<script>
+	$(document).ready(function () {
+		//LoadGmaps();
+	})
+</script>
 
 </body>

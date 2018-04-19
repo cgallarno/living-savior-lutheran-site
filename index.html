@@ -2,6 +2,25 @@
 layout: hero
 ---
 
+<!-- LCMS Wrap -->
+<div class="lcms-wrap" style="margin-top: 20px;">
+	<div class="container">
+		<div class="col-md-16 text-center">
+			<strong>Living Savior Lutheran Church is a Christian community of the <a href="http://www.lcms.org/" target="_blank">Lutheran Church - Missouri Synod</a>.</strong>
+
+		</div>
+	</div>
+	<div class="container" style="margin-bottom: 25px">
+		<h3 class="col-md-16">We believe</h3>
+
+		<div class="col-md-4 text-center" style="border-right: 1px solid #e1e1e1">That God’s love is shown in the life, death, and resurrection of his Son, Jesus Christ.</div>
+		<div class="col-md-4 text-center" style="border-right: 1px solid #e1e1e1">That God offers a free gift of eternal life to all to believe in Jesus Christ.</div>
+		<div class="col-md-4 text-center" style="border-right: 1px solid #e1e1e1">That the gift is given to all who receive it through the Holy Spirit.</div>
+		<div class="col-md-4 text-center" style="">That we gather for worship, study, fellowship and service as a response to God’s love for us.</div>
+			<!-- <p><em>Member Of:</em> <a href="http://www.lcms.org/" target="_blank">The Lutheran Church Missouri Synod (LCMS)</a> <i class="fa fa-home" aria-hidden="true"></i></p> -->
+	</div>
+</div>
+
 <div class="home2_wrap1">
 	<div class="container">
 		<div class="col-md-8">
@@ -10,17 +29,39 @@ layout: hero
 			<p>We are glad you are with us today! Visitors are welcome and asked to sign the Guest Register and Welcome Book in the Narthex through the main entrance.</p>
 			<p><span class="strong">Worship Services:</span> Every Sunday Morning at 8:30 AM and 11:00 AM <br></p>
 			<p><span class="strong">Sunday School:</span> Children, youth and adult Bible classes every Sunday at 9:45 AM</p>
-			<p><span class="strong">Located At:</span> 5500 Ox Road, Fairfax Station, VA 22039</p>
-			<p>Contemporary Worship is the first and third Sundays of each month from October through June at 11:00 AM</p>
+			<p><span class="strong">Located At:</span> 5500 Ox Road, Fairfax Station, VA 22039 <a target="_blank" href="https://www.google.com/maps/dir/?api=1&destination_place_id=ChIJvx8R6TNOtokRYJKnIbKtM94&destination=Living%20Savior%20Lutheran%20Church">(Directions)</a></p>
 			<!-- <p class="text-center"><a href="">What We Believe</a></p> -->
 		</div>
 		<div class="col-md-8">
-			<!-- <img src="demo/7.jpg" class="img-responsive" alt=""> -->
-			<h4>Whats New &amp; Announcements</h4>
+			<h4>Announcements</h4>
 			{% for announcement in site.data.announcements %}
 			<p class="col-md-2 text-right">{{ announcement.date }}</p><p class="col-md-13">{{ announcement.message }}</p>
 			{% endfor %}
-			<p class="text-right"><a href="">More Newsletters ></a></p>
+			<div class="clearfix"></div>
+				<!-- <a href="">More Newsletters ></a></p> -->
+		</div>
+	</div>
+	<div class="space10"></div>
+	<div class="container">
+		<div class="col-md-8 text-right">
+			<a href="https://www.facebook.com/LSLCPS/" target="_blank">
+				<img src="{{ '/images/find-us-on-facebook.png' | prepend: site.baseurl }}" alt="" height="20px" style="margin-right: 10px; cursor:pointer; margin-top:4px">
+			</a>
+		</div>
+		<div class="col-md-8">
+			<a href="https://twitter.com/LSLCPS" class="twitter-follow-button" data-size="large" data-show-count="false"></a>
+		</div>
+	</div>
+</div>
+
+<div style="margin-top: 60px; border-bottom: 1px solid #4889E0; padding-bottom:60px;">
+	<div class="container">
+		<div class="col-md-11">
+			<h3>What's New | Monica Rizzio Concert and BBQ</h3>
+			Mark your calendars for May 5. Living Savior Lutheran Church will host a country music concert and barbeque featuring recording artist Monica Rizzio. Monica’s debut CD, Washashore Cowgirl, was nominated for the Independent Music Awards Country Album of the Year. The singer-songwriter has graciously agreed to perform for us and join us for BBQ and dessert after the concert. More details coming soon. For more information on Monica visit <a href="https://monicarizzio.com" target="_blank">https://monicarizzio.com</a>.
+		</div>
+		<div class="col-md-5">
+			<img src="{{ '/images/monicarizzio.jpg' | prepend: site.baseurl }}" class="img-responsive" alt="">
 		</div>
 	</div>
 </div>
@@ -48,7 +89,7 @@ layout: hero
 								<!-- <li><a href="#" class="m-ico3"></a></li> -->
 							</ul>
 							<div class="line"></div>
-							<a href="/worship/sermons/" class="hb-more">previous sermons</a>
+							<a href="{{ '/education/sermons/' | prepend: site.baseurl }}" class="hb-more">previous sermons</a>
 						</div>
 					</div>
 				</div>
@@ -65,15 +106,6 @@ layout: hero
 			<a href="{{ '/events/' | prepend: site.baseurl }}" class="hb-more">See rest of events</a>
 		</div>
 		<!-- Events Wrap -->
-	</div>
-</div>
-
-<!-- LCMS Wrap -->
-<div class="lcms-wrap">
-	<div class="container">
-		<div class="col-md-16 text-center">
-			<p><em>Member Of:</em> <a href="http://www.lcms.org/" target="_blank">The Lutheran Church Missouri Synod (LCMS)</a></p>
-		</div>
 	</div>
 </div>
 
@@ -98,6 +130,7 @@ layout: hero
 
 <script src="{{ '/js/sermons.js' | prepend: site.baseurl }}"></script>
 <script src="{{ '/js/calendar.js' | prepend: site.baseurl }}"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script>
 	$(document).ready(function () {
 		sermonsRepo.get(1, function (videos) {

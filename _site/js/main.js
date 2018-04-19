@@ -264,72 +264,72 @@ $('body').removeClass('loading');
 // SERMONS SLIDER
 
 $(document).ready(function() {
-"use strict";
+	"use strict";
 
-$("#sermons-slider").owlCarousel({
+	$("#sermons-slider").owlCarousel({
 
-navigation : true,
-slideSpeed : 300,
-pagination : false,
-singleItem : true
+		navigation : true,
+		slideSpeed : 300,
+		pagination : false,
+		singleItem : true
 
-// "singleItem:true" is a shortcut for:
-// items : 1,
-// itemsDesktop : false,
-// itemsDesktopSmall : false,
-// itemsTablet: false,
-// itemsMobile : false
+		// "singleItem:true" is a shortcut for:
+		// items : 1,
+		// itemsDesktop : false,
+		// itemsDesktopSmall : false,
+		// itemsTablet: false,
+		// itemsMobile : false
 
-});
+	});
 });
 
 // DONATION SLIDER
 
 $(window).load(function() {
-"use strict";
+	"use strict";
 
-$('#donation-slider').flexslider({
-animation: "slide",
-directionnav: "true"
-});
+	$('#donation-slider').flexslider({
+		animation: "slide",
+		directionnav: "true"
+	});
 });
 
 // ISOTOPE
 
 $(window).load(function(){
-"use strict";
+	"use strict";
 
-var $container = $('#folio');
-$container.isotope({
-itemSelector : '.folio-item'
-});
-var $optionSets = $('#portfolio .folio-filter'),
-$optionLinks = $optionSets.find('a');
-$optionLinks.click(function(){
-var $this = $(this);
-// don't proceed if already selected
-if ( $this.hasClass('selected') ) {
-return false;
-}
-var $optionSet = $this.parents('.folio-filter');
-$optionSet.find('.selected').removeClass('selected');
-$this.addClass('selected');
-// make option object dynamically, i.e. { filter: '.my-filter-class' }
-var options = {},
-key = $optionSet.attr('data-option-key'),
-value = $this.attr('data-option-value');
+	var $container = $('#folio');
+	$container.isotope({
+	itemSelector : '.folio-item'
+	});
+	var $optionSets = $('#portfolio .folio-filter'),
+	$optionLinks = $optionSets.find('a');
+	$optionLinks.click(function(){
+	var $this = $(this);
+	// don't proceed if already selected
+	if ( $this.hasClass('selected') ) {
+	return false;
+	}
+	var $optionSet = $this.parents('.folio-filter');
+	$optionSet.find('.selected').removeClass('selected');
+	$this.addClass('selected');
+	// make option object dynamically, i.e. { filter: '.my-filter-class' }
+	var options = {},
+	key = $optionSet.attr('data-option-key'),
+	value = $this.attr('data-option-value');
 
-// parse 'false' as false boolean
-value = value === 'false' ? false : value;
-options[ key ] = value;
-if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
-changeLayoutMode( $this, options );
-} else {
-// otherwise, apply new options
-$container.isotope( options );
-}
-return false;
-});
+	// parse 'false' as false boolean
+	value = value === 'false' ? false : value;
+	options[ key ] = value;
+	if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+	changeLayoutMode( $this, options );
+	} else {
+	// otherwise, apply new options
+	$container.isotope( options );
+	}
+	return false;
+	});
 });
 
 // ANIMATED STATS

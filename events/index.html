@@ -58,27 +58,29 @@ title: Events
 		<script src="{{ '/js/calendar.js' | prepend: site.baseurl }}"></script>
 		<script>
 			$(document).ready(function () {
-				$eventsContainer = $('#events-container');calendarRepo.get(10, function (events) {
 				$eventsContainer = $('#events-container');
-				var eventItems = [];
-				$.each(events, function (i, event) {
-					console.log(event.recurringEventId + " : " + event.title);
+				calendarRepo.get(10, function (events) {
+					$eventsContainer = $('#events-container');
+					console.log("events", events);
+					var eventItems = [];
+					$.each(events, function (i, event) {
+						console.log(event.recurringEventId + " : " + event.title);
 
-					var eventLi = '<li><div class="row"><div class="col-md-16">';
-					eventLi += '<div class="date">' + event.date.day + '<span>' + event.date.month + '</span></div>';
-					eventLi += '<h4>' + event.category + '' + '<span>' + event.title + '</span></h4>';
-					eventLi += '<div class="time">' + event.date.time;
-					if(event.location){
-						eventLi += ' - ' + event.location;
-					}
-					eventLi += '</div>';
-					eventLi += '</div></div></li>';
+						var eventLi = '<li><div class="row"><div class="col-md-16">';
+						eventLi += '<div class="date">' + event.date.day + '<span>' + event.date.month + '</span></div>';
+						eventLi += '<h4>' + event.category + '' + '<span>' + event.title + '</span></h4>';
+						eventLi += '<div class="time">' + event.date.time;
+						if(event.location){
+							eventLi += ' - ' + event.location;
+						}
+						eventLi += '</div>';
+						eventLi += '</div></div></li>';
 
-					eventItems.push(eventLi);
+						eventItems.push(eventLi);
+					});
+					//debugger;
+
+					$eventsContainer.html(eventItems);
 				});
-				//debugger;
-
-				$eventsContainer.html(eventItems);
-			});
 			});
 		</script>
