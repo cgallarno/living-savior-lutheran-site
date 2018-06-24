@@ -5,6 +5,5 @@ source "https://rubygems.org"
 gem 'jekyll-paginate'
 gem 'jekyll-tagging'
 group :jekyll_plugins do
-    gem 'jekyll-livereload'
     gem 'jekyll-compose'
 end

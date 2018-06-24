@@ -10,9 +10,9 @@ layout: default
 					<div class="ministries-head">
 						<h5>Ministries <small>Listed Alphabetically</small></h5>
 					</div>
-					{% assign ministries = site.ministries | sort: 'sort' %}
-					{% for ministry in ministries | sort: 'sort' %}
-						{% if ministry.name != page.name %}
+					{% assign ministries = site.ministries | sort: 'title' %}
+					{% for ministry in ministries %}
+
 						<div class="ministries-list">
 							<div class="row">
 								<!-- <div class="col-md-4"><img src="{{ '/images/ministries/' | prepend: site.baseurl | append: ministry.name }}.jpg" class="img-responsive" alt=""/></div> -->
@@ -23,7 +23,7 @@ layout: default
 								</div>
 							</div>
 						</div>
-						{% endif %}
+
 					{% endfor %}
 				</div>
 				<!-- Ministries content -->
