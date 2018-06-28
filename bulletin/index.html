@@ -7,12 +7,12 @@ containerClass: news-bulletin
 {% assign bulletins = site.static_files | where: "bulletin", true %}
 
 <div class="container {{ page.containerClass }}">
-	<div class="col-md-12">
+	<div class="offset-md-2 col-md-12">
 		<div class="row">
 			<iframe src="https://docs.google.com/gview?url={{ '/bulletin/' | prepend: site.url | append: bulletins.last.name }}&embedded=true" style="width:100%; height:  988px; margin-top: 15px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;" frameborder="0"></iframe>
 		</div>
 	</div>
-	<div class="col-md-4">
+<!-- 	<div class="col-md-4">
 		<p>
 			<p>This Sunday, June 24, is the Fifth Sunday after Pentecost.  Living Savior will celebrate Divine Worship at 8:30 and Holy Communion at 11:00 am.</p>
 			<p>The First Lesson is Job 38:1-11.</p>
@@ -21,7 +21,7 @@ containerClass: news-bulletin
 			<p>Vicar Chris Conkling will be preaching and his sermon title is “Taking the Crookeds with the Straights” and is based on the Second Lesson.</p>
 		</p>
 
-	</div>
+	</div> -->
 </div>
 
 <script>
