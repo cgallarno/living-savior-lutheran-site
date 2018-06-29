@@ -27,6 +27,10 @@ defaults:
       path: "bulletin"
     values:
       bulletin: true
+  - scope:
+      path: "newsletter/files"
+    values:
+      newsletter: true
 
 # Devlopment settings
 livereload: true

@@ -1,6 +1,6 @@
 module Announcements
   class Generator < Jekyll::Generator
-  	def get_announcement_date_from_bulletin(bulletin)
+  	def get_announcement_date_from_file_modified_time(bulletin)
   		return bulletin.modified_time.strftime("%m/%d")
   	end
 
@@ -26,14 +26,24 @@ module Announcements
   		return message = "<a href=\"bulletin/?date=#{date}\">#{date_month} #{date_day}#{day_suffix} Bulletin</a>"
   	end
 
+  	def get_annoucment_message_from_newsletter(newsletter)
+  		return "<a href='newsletter/?date=" + newsletter.modified_time.strftime("%m-%y") + "'>" + newsletter.basename + " is Available!</a>"
+  	end
+
     def generate(site)
       announcements = site.data["announcements"]
       bulletins = site.static_files.select { |f| f.data["bulletin"] == true }
+      newsletters = site.static_files.select { |f| f.data["newsletter"] == true }
 
-      # Add Latest Bulletin to Annoucements
+      # Add Latest Bulletin to Announcements
       announcements.push({
-      	"date" => get_announcement_date_from_bulletin(bulletins.last),
+      	"date" => get_announcement_date_from_file_modified_time(bulletins.last),
       	"message" => get_annoucment_message_from_bulletin(bulletins.last)
+      })
+
+      announcements.push({
+      	"date" => get_announcement_date_from_file_modified_time(newsletters.last),
+      	"message" => get_annoucment_message_from_newsletter(newsletters.last)
       })
 
 

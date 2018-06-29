@@ -4,16 +4,18 @@ newsletter_title: 'May / June 2018'
 newsletter_file_name: '2018-05.pdf'
 ---
 
+{% assign newsletters = site.static_files | where: "newsletter", true %}
+
 	<div class="white-bg">
 		<div class="main-wrap">
 			<div class="container">
 				<!-- Ministries content -->
-				<div class="col-md-16">
+				<div class="col-md-offset-2 col-md-12">
 					<div class="ministries-head">
-						<h5>Latest Newsletter | {{ page.newsletter_title }}</h5>
-						<a class="pull-right" href="{{ '/newsletter/files/' | prepend: site.url | append: page.newsletter_file_name }}">Download</a>
+						<h5>Latest Newsletter | {{ newsletters.last.name | replace: "Newsletter.pdf" }}</h5>
+						<a class="pull-right" href="{{ newsletters.last.path | prepend: site.url }}">Download</a>
 					</div>
-					<iframe src="http://docs.google.com/gview?url={{ '/newsletter/files/' | prepend: site.url | append: page.newsletter_file_name }}&embedded=true" style="width:100%; height: 1000px; border: 1px solid #333" frameborder="0"></iframe>
+					<iframe src="http://docs.google.com/gview?url={{ newsletters.last.path | prepend: site.url }}&embedded=true" style="width:100%; height: 988px; border: 1px solid #333" frameborder="0"></iframe>
 
 
 
