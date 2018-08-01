@@ -31,7 +31,8 @@ var calendarRepo = {
 			return _.indexOf(c, event.recurringEventId) > -1;
 		});
 
-		var date = moment(event.start.dateTime);
+		var dateToUse = event.start.dateTime || event.start.date;
+		var date = moment();
 
 		props.category = category ? _.words(category).join(' ') : '';
 		props.date = {
@@ -39,6 +40,7 @@ var calendarRepo = {
 			day: date.date(),
 			time: date.format('h:mm a')
 		};
+		props._date = date;
 		props.title = event.summary;
 
 		return props;
@@ -55,11 +57,12 @@ var calendarRepo = {
 			},
 			dataType: 'json',
 			success: function (response) {
-				console.log(response);
 				var events = [];
 				$.each(response.items, function (i, event) {
 					events.push(_.merge({}, event, calendarRepo.parseEventProperties(event)));
 				});
+
+				console.log("The Events", events);
 
 				if(callback){
 					callback(events);

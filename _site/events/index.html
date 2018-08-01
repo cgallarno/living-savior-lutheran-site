@@ -224,21 +224,26 @@
 					console.log("events", events);
 					var eventItems = [];
 					$.each(events, function (i, event) {
-						console.log(event.recurringEventId + " : " + event.title);
-
 						var eventLi = '<li><div class="row"><div class="col-md-16">';
 						eventLi += '<div class="date">' + event.date.day + '<span>' + event.date.month + '</span></div>';
 						eventLi += '<h4>' + event.category + '' + '<span>' + event.title + '</span></h4>';
-						eventLi += '<div class="time">' + event.date.time;
+						eventLi += '<div class="time">';
+						if(event.start.dateTime){
+							eventLi += event.date.time;
+						}
+
 						if(event.location){
-							eventLi += ' - ' + event.location;
+							if(event.start.dateTime){
+								eventLi += ' - ';
+							}
+
+							eventLi += event.location;
 						}
 						eventLi += '</div>';
 						eventLi += '</div></div></li>';
 
 						eventItems.push(eventLi);
 					});
-					//debugger;
 
 					$eventsContainer.html(eventItems);
 				});
