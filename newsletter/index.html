@@ -1,10 +1,9 @@
 ---
 layout: default
-newsletter_title: 'May / June 2018'
-newsletter_file_name: '2018-05.pdf'
 ---
 
 {% assign newsletters = site.static_files | where: "newsletter", true %}
+{% assign sorted_newsletters = newsletters | sort: "modified_time" %}
 
 	<div class="white-bg">
 		<div class="main-wrap">
@@ -12,10 +11,10 @@ newsletter_file_name: '2018-05.pdf'
 				<!-- Ministries content -->
 				<div class="col-md-offset-2 col-md-12">
 					<div class="ministries-head">
-						<h5>Latest Newsletter | {{ newsletters.last.name | replace: "Newsletter.pdf" }}</h5>
-						<a class="pull-right" href="{{ newsletters.last.path | prepend: site.url }}">Download</a>
+						<h5>Latest Newsletter | {{ sorted_newsletters.last.name | replace: "Newsletter.pdf" }}</h5>
+						<a class="pull-right" href="{{ sorted_newsletters.last.path | prepend: site.url }}">Download</a>
 					</div>
-					<iframe src="http://docs.google.com/gview?url={{ newsletters.last.path | prepend: site.url }}&embedded=true" style="width:100%; height: 988px; border: 1px solid #333" frameborder="0"></iframe>
+					<iframe src="http://docs.google.com/gview?url={{ sorted_newsletters.last.path | prepend: site.url }}&embedded=true" style="width:100%; height: 988px; border: 1px solid #333" frameborder="0"></iframe>
 
 
 

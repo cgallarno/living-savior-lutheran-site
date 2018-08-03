@@ -34,7 +34,7 @@ module Announcements
       announcements = site.data["announcements"]
       bulletins = site.static_files.select { |f| f.data["bulletin"] == true }
       newsletters = site.static_files.select { |f| f.data["newsletter"] == true }
-
+      newsletters = newsletters.sort_by { | newsletter | newsletter.modified_time }
       # Add Latest Bulletin to Announcements
       announcements.push({
       	"date" => get_announcement_date_from_file_modified_time(bulletins.last),
