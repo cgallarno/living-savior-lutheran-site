@@ -32,7 +32,7 @@ var calendarRepo = {
 		});
 
 		var dateToUse = event.start.dateTime || event.start.date;
-		var date = moment();
+		var date = moment(dateToUse);
 
 		props.category = category ? _.words(category).join(' ') : '';
 		props.date = {
