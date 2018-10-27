@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+{% assign seasonal_path = 'newsletters/files/2018_10_11_12.pdf' %}
+
+	<div class="white-bg">
+		<div class="main-wrap">
+			<div class="container">
+				<!-- Ministries content -->
+				<div class="col-md-offset-2 col-md-12">
+					<div class="ministries-head">
+						<h5>Seasonal Newsletter | Oct / Nov / Dec</h5>
+						<a class="pull-right" href="{{ seasonal_path | prepend: site.url }}">Download</a>
+					</div>
+					<iframe src="http://docs.google.com/gview?url={{ seasonal_path | prepend: site.url }}&embedded=true" style="width:100%; height: 988px; border: 1px solid #333" frameborder="0"></iframe>
+
+
+
+<!-- 						<div class="ministries-list">
+							<div class="row">
+								<div class="col-md-4"><img src="{{ '/demo/ministries/4.jpg' | prepend: site.baseurl }}" class="img-responsive" alt=""/></div>
+								<div class="col-md-12">
+									<h4><a href="/ministries/{{ ministry.name }}">{{ ministry.title }}</a></h4>
+									<p>{{ ministry.description }}</p>
+								</div>
+							</div>
+						</div> -->
+
+				</div>
+<!-- 				<aside class="col-md-4">
+					<div class="side-widget">
+						<h5>Previous Newsletters</h5>
+						<ul>
+							<li>2017
+							<ul>
+								<li>May</li>
+								<li>Apr</li>
+								<li>Mar</li>
+								<li>Jan</li>
+							</ul></li>
+						</ul>
+					</div>
+				</aside> -->
+			</div>
+		</div>
+
+	</div>
