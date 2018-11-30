@@ -27,7 +27,7 @@ module Announcements
   	end
 
   	def get_annoucment_message_from_newsletter(newsletter)
-  		return "<a href='newsletter/?date=" + newsletter.modified_time.strftime("%m-%y") + "'>" + newsletter.basename + " is Available!</a>"
+  		return "<a href='newsletter/?v=" + newsletter.modified_time.strftime("%m%d%y") + "'>" + newsletter.basename + " is Available!</a>"
   	end
 
     def generate(site)
