@@ -1,0 +1,652 @@
+{\rtf1\ansi \deflang1033\deff0{\fonttbl
+{\f0\froman \fcharset0 \fprq2 Times New Roman;}{\f1\fmodern \fcharset0 \fprq1 Courier New;}{\f2\fswiss \fcharset0 \fprq2 Arial;}
+{\f3\fswiss \fcharset0 \fprq2 Symbol;}{\f4\fdecor \fcharset0 \fprq2 Wingdings;}{\f5\fnil \fcharset2 \fprq2 WP MathA;}
+{\f6\froman \fcharset0 \fprq2 Comic Sans MS;}{\f7\fswiss \fcharset0 \fprq2 Harrington;}{\f8\fswiss \fcharset0 \fprq2 Calibri;}}{\colortbl;\red0\green0\blue0;\red0\green0\blue0;
+\red128\green128\blue128;\red255\green255\blue255;\red0\green0\blue255;
+\red128\green0\blue128;\red255\green0\blue0;}
+{\stylesheet{\fs20 \snext0 Normal;}
+{\s1 \qj\fi-720\li720\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _level1;}
+{\s2 \qj\li720 Level 1;}
+{\s3 \qj\li1440 Level 2;}
+{\s4 \qj\li2160 Level 3;}
+{\s5 \qj\li2880 Level 4;}
+{\s6 \qj\li3600 Level 5;}
+{\s7 \qj\li4320 Level 6;}
+{\s8 \qj\li5040 Level 7;}
+{\s9 \qj\li5760 Level 8;}
+{\s10 \qj\li6480 Level 9;}
+{\*\cs11 \additive Default Para;}
+{\s12 \qj _26;}
+{\s13 \qj\fi-720\li1440\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _level2;}
+{\s14 \qj\fi-720\li2160\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _level3;}
+{\s15 \qj\fi-720\li2880\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _level4;}
+{\s16 \qj\fi-720\li3600\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _level5;}
+{\s17 \qj\fi-720\li4320\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _level6;}
+{\s18 \qj\fi-720\li5040\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _level7;}
+{\s19 \qj\fi-720\li5760\tx5760\tx6480\tx7200\tx7920\tx8640 _level8;}
+{\s20 \qj\fi-720\li6480\tx6480\tx7200\tx7920\tx8640 _level9;}
+{\s21 \qj\fi-720\li720\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _levsl1;}
+{\s22 \qj\fi-720\li1440\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _levsl2;}
+{\s23 \qj\fi-720\li2160\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _levsl3;}
+{\s24 \qj\fi-720\li2880\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _levsl4;}
+{\s25 \qj\fi-720\li3600\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _levsl5;}
+{\s26 \qj\fi-720\li4320\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _levsl6;}
+{\s27 \qj\fi-720\li5040\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _levsl7;}
+{\s28 \qj\fi-720\li5760\tx5760\tx6480\tx7200\tx7920\tx8640 _levsl8;}
+{\s29 \qj\fi-720\li6480\tx6480\tx7200\tx7920\tx8640 _levsl9;}
+{\s30 \qj\fi-720\li720\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _levnl1;}
+{\s31 \qj\fi-720\li1440\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _levnl2;}
+{\s32 \qj\fi-720\li2160\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _levnl3;}
+{\s33 \qj\fi-720\li2880\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _levnl4;}
+{\s34 \qj\fi-720\li3600\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _levnl5;}
+{\s35 \qj\fi-720\li4320\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _levnl6;}
+{\s36 \qj\fi-720\li5040\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _levnl7;}
+{\s37 \qj\fi-720\li5760\tx5760\tx6480\tx7200\tx7920\tx8640 _levnl8;}
+{\s38 \qj\fi-720\li6480\tx6480\tx7200\tx7920\tx8640 _levnl9;}
+{\s39 Normal;}
+{\s40 Definition T;}
+{\s41 \qj\li360\tx360\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 Definition L;}
+{\*\cs42 \additive\i Definition;}
+{\s43 \b\fs48 H1;}
+{\s44 \b\fs36 H2;}
+{\s45 \b\fs28 H3;}
+{\s46 \b H4;}
+{\s47 \b\fs20 H5;}
+{\s48 \b\fs16 H6;}
+{\s49 \i Address;}
+{\s50 \qj\li360\ri360\tx360\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 Blockquote;}
+{\*\cs51 \additive\i CITE;}
+{\*\cs52 \additive\f1\fs20 CODE;}
+{\*\cs53 \additive\i Emphasis;}
+{\*\cs54 \additive\ul\cf5 Hyperlink;}
+{\*\cs55 \additive\ul\cf6 FollowedHype;}
+{\*\cs56 \additive\b\f1\fs20 Keyboard;}
+{\s57 \qj\tx0\tx958\tx1917\tx2876\tx3835\tx4794\tx5754\tx6712\tx7671\tx8630\tx9356 \f1\fs20 Preformatted;}
+{\s58 \qc \brdrt\brdrdb\brdrw6\brdrcf2 \f2\fs16 zBottom of ;}
+{\s59 \qc \brdrb\brdrdb\brdrw6\brdrcf2 \f2\fs16 zTop of For;}
+{\*\cs60 \additive\f1 Sample;}
+{\*\cs61 \additive\b Strong;}
+{\*\cs62 \additive\f1\fs20 Typewriter;}
+{\*\cs63 \additive\i Variable;}
+{\*\cs64 \additive\v \additive\v\cf7 HTML Markup;}
+{\*\cs65 \additive \additive Comment;}
+{\s66 \qc \b Title;}
+{\s67 \b\fs20 heading 1;}
+{\s68 \qj\li360\ri720\tx360\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920 Block Text;}
+{\s69 \qj\fi-720\li1440\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _25;}
+{\s70 \qj\li2160\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _24;}
+{\s71 \qj\li2880\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _23;}
+{\s72 \qj\li3600\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _22;}
+{\s73 \qj\li4320\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _21;}
+{\s74 \qj\li5040\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _20;}
+{\s75 \qj\li5760\tx5760\tx6480\tx7200\tx7920\tx8640 _19;}
+{\s76 \qj\li6480\tx6480\tx7200\tx7920\tx8640 _18;}
+{\s77 \qj\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _17;}
+{\s78 \qj\fi-720\li1440\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _16;}
+{\s79 \qj\li2160\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _15;}
+{\s80 \qj\li2880\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _14;}
+{\s81 \qj\li3600\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _13;}
+{\s82 \qj\li4320\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _12;}
+{\s83 \qj\li5040\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _11;}
+{\s84 \qj\li5760\tx5760\tx6480\tx7200\tx7920\tx8640 _10;}
+{\s85 \qj\li6480\tx6480\tx7200\tx7920\tx8640 _9;}
+{\s86 \qj\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _8;}
+{\s87 \qj\fi-720\li1440\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _7;}
+{\s88 \qj\li2160\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _6;}
+{\s89 \qj\li2880\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _5;}
+{\s90 \qj\li3600\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _4;}
+{\s91 \qj\li-1440 {\u8729\'20};}
+{\s92 \qj\li4320\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _3;}
+{\s93 \qj\li5040\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640 _2;}
+{\s94 \qj\li5760\tx5760\tx6480\tx7200\tx7920\tx8640 _1;}
+{\s95 \qj\li6480\tx6480\tx7200\tx7920\tx8640 _;}
+{\*\cs96 \additive\b\fs20 QuickFormat1;}
+{\s97 Normal (Web);}
+{\s98 \qj\fi-360\li720\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920 \f3 Outline001_1;}
+{\s99 \qj\fi-360\li1440\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920 \f1 Outline001_2;}
+{\s100 \qj\fi-360\li2160\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920 \f4 Outline001_3;}
+{\*\cs101 \additive keywordresul;}
+{\*\cs102 \additive fieldconten;}
+{\s103 \qj\li-1440 {\f5 \'82};}
+{\s104 \qj\fi-360\li2880\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920 \f4 Outline001_4;}
+{\s105 \qj\fi-360\li3600\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920 \f4 Outline001_5;}
+{\s106 \qj\fi-360\li4320\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920 \f4 Outline001_6;}
+{\s107 \qj\fi-360\li5040\tx5040\tx5760\tx6480\tx7200\tx7920 \f4 Outline001_7;}
+{\s108 \qj\fi-360\li5760\tx5760\tx6480\tx7200\tx7920 \f4 Outline001_8;}
+{\s109 \fs22 Plain Text;}
+{\s110 \qj\fi-360\li6480\tx6480\tx7200\tx7920 \f4 Outline001_9;}
+{\*\cs111 \additive email;}
+{\*\cs112 \additive\f2 EmailStyle15;}
+{\*\cs113 \additive\fs21 Plain Text C;}
+{\s114 yiv213179207;}
+{\s115 \f6\fs32 Body Text;}
+{\*\cs116 \additive\f6 Body Text Ch;}
+{\s117 \b\f7 Body Text 3;}
+{\*\cs118 \additive\b\f7 Body Text 3 ;}
+{\*\cs119 \additive yiv116352571;}
+}{\info{\author Secretary}{\operator Secretary}
+}
+\notabind\paperh20160\margl1440\margr1440\margt720\margb720\widowctrl\hyphhotz936\ftnbj\fet2\ftnrstpg\aftnnar\viewkind1\lytprtmet\subfontbysize \sectd \marglsxn991\margrsxn8902\headery1440\footery1440\endnhere\endnhere 
+{\*\pnseclvl1\pndec\pnstart1{\pntxta .}}
+{\*\pnseclvl2\pnlcltr\pnstart1{\pntxta .}}
+{\*\pnseclvl3\pnlcrm\pnstart1{\pntxta .}}
+{\*\pnseclvl4\pndec\pnstart1{\pntxtb (}{\pntxta )}}
+{\*\pnseclvl5\pnlcltr\pnstart1{\pntxtb (}{\pntxta )}}
+{\*\pnseclvl6\pnlcrm\pnstart1{\pntxtb (}{\pntxta )}}
+{\*\pnseclvl7\pndec\pnstart1{\pntxta .}}
+{\*\pnseclvl8\pnlcltr\pnstart1{\pntxta .}}
+{\*\pnseclvl9\pnlcrm\pnstart1}
+
+{\field{\*\fldinst {\lang4105  SEQ CHAPTER \\h \\r 1}}{\fldrslt }}\pard \fs20\qc 
+{\field{\*\fldinst ADVANCE \\y 36}{\fldrslt }}\sl-1\par
+\sl0 {\field{\*\fldinst ADVANCE \\y 36}{\fldrslt }}\sl-1\par
+\sl0 {\plain \fs30 \b\f8\fs30 WELCOME IN THE NAME OF OUR LIVING SAVIOR!}{\plain \fs20 \f8\fs20 \par
+}{\plain \fs24 \f8 January 13, 2019\par
+}{\plain \fs24 \f8 www.livingsaviorlutheran.org\par
+}\pard \fs20\qc 
+{\plain \fs20 \f8\fs20 \par
+}\pard \fs24
+{\plain \fs24 \f8 We are glad you are with us and pray a blessing on your worship today!  Visitors are asked to sign the }{\plain \fs24 \b\f8 Guest \softline
+Register }{\plain \fs24 \f8 on the table in the Narthex (entrance) and sign the }{\plain \fs24 \b\f8 Welcome Book}{\plain \fs24 \f8  giving your address and phone \softline
+number.\tab \par
+}\pard \fs24
+{\plain \fs24 \f8 \par
+}{\plain \fs24 \b\f8 Living Savior{\u8217\'92}s MISSION }{\plain \fs24 \f8 is to know the love of Christ and serve God so that the Holy Spirit may work through us \softline
+to bring others to Christ.\par
+}{\plain \fs24 \f8 \ul0 \tab \ul0 \tab \ul0 \tab \par
+}{\plain \fs24 \b\f8 Nursery is provided for small children }{\plain \fs24 \b\ul\f8 ages 4 and younger}{\plain \fs24 \b\f8  during the worship services and Sunday School }{\plain \fs24 \f8 from \softline
+8:15am to 12:15pm in room #2 in the Educational Wing. Susanna Honeycutt is the attendant.  Please register your \softline
+children in the nursery so she can get to know them.\par
+}{\plain \fs24 \f8 \par
+}{\plain \fs28 \b\f8\fs28 Average Sunday Attendance}{\plain \fs24 \f8 \par
+}\pard \fs24\fi-1889\li2249\tx0\tx720\tx1440\tx2160\tx2520\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720 
+{\plain \fs24 \f8 \tab \tab Worship\ul0 \tab Education Hour\par
+}\pard \fs24\fi-2609\li2609\tx0\tx720\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720 
+{\plain \fs24 \f8 \tab Oct\ul0 \tab \ul0 \tab 148\ul0 \tab 33\par
+}\pard \fs24\fi-2609\li2609\tx0\tx720\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720 
+{\plain \fs24 \f8 \tab Nov\ul0 \tab \ul0 \tab 149\ul0 \tab 31\par
+}\pard \fs24\fi-2609\li2609\tx0\tx720\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720 
+{\plain \fs24 \f8 \tab Dec\ul0 \tab \ul0 \tab 161\ul0 \tab 44\par
+}\pard \fs24\fi-4769\li4769\tx0\tx720\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720 
+{\plain \fs24 \f8 Last Sunday\ul0 \tab \ul0 \tab 158\ul0 \tab 10\ul0 \tab \ul0 \tab \ul0 \tab }{\plain \fs24 \f8 \ul0 \tab \par
+}{\info}
+{\info}
+{\info}
+{\info}
+\pard \fs24\tx0\tx720\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720
+{\plain \fs24 \b\f8 \par
+}{\plain \fs24 \f8 Flowers this week were given to the Glory of God by the Gray family.}{\plain \fs24 \b\f8 \par
+}{\plain \fs24 \b\f8 \par
+}{\plain \fs24 \b\f8 The 2019 Flower Chart is in the walkway! }{\plain \fs24 \f8 Sign-up today to get your pick of Sundays.  Cost for each Sunday is $45.\par
+}{\plain \fs24 \b\f8 \par
+}{\plain \fs24 \b\f8 "WORSHIP NOTES" - }{\plain \fs24 \f8 Future dates for our Modern Worship services will be January 20 and February 10, all at the \softline
+11:00 service.\par
+}{\plain \fs24 \b\f8 \par
+}{\plain \fs24 \b\f8 Men's Prayer Breakfast:}{\plain \fs24 \f8  Men of the congregation are invited to join other Living Savior men for breakfast, prayer \softline
+and Bible study every 2nd and 4th Saturday from 7 - 8:30am. Our new study is on Martin Luther: Gospel and Law. \softline
+Questions?  Contact Paul Gross.\par
+}{\plain \fs24 \f8 \par
+}{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+\pard \fs24\qj\tx0\tx720\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720 
+{\plain \fs24 \b\f8 Men{\u8217\'92}s Christian Fellowship Dinner:}{\plain \fs24 \f8  LSLC men meet the last Thursday of every month beginning at 7:00pm for \softline
+dinner, fellowship and a short Bible study.}{\plain \fs24 \f8  The next dinner will be January 31}{\plain \fs24 \super\f8 st}{\plain \fs24 \f8  }{\plain \fs24 \f8 at 7:00pm.  Questions?  Contact \softline
+Jim Neuburger.\par
+}{\plain \fs24 \f8 \par
+}{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+\pard \fs24\qj\tx0\tx720\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720 
+{\plain \fs24 \b\f8 Small Group Home Bible Study: }{\plain \fs24 \f8 come for food, fellowship, and a Bible study!}{\plain \fs24 \f8  The next meeting will be Feb 3 from \softline
+1-3pm at the Kolton{\u8217\'92}s.}{\plain \fs24 \f8  Bring a dish to share and your Bibles!  Questions? Please contact Henni Froemke, 703-635-2131.\par
+}{\plain \fs24 \b\f8 \par
+}{\plain \fs24 \b\f8 LifeLight is an in-depth bible study which meets on Wednesdays }{\plain \fs24 \f8 from 1:00-2:30pm in the Narthex }{\plain \fs24 \f8 Please contact \softline
+Terri Beam with any questions at 703-239-0782 or terribeam@gmail.com.  All are welcome!\par
+}\pard \fs24\qj\tx0\tx720\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720 
+{\plain \fs24 \f8 \par
+}{\plain \fs24 \b\f8 Living Savior Lutheran Church Care Cards }{\plain \fs24 \f8 are located in the Narthex magazine rack and provide a valuable list \softline
+of community support organizations with phone numbers and operating hours in order to help individuals and \softline
+families in their time of need.  All are welcome to take and share with those requiring support.\par
+}{\plain \fs24 \f8 \par
+}\pard \fs24\qj\tx0\tx720\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720 
+{\plain \fs24 \b\f8 Christmas Tree Thank You! }{\plain \fs24 \f8 Thank you to everyone who helped with the Christmas Tree Sales - with setting-up \softline
+and taking down the stands, selling trees, and telling friends about the trees. WE SOLD OUT THIS YEAR! A special \softline
+thank you to Mr. Christmas Tree (aka Keith Meins) and to Paul Gross and the Men's Christian Fellowship for this \softline
+ministry which supports so many Missions. }{\plain \fs24 \b\f8 \par
+}\pard \fs24\tx0\tx720\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720
+{\plain \fs24 \b\f8 \par
+}\pard \fs24\qj\tx0\tx720\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720 
+{\plain \fs24 \b\f8 2019 Offering Envelopes - }{\plain \fs24 \f8 If you signed up for offering envelopes, you can pick up your 2019 envelopes in the \softline
+church hallway (close to Klein Hall). If you have any questions, please contact Patty Myers, Financial Secretary, \softline
+at pamyers01@live.com or 571-201-3383.}{\plain \fs24 \b\f8 \par
+}\pard \fs24\tx0\tx720\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720
+{\plain \fs24 \b\f8 \par
+}\pard \fs24\qj\tx0\tx720\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720 
+{\plain \fs24 \b\f8 Living Savior Preschool -}{\plain \fs24 \f8  The children would like to thank Living Savior Church for the Christmas gifts each child \softline
+received. It was a wonderful reminder of what the whole Christmas season is about! They were excited to come \softline
+back to school to see their friends again and share stories about their holidays. We look forward to a fun 2019!\par
+}\pard \fs24\tx0\tx720\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720
+{\plain \fs24 \b\f8 \par
+}\sect \sectd \sbknone\marglsxn991\margrsxn8902\headery1440\footery1440\endnhere\endnhere 
+{\*\pnseclvl1\pndec\pnstart1{\pntxta .}}
+{\*\pnseclvl2\pnlcltr\pnstart1{\pntxta .}}
+{\*\pnseclvl3\pnlcrm\pnstart1{\pntxta .}}
+{\*\pnseclvl4\pndec\pnstart1{\pntxtb (}{\pntxta )}}
+{\*\pnseclvl5\pnlcltr\pnstart1{\pntxtb (}{\pntxta )}}
+{\*\pnseclvl6\pnlcrm\pnstart1{\pntxtb (}{\pntxta )}}
+{\*\pnseclvl7\pndec\pnstart1{\pntxta .}}
+{\*\pnseclvl8\pnlcltr\pnstart1{\pntxta .}}
+{\*\pnseclvl9\pnlcrm\pnstart1}
+
+\pard \fs24\qj\tx0\tx720\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720 
+{\plain \fs24 \b\f8 Possible Seder Supper in 2019:}{\plain \fs24 \f8  Living Savior would like to hold a Seder Supper in 2019 if there is sufficient \softline
+interest and support from the congregation.  If you would be willing to help cook and set up for this special event, \softline
+please contact Jenny Minor or Chuck Froemke. }{\plain \fs24 \b\f8 \par
+}{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+\pard \fs24\tx0\tx720\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720
+{\plain \fs24 \f8 \par
+}{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+{\info}
+\pard \fs24\qj\tx-540\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx8910\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720 
+{\plain \fs24 \b\f8 Altar Guild Seeking Volunteers! }{\plain \fs24 \f8 The altar guild is in need of volunteers, especially for Purple Team. Purple team \softline
+will be serving during the months of April, August, and December. No experience necessary, and both men and \softline
+women are welcome! Team leads will train you.  This is a great way to support worship services at Living Savior. \softline
+Please prayerfully consider joining the Altar Guild. }{\plain \fs24 \b\f8 \par
+}{\plain \fs24 \b\f8 \par
+}{\plain \fs24 \b\f8 Don't Miss Out!}{\plain \fs24 \f8  If you need to update your email or phone number, please fill out one of the contact forms in \softline
+the hallway and place it in the basket.}{\plain \fs24 \b\f8 \par
+}{\plain \fs24 \b\f8 \par
+}{\plain \fs24 \b\f8 Adult Sunday School Series - }{\plain \fs24 \f8 On January 13, we will be continuing our Adult Sunday School Series, "Back to the \softline
+Basics". We will be doing a deeper dive and compare views from other denominations regarding some of those \softline
+foundational, basic Christian teachings. Our next few interactive discussions will focus on the Sacrament of \softline
+Baptism. Do all denominations believe that Baptism is a sacrament? Is Baptism a work of obedience that we do? \softline
+How is it that babies can be baptized while unable to demonstrate true faith? We will explore these and many \softline
+other questions. All are welcome! No worries if you miss a lesson. You can always jump in! Starting back on \softline
+January 13, between the services, at 9:50 AM, facilitated by Jason Tolbert.}{\plain \fs24 \b\f8 \par
+}{\plain \fs24 \b\f8  }{\plain \fs24 \f8  \par
+}\pard \fs24\qj\tx-540\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx8910\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720 
+{\plain \fs24 \b\f8 Brrrr! Its Cold Out There.  FACETS has opened its}{\plain \fs24 \f8  hypothermia shelter program at area churches. Living Savior \softline
+is supporting Lord of Life in their hypothermia shelter projects.  Please let us know if you would like to help! Miki \softline
+Kolton (eakolton@gmail.com) and Steve Thomas (bandsthomas@verizon.net)  February Hypothermia Shelter (sign \softline
+up for one or more Teams, let Miki or Steve know if you want to be a team leader):  \par
+}{\plain \fs24 \f8 Team #1 Feb 10th Dinner prep and serve at Lord of Life (Fairfax)  Lead: Laurie MacPherson \par
+}{\plain \fs24 \f8 Team #2 Feb 10th Lunch Prep at LSLC for Monday delivery at Lord of Life \par
+}{\plain \fs24 \f8 Team #3 Feb 11th Breakfast prep and serve at Lord of Life \par
+}{\plain \fs24 \f8 \tab \tab \tab \par
+}{\plain \fs24 \b\f8 The LSLC Board of Servant Leaders announces that there will be a winter Voters' Assembly on Sunday, February \softline
+24, 2019 at 9:45 am in Klein Hall.  An agenda will be distributed two weeks before the meeting.\par
+}{\plain \fs24 \f8 \par
+}{\plain \fs24 \b\f8 Hosts Needed! Hosts families are needed to house 28 Concordia University, Mequon, WI faculty and students \softline
+from January 17 to January 22, 2019 who are coming for the March for Life on January 18, 2019.  }{\plain \fs24 \f8 Families from \softline
+LSLC have been housing Concordia Mequon Students for Life since 2008. Host responsibilities include \softline
+transportation to and from church, providing accommodations and breakfast. Please consider helping! On Sunday, \softline
+January 20, 2019 the students plan to attend church, tour Mount Vernon and return to LSLC for a Host Meal. All \softline
+hosts and any interested church members are invited to help transport and tour with the group and return to \softline
+attend the potluck meal. For more information contact Mary Heetland at larheetinc@cox.net! }{\plain \fs20 \fs20 \par
+}\pard \fs20\tx-540\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx8910\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720
+{\plain \fs20 \fs20 \par
+}\pard \fs22\tqr\tx10529
+{\plain \fs22 \b\f8\fs22 THIS WEEK AT LIVING SAVIOR\ul0 \tab \par
+}\pard \fs22\tx-540\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx8910\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720
+{\plain \fs22 \b\f8\fs22 \par
+}\pard \fs22\fi-1889\li1889\tx-540\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx8910\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720 
+{\plain \fs22 \f8\fs22 Wed\ul0 \tab 1:00 PM\ul0 \tab LifeLight\par
+}\pard \fs22\fi-1889\li1889\tx-540\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx8910\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720 
+{\plain \fs22 \f8\fs22 Wed\ul0 \tab 7:30 PM\ul0 \tab Choir\par
+}\pard \fs22\tx-540\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx8910\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720
+{\plain \fs22 \b\f8\fs22 \ul0 \tab \ul0 \tab \ul0 \tab \par
+}{\plain \fs22 \b\f8\fs22 Next Sunday, January 20\par
+}{\plain \fs22 \b\f8\fs22 \par
+}\pard \fs22\fi-1889\li1889\tx-540\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx8910\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720 
+{\plain \fs22 \b\f8\fs22 \tab }{\plain \fs22 \f8\fs22 8:30 AM\ul0 \tab Holy Communion\par
+}\pard \fs22\fi-1889\li1889\tx-540\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx8910\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720 
+{\plain \fs22 \f8\fs22 \tab 11:00 AM \ul0 \tab Modern Worship\par
+}\pard \fs22\tx-540\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx8910\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720
+{\plain \fs22 \f8\fs22 \tab \par
+}{\plain \fs24 \b\f8 Serving today}{\plain \fs24 \f8 \par
+}{\plain \fs24 \f8 \par
+}{\plain \fs24 \b\i\f8 Organist}{\plain \fs24 \f8 \par
+}{\plain \fs24 \f8 Dr. Wallace Horton\par
+}{\plain \fs24 \f8 \par
+}{\plain \fs24 \b\i\f8 Lay Reader}{\plain \fs24 \f8 \par
+}\pard \fs24\tqr\tx10529
+{\plain \fs24 \f8  8:30\ul0 \tab Jason Tolbert\par
+}\pard \fs24\tqr\tx10529
+{\plain \fs24 \f8 11:00\ul0 \tab Addy Reyes\par
+}\pard \fs24\tqr\tx10529
+{\plain \fs24 \f8 \tab \par
+}\pard \fs24\qc\tx-540\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx8910\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720 
+{\plain \fs24 \b\i\f8 Ushers}{\plain \fs24 \f8 \par
+}\pard \fs24\fi-449\li449\tx1169\tqr\tx10529 
+{\plain \fs24 \f8  8:30 \ul0 \tab              \ul0 \tab Redmann\par
+}\pard \fs24\tqr\tx10529
+{\plain \fs24 \f8 11:00\ul0 \tab Meins\par
+}\pard \fs24\qc\tx-540\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx8910\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720 
+{\plain \fs24 \f8 \par
+}{\plain \fs24 \b\i\f8 Greeters}{\plain \fs24 \f8 \par
+}\pard \fs24\tqr\tx10529
+{\plain \fs24 \f8 8:30\ul0 \tab The Beam Family\par
+}\pard \fs24\tx720\tqr\tx10529
+{\plain \fs24 \f8 11:00\ul0 \tab }{\plain \fs24 \f8 TBD\par
+}\pard \fs24\tx-540\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx8910\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720
+{\plain \fs24 \f8 \par
+}\pard \fs24\qc\tx-540\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx8910\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720 
+{\plain \fs24 \b\i\f8 Acolytes}{\plain \fs24 \f8 \par
+}\pard \fs24\fi-1169\li1169\tx1889\tx2609\tqr\tx10529 
+{\plain \fs24 \f8 8:30\ul0 \tab \ul0 \tab \ul0 \tab Olivia Tolbert\par
+}\pard \fs24\fi-1169\li1169\tx1889\tx2609\tqr\tx10529 
+{\plain \fs24 \f8 11:00\ul0 \tab \ul0 \tab \ul0 \tab Daniel Smith\par
+}\pard \fs24\tx-540\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx8910\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720
+{\plain \fs24 \f8 \par
+}{\plain \fs24 \b\i\f8 Security Ushers}{\plain \fs24 \f8 \par
+}\pard \fs24\tqr\tx10529
+{\plain \fs24 \f8  }{\plain \fs24 \f8 8:30\ul0 \tab Marie Acevedo Weyrick\par
+}\pard \fs20\tqr\tx10529
+{\plain \fs24 \f8 11:00\ul0 \tab Jim Neuburger}{\plain \fs22 \f8\fs22  }}
