@@ -4,10 +4,10 @@
     <title>Living Savior Lutheran Church</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>http://www.livingsaviorlutheran.org/</link>
-    <atom:link href="http://www.livingsaviorlutheran.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 01 Jun 2019 10:05:16 -0400</pubDate>
-    <lastBuildDate>Sat, 01 Jun 2019 10:05:16 -0400</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 10 Jun 2019 12:28:59 -0400</pubDate>
+    <lastBuildDate>Mon, 10 Jun 2019 12:28:59 -0400</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
     
   </channel>
