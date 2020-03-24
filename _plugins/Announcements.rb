@@ -47,18 +47,19 @@ module Announcements
 
       bulletins = bulletins.sort_by { | bulletin | Date.strptime(bulletin.basename, "%m %d %y") }
       site.data["newsletters"] = newsletters.sort_by { | newsletter | newsletter["posted_date"] }
-      # Add Latest Bulletin to Announcements
-      announcements.push({
-      	"date" => get_announcement_date_from_file_modified_time(bulletins.last),
-      	"message" => get_annoucment_message_from_bulletin(bulletins.last)
-      })
+
+      if(bulletins.last)
+	      # Add Latest Bulletin to Announcements
+	      announcements.push({
+	      	"date" => get_announcement_date_from_file_modified_time(bulletins.last),
+	      	"message" => get_annoucment_message_from_bulletin(bulletins.last)
+	      })
+	    end
 
       announcements.push({
       	"date" => get_newsletter_date_from_posted_time(site.data["newsletters"].last),
       	"message" => get_annoucment_message_from_newsletter(site.data["newsletters"].last)
       })
-
-
 
       #corece date into a valid date string
       announcements.each { |a|
