@@ -102,7 +102,7 @@ layout: hero
 							<div class="music-info">
 								<h5 class="latest-sermon__title"></h5>
 								<p id="latest-sermon__details"></p>
-								<a href="{{ '/education/sermons/' | prepend: site.baseurl }}" class="hb-more">Watch Part 2 Here</a>
+								<!-- <a href="{{ '/education/sermons/' | prepend: site.baseurl }}" class="hb-more">Watch Part 2 Here</a> -->
 							</div>
 							<ul class="m-ico">
 								<!-- <li><a href="#" class="m-ico1"></a></li> -->
@@ -154,9 +154,9 @@ layout: hero
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script>
 	$(document).ready(function () {
-		sermonsRepo.get(2, function (videos) {
+		sermonsRepo.get(1, function (videos) {
 			$sermonContainer = $('#sermons-slider');
-			var latestVideo = videos[1];
+			var latestVideo = videos[0];
 
 			var dateString = ' / ' + latestVideo.date.format('LL');
 
