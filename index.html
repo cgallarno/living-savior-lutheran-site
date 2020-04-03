@@ -154,9 +154,9 @@ layout: hero
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script>
 	$(document).ready(function () {
-		sermonsRepo.get(1, function (videos) {
+		sermonsRepo.get(2, function (videos) {
 			$sermonContainer = $('#sermons-slider');
-			var latestVideo = videos[0];
+			var latestVideo = videos[1];
 
 			var dateString = ' / ' + latestVideo.date.format('LL');
 
