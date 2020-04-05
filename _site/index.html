@@ -333,7 +333,7 @@
 	$(document).ready(function () {
 		sermonsRepo.get(2, function (videos) {
 			$sermonContainer = $('#sermons-slider');
-			var latestVideo = videos[1];
+			var latestVideo = videos[0];
 
 			var dateString = ' / ' + latestVideo.date.format('LL');
 
