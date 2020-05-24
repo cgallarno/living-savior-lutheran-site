@@ -6,7 +6,10 @@ var sermonsRepo = {
 		'/videos/149996913' : '"A Mixed Up Day" By Rev. Andrew C. Lissy Luke 1:37-54 12_24_2015',
 		'/videos/183206935' : '"How Do We Measure Love" By Rev. Andrew C. Lissy Amos 8:4-7 09_18_2016',
 		'/videos/196183699' : '"It seemed like a good idea at the time" By Vicar Kevin Barron Matthew 1:18-25 12_18_2016',
-		'/videos/164014105' : '"Rev. Lannon Martin of Concordia Seminary, Ft. Wayne, IN" Rev. Lannon Martin'
+		'/videos/164014105' : '"Rev. Lannon Martin of Concordia Seminary, Ft. Wayne, IN" Rev. Lannon Martin',
+		'/videos/421799804' : 'Ascension Sunday 05_24_2020',
+		'/videos/416586892' : 'Fifth Sunday of Easter 05_10_2020',
+		'/videos/411667452' : 'Third Sunday of Easter 26 April 2020'
 	},
 	previewOffsets : {
 		'/videos/203747965' : -45,
