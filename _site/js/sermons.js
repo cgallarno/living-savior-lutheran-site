@@ -9,7 +9,7 @@ var sermonsRepo = {
 		'/videos/164014105' : '"Rev. Lannon Martin of Concordia Seminary, Ft. Wayne, IN" Rev. Lannon Martin',
 		'/videos/421799804' : 'Ascension Sunday 05_24_2020',
 		'/videos/416586892' : 'Fifth Sunday of Easter 05_10_2020',
-		'/videos/411667452' : 'Third Sunday of Easter 26 April 2020'.
+		'/videos/411667452' : 'Third Sunday of Easter 26 April 2020',
 		'/videos/426462427' : 'Trinity Sunday 06_07_2020'
 	},
 	previewOffsets : {
