@@ -243,7 +243,7 @@
 				sermonsRepo.get(5, function (videos) {
 					$sermonContainer = $('#sermon-container');
 					var embeds = [];
-					videos.pop();
+					videos.shift(); // Remove this
 					$.each(videos, function (key, video) {
 						var dateString = ' / ' + video.date.format('LL');
 						var lastClass = key == videos.length - 1 ? 'lasts': '';
