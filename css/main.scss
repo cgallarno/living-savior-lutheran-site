@@ -43,7 +43,7 @@ $on-laptop:        800px;
 .nav-left, .nav-right{
 	&> ul {
 		// border-color: $grey-color-dark;
-
+		white-space: nowrap;
 		a {
 			color: $white-color;
 			&:hover{

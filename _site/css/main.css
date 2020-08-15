@@ -4133,10 +4133,12 @@ blockquote {
 #slide-full .slider-wrapper .owl-item .item {
   max-height: 580px; }
 
-.nav-left > ul a, .nav-right > ul a {
-  color: #fefefe; }
-  .nav-left > ul a:hover, .nav-right > ul a:hover {
-    color: #9fc1ef; }
+.nav-left > ul, .nav-right > ul {
+  white-space: nowrap; }
+  .nav-left > ul a, .nav-right > ul a {
+    color: #fefefe; }
+    .nav-left > ul a:hover, .nav-right > ul a:hover {
+      color: #9fc1ef; }
 
 a {
   color: #07B767; }
