@@ -99,22 +99,23 @@ layout: hero
 				<div id="sermons-slider" class="owl-carousel">
 					<div class="item">
 						<div class="col-md-8" style="overflow:hidden">
-							<img style="height:275px;width:auto!important;max-width: none;" id="latest-sermon__preview" class="img-responsive" src="" alt=""/>
+							<img style="height:275px;width:auto!important;max-width: none; margin-left: -155px;" id="latest-sermon__preview" class="img-responsive" src="images/video_preview.png" alt=""/>
 						</div>
 						<div class="col-md-8">
-							<h4>Latest worship service</h4>
+							<h4>Online Worship</h4>
 							<div class="music-info">
-								<h5 class="latest-sermon__title"></h5>
+								<h5 class="latest-sermon__title">Watch Live, 11am Sundays</h5>
 								<p id="latest-sermon__details"></p>
 								<!-- <a href="{{ '/education/sermons/' | prepend: site.baseurl }}" class="hb-more">Watch Part 2 Here</a> -->
 							</div>
 							<ul class="m-ico">
 								<!-- <li><a href="#" class="m-ico1"></a></li> -->
-								<li><a href="#" class="m-ico2" data-toggle="modal" data-target="#latestSermonModal"></a></li>
+								<!-- <li><a href="https://livingsaviorlutheran.online.church/" class="m-ico2" data-toggle="modal" data-target="#latestSermonModal"></a></li> -->
+								<li><a href="https://livingsaviorlutheran.online.church/" class="m-ico2"></a></li>
 								<!-- <li><a href="#" class="m-ico3"></a></li> -->
 							</ul>
 							<div class="line"></div>
-							<a href="{{ '/education/sermons/' | prepend: site.baseurl }}" class="hb-more">previous worship service</a>
+							<a href="https://boxcast.tv/channel/yb084uq1ur5eid2jonin" class="hb-more">View Service Archive</a>
 						</div>
 					</div>
 				</div>
@@ -134,7 +135,7 @@ layout: hero
 	</div>
 </div>
 
-<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="latestSermonModal" id="latestSermonModal">
+<!-- <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="latestSermonModal" id="latestSermonModal">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -149,30 +150,30 @@ layout: hero
           </div>
         </div>
       </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-
+    </div>
+  </div>
+</div>
+ -->
 <script src="{{ '/js/sermons.js' | prepend: site.baseurl }}"></script>
 <script src="{{ '/js/calendar.js' | prepend: site.baseurl }}"></script>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script>
 	$(document).ready(function () {
-		sermonsRepo.get(3, function (videos) {
-			$sermonContainer = $('#sermons-slider');
-			var latestVideo = videos[0];
+		// sermonsRepo.get(3, function (videos) {
+		// 	$sermonContainer = $('#sermons-slider');
+		// 	var latestVideo = videos[0];
 
-			var dateString = ' / ' + latestVideo.date.format('LL');
+		// 	var dateString = ' / ' + latestVideo.date.format('LL');
 
-			$('.latest-sermon__title').text(latestVideo.title);
-			$sermonContainer.find('#latest-sermon__details').text(latestVideo.speaker + ' ' + dateString + ' ' + latestVideo.passageString);
-			$("#latestSermonModal iframe").attr('src', 'https://player.vimeo.com/video/' + latestVideo.uri.split('/')[2]);
-			$("#latest-sermon__preview").attr('src', latestVideo.pictures.sizes[2].link);
+		// 	$('.latest-sermon__title').text(latestVideo.title);
+		// 	$sermonContainer.find('#latest-sermon__details').text(latestVideo.speaker + ' ' + dateString + ' ' + latestVideo.passageString);
+		// 	$("#latestSermonModal iframe").attr('src', 'https://player.vimeo.com/video/' + latestVideo.uri.split('/')[2]);
+		// 	$("#latest-sermon__preview").attr('src', latestVideo.pictures.sizes[2].link);
 
-			if(sermonsRepo.previewOffsets[latestVideo.uri]){
-				$("#latest-sermon__preview").css('margin-left', sermonsRepo.previewOffsets[latestVideo.uri]);
-			}
-		});
+		// 	if(sermonsRepo.previewOffsets[latestVideo.uri]){
+		// 		$("#latest-sermon__preview").css('margin-left', sermonsRepo.previewOffsets[latestVideo.uri]);
+		// 	}
+		// });
 
 		calendarRepo.get(3, function (events) {
 			$eventsContainer = $('#events-container');
