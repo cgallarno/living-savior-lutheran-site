@@ -10,7 +10,7 @@ layout: html
     		<!-- Page Header -->
     		<div class="page-header container">
     			<div class="col-md-16">
-
+    				{{page.path}}
     				{% assign url_parts = page.url | remove: 'index.html' | split:'/' %}
     				{% assign previous="" %}
 

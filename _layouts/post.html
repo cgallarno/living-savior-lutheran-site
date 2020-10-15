@@ -1,14 +1,54 @@
 ---
+layout: html
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<body id="pages">
+    <div class="body">
+  		<div class="slider-wrap">
+				<div class="gradient-cover"></div>
+    		{% include header.html %}
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
+  			<!-- Slider -->
+  			<div class="slider-wrapper theme-default">
+  				<div id="owl-homeslider" class="owl-carousel">
+  					<div class="item">
+  						<img alt="" class="img-responsive" src="{{ '/images/hero.png' | prepend: site.baseurl }}" style="width: 100%;">
+  					</div>
+  				</div>
+  			</div>
+  			<!-- Slider -->
+  		</div>
+  		<div class="white-bg">
+        <div class="main-wrap">
+					<div class="container">
+						<!-- Blog Content -->
+						<div class="col-md-16">
+							<article>
+								<div class="row">
+									<div class="col-md-11">
+										<span class="post-meta">{{ page.date | date: "%b %-d, %Y" }}
+										<h4>{{ page.title }}</h4>
+									</div>
+<!-- 									<div class="col-md-5">
+										<div class="space20"></div>
+										<ul class="hb-social">
+											<li class="hb-fb"><a href="#"><i class="fa fa-facebook"></i></a></li>
+											<li class="hb-fb"><a href="#"><i class="fa fa-facebook"></i></a></li>
+											<li class="hb-tw"><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li class="hb-plus"><a href="#"><i class="fa fa-plus"></i></a></li>
+										</ul>
+									</div> -->
+								</div>
+								<div class="space20"></div>
+								<div class="excerpt">
+									{{ content }}
+								</div>
+							</article>
+						</div>
+						<!-- Blog Content -->
+					</div>
+				</div>
 
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-  </div>
-
-</article>
+    		{% include footer.html %}
+      </div>
+    </div>
+  </body>
