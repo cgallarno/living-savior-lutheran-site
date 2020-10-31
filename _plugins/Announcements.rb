@@ -56,10 +56,10 @@ module Announcements
 	      })
 	    end
 
-      announcements.push({
-      	"date" => get_newsletter_date_from_posted_time(site.data["newsletters"].last),
-      	"message" => get_annoucment_message_from_newsletter(site.data["newsletters"].last)
-      })
+      # announcements.push({
+      # 	"date" => get_newsletter_date_from_posted_time(site.data["newsletters"].last),
+      # 	"message" => get_annoucment_message_from_newsletter(site.data["newsletters"].last)
+      # })
 
       #corece date into a valid date string
       announcements.each { |a|
