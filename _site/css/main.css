@@ -928,12 +928,9 @@ aside {
   width: 100%;
   border-radius: 15px;
   border: 1px solid #4889E0;
-  padding: 0 15px;
+  padding: 20px;
   color: #ccc;
-  font-size: 36px;
-  height: 150px;
-  text-align: center;
-  padding: 50px 0 0; }
+  height: 150px; }
 
 .comment-form textarea:focus {
   color: #676666;

@@ -176,13 +176,16 @@
     				  
     				  	
     				  	
-    				  	<li class="active">Bulletin</li>
+    				  	<li><a href="/about">About</a></li>
+    				  	
+    					
+    				  	
+    				  	
+    				  	<li class="active">Commitment stewardship statement</li>
     				  	
     					
     				</ol>
 
-    				
-    				<h3>News Bulletin</h3>
     				
     			</div>
     		</div>
@@ -200,30 +203,107 @@
 
   		</div>
   		<div class="white-bg">
-        
+        <body id="home2">
 
-<div class="container news-bulletin">
-	<div class="col-md-offset-2 col-md-12">
-		<div class="row">
-			<iframe src="https://docs.google.com/gview?url=http://localhost:4000/bulletin/12 20 20.pdf&embedded=true" style="width:100%; height:  988px; margin-top: 15px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;" frameborder="0"></iframe>
+<div class="body">
+	<div class="white-bg">
+		<div class="main-wrap">
+			<div class="container">
+
+				<!-- Contact form -->
+				<div class="col-md-16 contact-form-info">
+					<h5>Moving Forward in Faith Commitment Stewardship Statement</h5>
+					<p>During this period of COVID-19 Pandemic, Living Savior ministries and activities have
+been modified (Zoom & in-person), but we still have opportunities for growth in your
+faith journey.</p>
+
+					<div style="position:relative;">
+						<!-- <input type="hidden" name="_cc" value="secretary@livingsaviorlutheran.org" /> -->
+						<form class="comment-form" id="contactForm" action="https://formspree.io/f/xvovvojv" method="post">
+							<div class="row">
+								<div class="col-md-8">
+									<input type="text" name="_fullname" id="senderName" placeholder="Full Name" required="required" />
+								</div>
+								<div class="col-md-8">
+									<input type="email" name="_replyto" id="senderEmail" placeholder="Email address" required="required"  />
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-8">
+									<p>
+										<strong>Worship, Prayer and Study Opportunities</strong><br>
+										Sunday Worship: ________ In person and / or _______ Live Streaming
+										<ul>
+											<li>Advent Worship Services</li>
+											<li>Lent Worship and Holy Week Services</li>
+											<li>Men’s Prayer & Fellowship Study: Paul Gross</li>
+											<li>Sunday afternoon Bible Studies: Jason Tolbert</li>
+											<li>Sunday evening Study: Dr. Horton & Dr. Benson</li>
+											<li>Vicar Book Club: Vicar Tim</li>
+											<li>Adult Sunday School: Sarah Loesch</li>
+											<li>Confirmation; Vicar Tim</li>
+											<li>Sunday School virtual: Jean Marie Galing</li>
+										</ul>
+									</p>
+								</div>
+								<div class="col-md-8">
+									<p>
+										<strong>Spiritual Outreach and Service Actions</strong> <br>
+										Fellowship Opportunities
+										<ul>
+											<li>Men’s Happy Hour (Friday afternoon) Paul Gross </li>
+											<li>Youth Study & Events: Jonathan Loesch </li>
+											<li>Young Adults (18-35): Victoria & Ben Pierce </li>
+											<li>Special Events - e.g.:Trunk or Treat, Christmas Carols (see church bulletin) </li>
+											<li>Woman’s Retreat</li>
+											<li>Social Ministry: Miki Kolton & Steve Thomas;</li>
+											<li>Crop Walk, Shelter House / NOVACO (Back to School, Christmas gifts),Thanksgiving
+	Boxes, Christmas Angel Tree, Concordia Food Ministry, Operation Christmas Child,
+	Meals for hypothermia shelter, Disaster Relief</li>
+										</ul>
+									</p>
+								</div>
+							</div>
+
+							 <br>
+
+							<div class="row">
+								<div class="col-md-16">
+									<textarea name="_message" id="message" required="required" value="" style="height: 200px">As the Lord has blessed me, I will support His Church with my offering of:
+$____________ Weekly OR
+$____________ Monthly OR
+$ ____________Yearly
+_____I would like information regarding a Direct Deposit Option
+I wish to make a one-time gift of $___________ for the general fund or a specific
+following purpose(s):</textarea>
+									<input type="text" name="_gotcha" id="gotcha" />
+									<input type="hidden" name="_format" value="plain" />
+									<input type="hidden" name="_next" value="/about/contact/" />
+									<button type="submit" id="sendMessage" class="c-btn pull-right">Submit</button>
+								</div>
+							</div>
+						</form>
+						<div id="successMessage" class="successmessage"><p><span class="success-ico"></span> Thanks for sending your message! We'll get back to you shortly.</p></div>
+						<div id="failureMessage" class="errormessage"><p><span class="error-ico"></span> There was a problem sending your message. Please try again.</p></div>
+						<div id="incompleteMessage" class="statusMessage"><p>Please complete all the fields in the form before sending.</p></div>
+					</div>
+				</div>
+				<!-- Contact form -->
+			</div>
 		</div>
+
+		<!-- Footer -->
+
+		<!-- Footer -->
 	</div>
-<!-- 	<div class="col-md-4">
-		<p>
-			<p>This Sunday, June 24, is the Fifth Sunday after Pentecost.  Living Savior will celebrate Divine Worship at 8:30 and Holy Communion at 11:00 am.</p>
-			<p>The First Lesson is Job 38:1-11.</p>
-			<p>The Second Lesson is 2 Corinthians 6:1-13.</p>
-			<p>The Holy Gospel Reading is Mark 4:35-41.</p>
-			<p>Vicar Chris Conkling will be preaching and his sermon title is “Taking the Crookeds with the Straights” and is based on the Second Lesson.</p>
-		</p>
-
-	</div> -->
 </div>
-
 <script>
-	console.log(window.location)
+	$(document).ready(function () {
+		//LoadGmaps();
+	})
 </script>
 
+</body>
 
     		<div class="space50"></div>
 
