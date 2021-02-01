@@ -64,7 +64,7 @@ layout: hero
 			{% assign announcements = site.data.announcements | sort:"date" | reverse %}
 
 			{% for announcement in announcements %}
-			<p class="col-md-2 text-right">{{ announcement.date | date: "%-m/%d" }}</p><p class="col-md-13">{{ announcement.message }}</p>
+			<p class="col-md-2 text-right">{{ announcement.date | date: "%m/%d/%y" }}</p><p class="col-md-13">{{ announcement.message }}</p>
 			{% endfor %}
 			<div class="clearfix"></div>
 				<!-- <a href="">More Newsletters ></a></p> -->

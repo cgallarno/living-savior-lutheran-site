@@ -1,11 +1,11 @@
 module Announcements
   class Generator < Jekyll::Generator
   	def get_announcement_date_from_file_modified_time(bulletin)
-  		return bulletin.modified_time.strftime("%m/%d")
+  		return bulletin.modified_time.strftime("%m/%d/%y")
   	end
 
   	def get_newsletter_date_from_posted_time(newsletter)
-  		return newsletter["posted_date"].strftime("%m/%d")
+  		return newsletter["posted_date"].strftime("%m/%d/%y")
   	end
 
   	def get_annoucment_message_from_bulletin(bulletin)
@@ -63,7 +63,7 @@ module Announcements
 
       #corece date into a valid date string
       announcements.each { |a|
-      	a["date"] = Date.strptime(a["date"], "%m/%d")
+      	a["date"] = Date.strptime(a["date"], "%m/%d/%y")
       }
 
 
