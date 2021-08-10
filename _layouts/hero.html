@@ -7,36 +7,43 @@
 
 	<body id="slide-full">
 
-    {% include header.html %}
-
     <div class="body">
-    		<div class="slider-wrap">
-					<div class="gradient-cover">
-<!-- 						<div class="container" style="height: 100%; position: relative;">
-							<div class="donation-btn">
-								<a href="https://www.eservicepayments.com/cgi-bin/Vanco_ver3.vps?appver3=wWsk24ZWJSTZKsGd1RMKlg0BDvsSG3VIWQCPJNNxD8upkiY7JlDavDsozUE7KG0nFx2NSo8LdUKGuGuF396vbZdLM92ycpPBxMcwOnoGn_0iYnTg5dP4O6rpX5QvPEWlBhHDN59kLZFffwKfYERpQmmLLzAAVYnaJtbQCSv5y6k=&ver=3" target="_blank">Donate now</a>
-							</div>
-						</div> -->
-					</div>
-    			<!-- Slider -->
-    			<div class="slider-wrapper theme-default">
-    				<div id="owl-homeslider" class="owl-carousel">
-    					<div class="item">
-    						<!-- <img alt="" class="img-responsive" src="{{ '/images/hero.png' | prepend: site.baseurl }}"> -->
-    						<div class="nivo-caption container">
-    							<!-- <h2>Changing <br>School Culture</h2> -->
-    							<!-- <p>The wise prevail through great power, and those who have knowledge muster their strength. <em>Proverbs 24:5 </em></p> -->
-    						</div>
-    					</div>
-    				</div>
-    			</div>
-    			<!-- Slider -->
-    		</div>
+    <div class="slider-wrap">
+	    {% include header.html %}
 
-        {{ content }}
+	    <!-- Slider -->
+			<div class="slider-wrapper theme-default">
+				<div id="owl-homeslider" class="owl-carousel">
+					<div class="item">
+						<img alt="" class="img-responsive" src="images/slide/1.jpg">
+						<div class="nivo-caption">
+							<!-- <h2>Changing <br>School Culture</h2>
+							<p>With Pastor Eric</p> -->
+						</div>
+					</div>
+					<div class="item">
+						<img alt="" class="img-responsive" src="images/slide/2.jpg">
+						<div class="nivo-caption">
+							<h2>Optional Title</h2>
+							<p><a href="">Can link to other pages</a></p>
+						</div>
+					</div>
+					<div class="item">
+						<img alt="" class="img-responsive" src="images/slide/3.jpg">
+						<div class="nivo-caption">
+							<h2>Volunteers Needed</h2>
+							<p>Check Announcements</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Slider -->
     </div>
 
+        {{ content }}
+
     {% include footer.html %}
+    </div>
 
   </body>
 

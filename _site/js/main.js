@@ -231,11 +231,13 @@ $(document).ready(function() {
 "use strict";
 
 $("#owl-homeslider").owlCarousel({
-autoplay : true,
+autoPlay : 5000,
+stopOnHover: true,
 navigation : false,
 slideSpeed : 300,
 pagination : true,
-singleItem : true
+singleItem : true,
+items: 1,
 
 // "singleItem:true" is a shortcut for:
 // items : 1,
