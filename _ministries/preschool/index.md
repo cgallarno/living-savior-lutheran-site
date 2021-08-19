@@ -2,7 +2,7 @@
 collection: ministries
 name: preschool
 title: Preschool
-leads: Liz Smith
+leads: Terri Kiss
 description: >
   At Living Savior Preschool,
   our program offers young children one of the best opportunities for achieving the goals of a Christian education outside of the home.
