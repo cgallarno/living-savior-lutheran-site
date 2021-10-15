@@ -14,7 +14,7 @@ html, body {
 body {
   font-family: Calibri, sans-serif;
   font-weight: 400;
-  background: #fffff; }
+  background: #f0f0f0; }
 
 p {
   font-family: Calibri, sans-serif;
@@ -592,7 +592,7 @@ article a {
   color: #07B767; }
 
 .white-bg {
-  background: #FFF;
+  background: #f0f0f0;
   position: relative;
   z-index: 9999; }
 

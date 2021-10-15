@@ -10,7 +10,7 @@ html,body {
 body {
 	font-family: Calibri, sans-serif;
 	font-weight: 400;
-	background:#fffff;
+	background:$background-color;
 }
 
 p {
@@ -708,7 +708,7 @@ article a {
 }
 
 .white-bg {
-	background: #FFF;
+	background: $background-color;
 	position: relative;
 	z-index: 9999;
 }
