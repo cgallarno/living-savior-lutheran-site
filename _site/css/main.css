@@ -4,6 +4,9 @@
 .nowrap {
   white-space: nowrap; }
 
+.wrap {
+  white-space: normal; }
+
 /*
 THEME NAME
 */
