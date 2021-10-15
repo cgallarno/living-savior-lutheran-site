@@ -12,14 +12,14 @@ html, body {
   height: 100%; }
 
 body {
-  font-family: Bitter;
+  font-family: Calibri, sans-serif;
   font-weight: 400;
   background: #fffff; }
 
 p {
-  font-family: Bitter;
+  font-family: Calibri, sans-serif;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 16px;
   color: #333;
   line-height: 21px; }
 
@@ -68,7 +68,7 @@ p {
   display: table;
   padding: 20px 15px;
   text-align: center;
-  font-family: Bitter;
+  font-family: Bitter, sans-serif;
   color: #fff;
   font-size: 16px;
   text-shadow: 1px 0 0 rgba(0, 0, 0, 0.5);
@@ -2685,14 +2685,14 @@ aside {
 
 .m-ico1:hover:before {
   content: "Listen";
-  font-family: Bitter;
+  font-family: Calibri, sans-serif;
   font-size: 16px;
   font-style: italic;
   background: #436085; }
 
 .m-ico2:hover:before {
   content: "Watch Live";
-  font-family: Bitter;
+  font-family: Calibri, sans-serif;
   font-size: 16px;
   font-style: italic;
   background: #436085;
@@ -2701,7 +2701,7 @@ aside {
 
 .m-ico3:hover:before {
   content: "Save as";
-  font-family: Bitter;
+  font-family: Calibri, sans-serif;
   font-size: 16px;
   font-style: italic;
   background: #436085; }
@@ -3380,7 +3380,7 @@ blockquote {
   margin: 0;
   text-align: center;
   font-size: 35px;
-  font-family: Bitter;
+  font-family: Calibri, sans-serif;
   line-height: 120%;
   text-shadow: 3px 0px 0px rgba(0, 0, 0, 0.6);
   color: #F3F8FF; }
