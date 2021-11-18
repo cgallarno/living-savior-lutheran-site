@@ -3668,6 +3668,7 @@ blockquote {
 	-moz-transition: all .5s;
 	transition: all .5s;
 	opacity: 0;
+	visibility: hidden;
 }
 
 .has-sub:hover .subpage {
@@ -3676,6 +3677,7 @@ blockquote {
 	-moz-transition: all .5s;
 	transition: all .5s;
 	opacity: 1;
+	visibility: visible;
 }
 
 .subpage:after {
