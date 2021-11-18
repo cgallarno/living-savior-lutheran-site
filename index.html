@@ -16,27 +16,32 @@ layout: hero
 		</div>
 	</div> -->
 	<!-- Home Story -->
-	<div class="home-blog container">
+	<div class="home-blog container home2_wrap1">
 		<div class="col-md-5 hb-content">
 			<div class="hb-meta"><span class="date">Updated: 5 Apr 2013</span><!--  / <a href="#">Helping</a> --></div>
 			<h3><a href="#">Sunday Worship</a></h3>
 			<!-- <img src="demo/blog/2.jpg" class="img-responsive img-thumbnail" alt=""/> -->
-			<p>Service is live streamed Sundays at 11 am<br>View the livestream here starting at 10:55am</p>
-			<a href="https://livingsaviorlutheran.online.church/" class="hb-more">Open Livestream</a>
+			<p>
+				Service is live streamed Sundays at 11 am<br>View the livestream here starting at 10:55am<br /><br />
+				<span class="strong">Worship Services:</span> Every Sunday Morning at 8:30 AM and 11:00 AM <br /><br />
+				<span class="strong">Sunday School:</span> Children, youth and adult Bible classes every Sunday at 9:45 AM</p>
+				<a href="https://livingsaviorlutheran.online.church/" class="hb-more">Open Livestream</a>
 		</div>
 		<div class="col-md-5 hb-content">
 			<div class="hb-meta"><span class="date">Updated: 5 Apr 2013</span><!--  / <a href="#">Helping</a> --></div>
-			<h3><a href="/about/">I'm New</a></h3>
+			<h3><a href="{{ '/about/' | prepend: site.baseurl }}">I'm New</a></h3>
 			<!-- <img src="demo/blog/1.jpg" class="img-responsive img-thumbnail" alt=""/> -->
 			<p>Sed eu orci dictum, condimentum orci et, adipiscing leo. Etiam luctus tincidunt neque non posuere. Praesent eu augue...</p>
-			<a href="/im-new/" class="hb-more">Read more</a>
+			<a href="{{ '/im-new/' | prepend: site.baseurl }}" class="hb-more">Read more</a>
 		</div>
 		<div class="col-md-5 hb-content">
 			<div class="hb-meta"><span class="date">Updated: 5 Apr 2013</span><!--  / <a href="#">Helping</a> --></div>
 			<h3><a href="#">Annoucements</a></h3>
 			<!-- <img src="demo/blog/3.jpg" class="img-responsive img-thumbnail" alt=""/> -->
-			<p>Sed eu orci dictum, condimentum orci et, adipiscing leo. Etiam luctus tincidunt neque non posuere. Praesent eu augue...</p>
-			<a href="#" class="hb-more">Read more</a>
+			<p>
+				<span class="strong">Latest Newsletter:</span> July Newsletter <a href="{{ '/newsletter' | prepend: site.baseurl }}">(Read)</a><br />
+			</p>
+			<a href="{{ '/annoucements/' | prepend: site.baseurl }}" class="hb-more">Read more</a>
 		</div>
 	</div>
 	<!-- Home Story -->
@@ -45,7 +50,7 @@ layout: hero
 
 <div class="home2_wrap1">
 	<div class="container">
-		<div class="col-md-8">
+<!-- 		<div class="col-md-8">
 			<h4>At A Glance</h4>
 			<p>We are glad you are with us today! Visitors are welcome and asked to sign the Guest Register and Welcome Book in the Narthex through the main entrance.</p>
 			<p><span class="strong">Worship Services:</span> Every Sunday Morning at 8:30 AM and 11:00 AM <br></p>
@@ -62,9 +67,9 @@ layout: hero
 			<p class="col-md-2 text-right">{{ announcement.date | date: "%m/%d/%y" }}</p><p class="col-md-13">{{ announcement.message }}</p>
 			{% endfor %}
 			<div class="clearfix"></div>
-				<!-- <a href="">More Newsletters ></a></p> -->
+			<a href="">More Newsletters ></a></p>
 		</div>
-	</div>
+	</div> -->
 	<div class="space10"></div>
 	<div class="container">
 		<div class="col-md-8 text-right">
@@ -79,18 +84,16 @@ layout: hero
 </div>
 
 <!-- What's New Announcements -->
-<div style="margin-top: 60px; border-bottom: 1px solid #4889E0; padding-bottom:60px;">
+<!-- <div style="margin-top: 60px; border-bottom: 1px solid #4889E0; padding-bottom:60px;">
 	<div class="container">
 		<div class="col-md-7">
-			<!-- <img src="{{ '/images/horton.png' | prepend: site.baseurl }}" class="img-responsive" height="250px" alt=""> -->
 			<img src="{{ '/images/horton.png' | prepend: site.baseurl }}" height="300px" alt="" style="float: right">
 		</div>
 		<div class="col-md-9">
-			<!-- <h3 class="text-center" style="margin-top:100px">Monica Rizzio to perform at LSLC May 18</h3> -->
 			<h3>Congratulations to Dr. Wally Horton, our Director of Worship,  whose new book was recently published! “Windows on Worship: 52 Devotional Readings for Those Who Lead, Plan and Engage in Worshiping God.”</h3>
 		</div>
 	</div>
-</div>
+</div> -->
 
 
 <!-- Sermons Wrap -->

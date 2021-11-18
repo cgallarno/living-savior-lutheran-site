@@ -36,7 +36,7 @@ module Announcements
 
     def generate(site)
       announcements = site.data["announcements"]
-      bulletins = site.static_files.select { |f| f.data["bulletin"] == true }
+      # bulletins = site.static_files.select { |f| f.data["bulletin"] == true }
       newsletter_files = site.static_files.select { |f| f.data["newsletter"] == true }
 
       newsletters = newsletter_files.map { |n|
@@ -45,16 +45,16 @@ module Announcements
       	newsletter
       }
 
-      bulletins = bulletins.sort_by { | bulletin | Date.strptime(bulletin.basename, "%m %d %y") }
+      # bulletins = bulletins.sort_by { | bulletin | Date.strptime(bulletin.basename, "%m %d %y") }
       site.data["newsletters"] = newsletters.sort_by { | newsletter | newsletter["posted_date"] }
 
-      if(bulletins.last)
-	      # Add Latest Bulletin to Announcements
-	      announcements.push({
-	      	"date" => get_announcement_date_from_file_modified_time(bulletins.last),
-	      	"message" => get_annoucment_message_from_bulletin(bulletins.last)
-	      })
-	    end
+     #  if(bulletins.last)
+	    #   # Add Latest Bulletin to Announcements
+	    #   announcements.push({
+	    #   	"date" => get_announcement_date_from_file_modified_time(bulletins.last),
+	    #   	"message" => get_annoucment_message_from_bulletin(bulletins.last)
+	    #   })
+	    # end
 
       # announcements.push({
       # 	"date" => get_newsletter_date_from_posted_time(site.data["newsletters"].last),

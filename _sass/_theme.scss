@@ -418,7 +418,7 @@ header {
 	font-size: 12px;
 	text-transform: uppercase;
 	color: #7f7e7a;
-	margin: 0 0 9px;
+	margin: 0 0 9px!important;
 }
 
 .events-wrap h4 span {
@@ -430,7 +430,8 @@ header {
 }
 
 .events-wrap h4 span a {
-	color: $dark-gray-color;
+	// color: $dark-gray-color; // Original
+	color: $mid-green-color;
 }
 
 .events-wrap .time {

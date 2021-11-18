@@ -359,7 +359,7 @@ header {
   font-size: 12px;
   text-transform: uppercase;
   color: #7f7e7a;
-  margin: 0 0 9px; }
+  margin: 0 0 9px !important; }
 
 .events-wrap h4 span {
   font-size: 18px;
@@ -369,7 +369,7 @@ header {
   margin-top: 4px; }
 
 .events-wrap h4 span a {
-  color: #222; }
+  color: #07B767; }
 
 .events-wrap .time {
   color: #7f7e7a;
