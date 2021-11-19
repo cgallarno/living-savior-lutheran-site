@@ -16,9 +16,9 @@ layout: default
 							<li>
 								<div class="row">
 
-										<div class="date">{{ announcement.date | date: "%d"}}<span>{{ announcement.date | date: "%b '%y" }}</span></div>
-										<h4 style="padding-left: 129px">Student Ministries <span>{{ announcement.message }}</span></h4>
-										<!-- <div class="time">12:30 pm - Bethlehem Church</div> -->
+										<!-- <div class="date">{{ announcement.date | date: "%d"}}<span>{{ announcement.date | date: "%b '%y" }}</span></div> -->
+										<h4 >Student Ministries <span>{{ announcement.message }}</span></h4>
+										<div class="time">Posted {{ announcement.date | date: "%m/%d/%Y" }}</div>
 
 <!-- 									<div class="col-md-4">
 										<ul class="hb-social">
