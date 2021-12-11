@@ -37,13 +37,21 @@ layout: default
 					<div class="side-widget">
 						<h5>Recent Bulletin</h5>
 						<ul class="categories">
-							<li><a href="{{ '/bulletin' | prepend:site.baseurl}}">Dec 5th Bulletin</a></li>
+							{% for bulletin in site.data.bulletins limit:1 %}
+								<li>
+									<a href="{{ bulletin.path | prepend:site.baseurl }}">{{ bulletin.name}}</a>
+								</li>
+							{% endfor %}
 						</ul>
 					</div>
 					<div class="side-widget">
 						<h5>Latest Newsletter</h5>
 						<ul class="categories">
-							<li><a href="#">Sept / Nov Newsletter</a></li>
+							{% for newsletter in site.data.newsletters limit:1 %}
+								<li>
+									<a href="{{ '/newsletter' | prepend:site.baseurl }}">{{ newsletter.name}}</a>
+								</li>
+							{% endfor %}
 						</ul>
 					</div>
 				</aside>
