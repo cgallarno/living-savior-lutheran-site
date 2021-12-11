@@ -21,7 +21,7 @@ module Announcements
 
   		return {
   			'name' => "#{date_month} #{date_day}#{day_suffix}",
-  			'path' => "bulletin/?date=#{date}"
+  			'path' => "/bulletin/?date=#{date}"
   		}
   	end
 
