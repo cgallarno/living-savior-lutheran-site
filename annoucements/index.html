@@ -17,7 +17,7 @@ layout: default
 								<div class="row">
 
 										<!-- <div class="date">{{ announcement.date | date: "%d"}}<span>{{ announcement.date | date: "%b '%y" }}</span></div> -->
-										<p>Student Ministries <span>{{ announcement.message }}</span></p>
+										<p>{{ announcement.message }}</p>
 										<div class="time" style="margin-left:0">Posted {{ announcement.date | date: "%m/%d/%Y" }}</div>
 
 <!-- 									<div class="col-md-4">
@@ -37,7 +37,7 @@ layout: default
 					<div class="side-widget">
 						<h5>Recent Bulletin</h5>
 						<ul class="categories">
-							<li><a href="#">November 14th Bulletin</a></li>
+							<li><a href="{{ '/bulletin' | prepend:site.baseurl}}">Dec 5th Bulletin</a></li>
 						</ul>
 					</div>
 					<div class="side-widget">
