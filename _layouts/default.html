@@ -14,7 +14,7 @@ layout: html
     				{% assign previous="" %}
 
     				<ol class="breadcrumb">
-    					<li><a href="/"><img src="{{ '/images/home.png' | prepend: site.baseurl }}" alt=""/></a></li>
+    					<li><a href="{{ '/' | prepend:site.baseurl }}"><img src="{{ '/images/home.png' | prepend: site.baseurl }}" alt=""/></a></li>
     				  {% for part in url_parts offset:1 %}
     				  	{% capture previous %}{{ previous }}/{{ part }}{% endcapture %}
     				  	{% if forloop.last %}
