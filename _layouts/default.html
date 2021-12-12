@@ -11,7 +11,7 @@ layout: html
     		<div class="page-header container">
     			<div class="col-md-16">
     				{% assign url_parts = page.url | remove: 'index.html' | split:'/' %}
-    				{% assign previous="" %}
+    				{% assign previous=site.baseurl %}
 
     				<ol class="breadcrumb">
     					<li><a href="{{ '/' | prepend:site.baseurl }}"><img src="{{ '/images/home.png' | prepend: site.baseurl }}" alt=""/></a></li>
