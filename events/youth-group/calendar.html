@@ -8,51 +8,55 @@ title: Youth Group Calendar
 		<div class="col-md-16">
 			<div class="home-blog-single row">
 				<h1>Winter / Spring 2023 Living Savior Youth Group Events</h1>
-				<table class="table">
-					<tr><th>Date/Time</th><th>What</th><th>Where</th></tr>
-					<tr><td>Sat, Dec 31 5-8 pm</td><td>New Year’s Eve Bonfire Countdown to the British New Year! </td><td>Vicarage</td></tr>
-
-<tr><td>Sun, Jan 15 4-6 pm</td><td>Game Night</td>
-<td>Vicarage </td></tr>
-
-<tr><td>TBD (Late Jan, Early Feb)</td><td>Hypothermia Shelter Support</td>
-<td>Klein Hall </td></tr>
-
-<tr><td>Fri-Sat, Feb 3-4 7pm - 8am</td><td>Lock-in</td>
-<td>Klein Hall </td></tr>
-
-<tr><td>Wed, Feb 22 5-7pm</td><td>Ash Wed Spaghetti Supper Fundraiser</td>
-<td>Klein Hall </td></tr>
-
-<tr><td>Sun, Mar 5 4-6pm</td><td>Game Night</td>
-<td>Vicarage </td></tr>
-
-<tr><td>Fri-Sun, Mar 24-26</td><td>Junior High Retreat</td>
-<td>Williamsburg </td></tr>
-
-<tr><td>Sat, Apr 8 TBD</td><td>Easter Breakfast set-up</td>
-<td>Klein Hall </td></tr>
-
-<tr><td>Sun, Apr 9 TBD</td><td>Easter Breakfast</td>
-<td>Klein Hall </td></tr>
-
-<tr><td>Sun, Apr 23 4-6 pm</td><td>Game Night</td>
-<td>Vicarage </td></tr>
-
-<tr><td>Sun, May 7 8am - 12pm</td><td>Car Wash Fundraiser</td>
-<td>Parking Lot </td></tr>
-
-<tr><td>Sun, May 21 1 - 5pm</td><td>Picnic/Canoeing outing</td>
-<td>Pohick Bay </td></tr>
+				<table class="table" id="events">
+					<tr>
+						<th class="datetime">Date/Time</th>
+						<th>What</th>
+						<!-- <th>Where</th> -->
+					</tr>
+					
 				</table>
 
-				<p>** Please contact Ben Pollock (360-813-5020) or Ellena Pollock (360-434-2293) with
-questions. We can also be reached at benellena@gmail.com.</p>
-
-
-
-
+				<p>** Please contact Ben Pollock (360-813-5020) or Ellena Pollock (360-434-2293) with questions. We can also be reached at benellena@gmail.com.</p>
 			</div>
 		</div>
 	</div>
 </div>
+
+
+
+
+
+
+
+
+ 
+<style type="text/css">
+	.datetime{
+		width: 200px;
+	}
+</style>
+
+
+<script type="text/javascript">
+	const events = [
+		{
+			when: 'Mar 19',
+			what: 'Game Night',
+			where: '',
+			
+		},
+		{when: 'Mar 24-26', what: 'Southeastern District Junior High Retreat', where: ''},
+{when: 'Apr 9 (Easter)', what: 'Egg Hunt (between services)', where: 'Church'},
+{when: 'Apr 23', what: 'Game Night', where: ''},
+{when: 'May 7', what: 'Car Wash Fundraiser', where: ''},
+{when: 'May 21', what: 'Picnic and Canoeing at Pohick Bay', where: ''},
+{when: 'July 23-29', what: 'Servant Event Week at Camp Linn Haven (North Carolina)', where: ''},
+	]
+
+	$table = $("#events");
+
+	for(event of events){
+		$table.append(`<tr><td class="datetime">${event.when}</td><td>${event.what}</td></tr>`)
+	}
+</script>
