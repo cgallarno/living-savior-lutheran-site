@@ -12,12 +12,12 @@ title: Youth Group Calendar
 					<tr>
 						<th class="datetime">Date/Time</th>
 						<th>What</th>
-						<!-- <th>Where</th> -->
+						<th>Where</th>
 					</tr>
 					
 				</table>
 
-				<p>** Please contact Ben Pollock (360-813-5020) or Ellena Pollock (360-434-2293) with questions. We can also be reached at benellena@gmail.com.</p>
+				<p>** Please contact Ben Pollock (360-813-5020) or Ellena Pollock (360-434-2293) with questions. We can also be reached at benellena@gmail.com</p>
 			</div>
 		</div>
 	</div>
@@ -44,17 +44,14 @@ title: Youth Group Calendar
 
 <script type="text/javascript">
 	const events = [
-{ when : 'Sun, Sept 17 4-6pm', what: 'Meeting', },
-{ when : 'Sun, Oct 1 1-4pm', what: 'Fun Event with Other churches (TBD)', },
-{ when : 'Sat, Oct 14 8:30-12am', what: 'Pre-school Fall Festival support', },
-{ when : 'Sun, Oct 22 4-6pm', what: 'Meeting', },
-{ when : 'Sun, Nov 6 1:30-4pm', what: 'CROP Walk ', },
-{ when : 'Sun, Nov 19 4-6pm', what: 'Meeting', },
+{ when : 'Friday, December 3 12- 3pm', what: 'Christmas Tree Sales', where: 'Parking Lot', },
+{ when : 'Saturday, December 16th', what: 'Babysitting Fundraiser', where: 'Klein Hall', },
+{ when : 'TBD (Late Jan, Early Feb)', what: 'Hypothermia Shelter Support', where: 'Klein Hall', },
 	]
 
 	$table = $("#events");
 
 	for(event of events){
-		$table.append(`<tr><td class="datetime">${event.when}</td><td>${event.what}</td></tr>`)
+		$table.append(`<tr><td class="datetime">${event.when}</td><td>${event.what}</td><td>${event.where}</td></tr>`)
 	}
 </script>
