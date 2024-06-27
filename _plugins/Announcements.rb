@@ -12,7 +12,7 @@ module Announcements
 		rescue => e
 		  puts "Error parsing date from bulletin basename: #{bulletin.basename}"
 		  puts e.message
-		  return {}
+		  raise e # Rethrow the error to stop the build process
 		end
   
 		date_month = date.strftime("%B")
@@ -49,6 +49,7 @@ module Announcements
 		  rescue => e
 			puts "Error parsing date from announcement: #{a.inspect}"
 			puts e.message
+			raise e # Rethrow the error to stop the build process
 		  end
 		end
   
@@ -61,7 +62,7 @@ module Announcements
 		  rescue => e
 			puts "Error parsing date from bulletin basename in sort: #{bulletin.basename}"
 			puts e.message
-			Date.new(1970, 1, 1) # Default to epoch date if parsing fails
+			raise e # Rethrow the error to stop the build process
 		  end
 		end
   
