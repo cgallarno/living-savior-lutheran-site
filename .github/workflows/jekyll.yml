@@ -26,13 +26,11 @@ jobs:
       run: bundle exec jekyll build
 
     - name: Deploy via FTP
-      env:
-        FTP_HOST: ${{ secrets.FTP_HOST }}
-        FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
-        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
-      run: |
-        lftp -c "
-        open -u $FTP_USERNAME,$FTP_PASSWORD $FTP_HOST;
-        mirror -R ./_site /path/on/server;
-        bye
-        "
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ftp.samkirkland.com
+        username: ${{ secrets.ftp_username }}
+        password: ${{ secrets.ftp_password }}
+        local-dir: ./site/
+        server-dir: /public_html/
+        dry-run: true
