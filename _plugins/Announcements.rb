@@ -1,9 +1,18 @@
 module Announcements
 	class Generator < Jekyll::Generator
   
-	  def get_annoucment_message_from_bulletin(baseurl, bulletin)
+	  def get_annoucment_message_from_bulletin(baseurl, bulletin, site)
 		# Debug: Print the bulletin basename
 		puts "Processing bulletin: #{bulletin.basename}"
+  
+		# Extract the bulletin name without any letters
+		bulletin_name = bulletin.basename.gsub(/[^0-9]/, '') + ".pdf"
+  
+		# Check if corresponding file exists in /inserts
+		insert_file_path = File.join(site.source, "inserts", bulletin_name)
+		unless File.exist?(insert_file_path)
+		  puts "Warning: No corresponding insert file found for #{bulletin.basename}"
+		end
   
 		begin
 		  # Extract the first 6 characters ignoring any spaces and non-numeric characters
@@ -30,17 +39,15 @@ module Announcements
 		  day_suffix = "th"
 		end
   
-		return {
+		{
 		  'name' => "#{date_month} #{date_day}#{day_suffix}",
-		  'path' => "/bulletin/?date=#{date}"
+		  'path' => "/bulletin/?date=#{date}",
+		  'inserts_path' => "/inserts/#{bulletin_name}"
 		}
 	  end
   
 	  def generate(site)
 		announcements = site.data["announcements"]
-  
-		# Debug: Print the raw announcements data
-		puts "Announcements data: #{announcements.inspect}"
   
 		# Coerce date into a valid date string
 		announcements.each do |a|
@@ -66,7 +73,11 @@ module Announcements
 		  end
 		end
   
-		site.data['bulletins'] = bulletins.reverse.map { |b| get_annoucment_message_from_bulletin(site.baseurl, b) }
+		# Generate the data for bulletins
+		site.data['bulletins'] = bulletins.reverse.map do |b|
+		  bulletin_data = get_annoucment_message_from_bulletin(site.baseurl, b, site)
+		  b.data.merge!(bulletin_data) # Merge the generated data into the bulletins' data
+		end
 	  end
 	end
   end
