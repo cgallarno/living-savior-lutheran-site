@@ -5,7 +5,6 @@ containerClass: news-bulletin
 ---
 
 {% assign bulletins = site.static_files | where: "bulletin", true %}
-{% assign inserts = site.static_files | where: "inserts", true %}
 {% assign current_bulletin_path = '/bulletin/' | prepend:site.baseurl | prepend:site.url | append: bulletins.last.name  %}
 
 
