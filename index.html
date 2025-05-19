@@ -59,7 +59,14 @@ layout: hero
 		<div class="col-md-5 hb-content">
 			<!-- <div class="hb-meta"><span class="date">Updated: 5 Apr 2013</span></div> -->
 			<h3><a href="{{ '/announcements/' | prepend: site.baseurl }}" >Announcements</a></h3>
-			<p><span class="strong">Sign up for Sunday morning coffee hour</span><a href="https://www.signupgenius.com/go/4090A48A5A62B0-54178267-sunday">(Signup)</a><br/><br/>
+			<p><span class="strong">Sign up for Sunday morning coffee hour</span><a href="https://www.signupgenius.com/go/4090A48A5A62B0-54178267-sunday">(Signup)</a>
+			
+    {% assign recent_announcements = site.data.announcements | sort: "date" | reverse | slice: 0, 5 %}
+    {% for announcement in recent_announcements %}
+        <span class="strong">{{ announcement.date | date: "%m/%d/%y" }}:</span> {{ announcement.message }}<br><br>
+    {% endfor %}
+</p>
+				
 				<!-- <span class="strong">Latest Newsletter:</span> {{site.data.newsletters.last.name }} <a href="{{ '/newsletter' | prepend: site.baseurl }}">(Read)</a> -->
 				<!-- <span class="strong">Whats Happening</span> <a href="downloads/2024/01/Jan%20Feb%20Mar%202024%20Outreach%20Info%20Sheet%20v1.pdf">Jan / Feb / Mar 2024</a> -->
 				<br /><br />
