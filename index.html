@@ -28,30 +28,30 @@ layout: hero
 				<span class="strong">Live stream:</span> Sundays at 11 am, available starting at 10:55am. <a href="https://livingsaviorlutheran.online.church/" >View Livestream</a>
 				<br /><br />
 				<!-- Usual Worship Services -->
-				
+
 				<span class="strong">Worship Services:</span>
 				<br/>Every Sunday Morning at 8:30 AM and 11:00 AM. <a href="{{ site.data.bulletins.first.path | prepend:site.baseurl }}">{{ site.data.bulletins.first.name}} Bulletin</a>
 				<br /><br />
-				
+
 
 				<!-- Easter Services -->
 				<!--
-				<span class="strong">Worship Services:</span>
-				<br/>Palm Sunday Service at 8:30 AM and 11:00 AM <a href="{{ site.data.bulletins.first.path | prepend:site.baseurl }}">{{ site.data.bulletins.first.name}} Bulletin</a>
-				<br/>Maundy Thursday Service April 17th at 7:00 PM
-				<br/>Good Friday Service April 18th at 7:00 PM
-				<br/>Easter Sunday Service April 20th at 6:15 AM Sunrise Service
-				<br/>Communion Services: 8:30 AM and 11:00 AM.-->
+<span class="strong">Worship Services:</span>
+<br/>Palm Sunday Service at 8:30 AM and 11:00 AM <a href="{{ site.data.bulletins.first.path | prepend:site.baseurl }}">{{ site.data.bulletins.first.name}} Bulletin</a>
+<br/>Maundy Thursday Service April 17th at 7:00 PM
+<br/>Good Friday Service April 18th at 7:00 PM
+<br/>Easter Sunday Service April 20th at 6:15 AM Sunrise Service
+<br/>Communion Services: 8:30 AM and 11:00 AM.-->
 				<span class="strong">Sunday School:</span> Children, youth and adult Bible classes every Sunday at 9:45 AM
 				<br /><br />
 			</p>
-				<a href="https://livingsaviorlutheran.online.church/" class="hb-more">Open Livestream</a>
+			<a href="https://livingsaviorlutheran.online.church/" class="hb-more">Open Livestream</a>
 		</div>
 		<div class="col-md-5 hb-content">
 			<!-- <div class="hb-meta"><span class="date">Updated: 5 Apr 2013</span></div> -->
 			<h3><a href="{{ '/about/' | prepend: site.baseurl }}">I'm New</a></h3>
 			<p>Living Savior’s Mission is to know the love of Christ and serve God so that the Holy Spirit may work through us to bring others to Christ <br><br>
-			<span class="strong">Helpful Links:</span><br>
+				<span class="strong">Helpful Links:</span><br>
 				<a href="{{ '/bible-studies' | prepend: site.baseurl }}">Bible Studies</a><br>
 				<a href="{{ '/about/contact' | prepend: site.baseurl }}">Location & Contact</a></p>
 			<a href="{{ '/im-new/' | prepend: site.baseurl }}" class="hb-more">Read more</a>
@@ -59,27 +59,25 @@ layout: hero
 		<div class="col-md-5 hb-content">
 			<!-- <div class="hb-meta"><span class="date">Updated: 5 Apr 2013</span></div> -->
 			<h3><a href="{{ '/announcements/' | prepend: site.baseurl }}" >Announcements</a></h3>
-			
-    {% assign recent_announcements = site.data.announcements | sort: "date" | reverse | slice: 0, 5 %}
-    {% for announcement in recent_announcements %}
-         {{ announcement.message }}<br><br>
-    {% endfor %}
-</p>
-				
-				<!-- <span class="strong">Latest Newsletter:</span> {{site.data.newsletters.last.name }} <a href="{{ '/newsletter' | prepend: site.baseurl }}">(Read)</a> -->
-				<!-- <span class="strong">Whats Happening</span> <a href="downloads/2024/01/Jan%20Feb%20Mar%202024%20Outreach%20Info%20Sheet%20v1.pdf">Jan / Feb / Mar 2024</a> -->
-				<br /><br />
-				<span class="strong">Events:</span> <a href="{{ '/events' | prepend:site.baseurl}}">View Calendar</a>
-				<br><br>
-				<!--<br><br>
-				<span class="strong"><a href="{{ '/downloads/2023/12/Operation Barnabas Congregations Flyer.docx' | prepend:site.baseurl}}">OPERATION BARNABAS</a></span>
-				-->
-			</p>
+
+			{% assign recent_announcements = site.data.announcements | sort: "date" | reverse | slice: 0, 5 %}
+			{% for announcement in recent_announcements %}
+			{{ announcement.message }}<br><br>
+			{% endfor %}
+
+			<!-- <span class="strong">Latest Newsletter:</span> {{site.data.newsletters.last.name }} <a href="{{ '/newsletter' | prepend: site.baseurl }}">(Read)</a> -->
+			<!-- <span class="strong">Whats Happening</span> <a href="downloads/2024/01/Jan%20Feb%20Mar%202024%20Outreach%20Info%20Sheet%20v1.pdf">Jan / Feb / Mar 2024</a> -->
+			<br /><br />
+			<span class="strong">Events:</span> <a href="{{ '/events' | prepend:site.baseurl}}">View Calendar</a>
+			<br><br>
+			<!--<br><br>
+<span class="strong"><a href="{{ '/downloads/2023/12/Operation Barnabas Congregations Flyer.docx' | prepend:site.baseurl}}">OPERATION BARNABAS</a></span>
+-->
 			<a href="{{ '/announcements/' | prepend: site.baseurl }}" class="hb-more">View all announcements</a>
 		</div>
 	</div>
 	<!-- Home Story -->
-<div class="space10"></div>
+	<div class="space10"></div>
 	<div class="container">
 		<div class="col-md-12 col-md-offset-2">
 			<p class="">
@@ -88,9 +86,9 @@ layout: hero
 		</div>
 	</div>
 
-	
+
 	<!-- VBS / Temporary Sections -->
- 	<div class="space10"></div>
+	<div class="space10"></div>
 	<div class="container">
 		<div class="col-md-12 col-md-offset-2">
 			<p class="">
@@ -105,158 +103,158 @@ layout: hero
 
 <div class="home2_wrap1">
 	<div class="container">
-<!-- 		<div class="col-md-8">
-			<h4>At A Glance</h4>
-			<p>We are glad you are with us today! Visitors are welcome and asked to sign the Guest Register and Welcome Book in the Narthex through the main entrance.</p>
-			<p><span class="strong">Worship Services:</span> Every Sunday Morning at 8:30 AM and 11:00 AM <br></p>
-			<p><span class="strong">Sunday School:</span> Children, youth and adult Bible classes every Sunday at 9:45 AM</p>
-			<p><span class="strong">Located At:</span> 5500 Ox Road, Fairfax Station, VA 22039 <a target="_blank" href="https://www.google.com/maps/dir/?api=1&destination_place_id=ChIJvx8R6TNOtokRYJKnIbKtM94&destination=Living%20Savior%20Lutheran%20Church">(Directions)</a></p>
-			<p><span class="strong">E-giving:</span> How to give during Coronavirus outbreak <a href='/announcements/letter-on-egiving.pdf' target='_blank'>(Read letter)</a></p>
-			<p><span class="strong">Latest Newsletter:</span> Nov Newsletter <a href='/newsletter'>(Read)</a>
-		</div>
-		<div class="col-md-8">
-			<h4>Announcements</h4>
-			{% assign announcements = site.data.announcements | sort:"date" | reverse %}
-
-			{% for announcement in announcements %}
-			<p class="col-md-2 text-right">{{ announcement.date | date: "%m/%d/%y" }}</p><p class="col-md-13">{{ announcement.message }}</p>
-			{% endfor %}
-			<div class="clearfix"></div>
-			<a href="">More Newsletters ></a></p>
-		</div>
-	</div> -->
-
-	<div class="space10"></div>
-	<div class="container">
-		<div class="col-md-8 text-right">
-			<a href="https://www.facebook.com/LSLCPS/" target="_blank">
-				<img src="{{ '/images/find-us-on-facebook.png' | prepend: site.baseurl }}" alt="" height="20px" style="margin-right: 10px; cursor:pointer; margin-top:4px">
-			</a>
-		</div>
-		<div class="col-md-8">
-			<a href="https://twitter.com/LSLCPS" class="twitter-follow-button" data-size="large" data-show-count="false"></a>
-		</div>
-	</div>
+		<!-- 		<div class="col-md-8">
+<h4>At A Glance</h4>
+<p>We are glad you are with us today! Visitors are welcome and asked to sign the Guest Register and Welcome Book in the Narthex through the main entrance.</p>
+<p><span class="strong">Worship Services:</span> Every Sunday Morning at 8:30 AM and 11:00 AM <br></p>
+<p><span class="strong">Sunday School:</span> Children, youth and adult Bible classes every Sunday at 9:45 AM</p>
+<p><span class="strong">Located At:</span> 5500 Ox Road, Fairfax Station, VA 22039 <a target="_blank" href="https://www.google.com/maps/dir/?api=1&destination_place_id=ChIJvx8R6TNOtokRYJKnIbKtM94&destination=Living%20Savior%20Lutheran%20Church">(Directions)</a></p>
+<p><span class="strong">E-giving:</span> How to give during Coronavirus outbreak <a href='/announcements/letter-on-egiving.pdf' target='_blank'>(Read letter)</a></p>
+<p><span class="strong">Latest Newsletter:</span> Nov Newsletter <a href='/newsletter'>(Read)</a>
 </div>
+<div class="col-md-8">
+<h4>Announcements</h4>
+{% assign announcements = site.data.announcements | sort:"date" | reverse %}
 
-<!-- What's New Announcements -->
-<!-- <div style="margin-top: 60px; border-bottom: 1px solid #4889E0; padding-bottom:60px;">
-	<div class="container">
-		<div class="col-md-7">
-			<img src="{{ '/images/horton.png' | prepend: site.baseurl }}" height="300px" alt="" style="float: right">
-		</div>
-		<div class="col-md-9">
-			<h3>Congratulations to Dr. Wally Horton, our Director of Worship,  whose new book was recently published! “Windows on Worship: 52 Devotional Readings for Those Who Lead, Plan and Engage in Worshiping God.”</h3>
+{% for announcement in announcements %}
+<p class="col-md-2 text-right">{{ announcement.date | date: "%m/%d/%y" }}</p><p class="col-md-13">{{ announcement.message }}</p>
+{% endfor %}
+<div class="clearfix"></div>
+<a href="">More Newsletters ></a></p>
+</div>
+</div> -->
+
+		<div class="space10"></div>
+		<div class="container">
+			<div class="col-md-8 text-right">
+				<a href="https://www.facebook.com/LSLCPS/" target="_blank">
+					<img src="{{ '/images/find-us-on-facebook.png' | prepend: site.baseurl }}" alt="" height="20px" style="margin-right: 10px; cursor:pointer; margin-top:4px">
+				</a>
+			</div>
+			<div class="col-md-8">
+				<a href="https://twitter.com/LSLCPS" class="twitter-follow-button" data-size="large" data-show-count="false"></a>
+			</div>
 		</div>
 	</div>
+
+	<!-- What's New Announcements -->
+	<!-- <div style="margin-top: 60px; border-bottom: 1px solid #4889E0; padding-bottom:60px;">
+<div class="container">
+<div class="col-md-7">
+<img src="{{ '/images/horton.png' | prepend: site.baseurl }}" height="300px" alt="" style="float: right">
+</div>
+<div class="col-md-9">
+<h3>Congratulations to Dr. Wally Horton, our Director of Worship,  whose new book was recently published! “Windows on Worship: 52 Devotional Readings for Those Who Lead, Plan and Engage in Worshiping God.”</h3>
+</div>
+</div>
 </div> -->
 
 
-<!-- Sermons Wrap -->
-<div class="home-wrap">
-	<div class="container">
-		<div class="col-md-8 music-wrap">
-			<div class="row">
-				<div id="sermons-slider" class="owl-carousel">
-					<div class="item">
-						<div class="col-md-8" style="overflow:hidden">
-							<img style="height:275px;width:auto!important;max-width: none; margin-left: -155px;" id="latest-sermon__preview" class="img-responsive" src="images/video_preview.png" alt=""/>
-						</div>
-						<div class="col-md-8">
-							<h4>Online Worship</h4>
-							<div class="music-info">
-								<h5 class="latest-sermon__title">Watch Live, 11am Sundays</h5>
-								<p id="latest-sermon__details"></p>
-								<!-- <a href="{{ '/education/sermons/' | prepend: site.baseurl }}" class="hb-more">Watch Part 2 Here</a> -->
+	<!-- Sermons Wrap -->
+	<div class="home-wrap">
+		<div class="container">
+			<div class="col-md-8 music-wrap">
+				<div class="row">
+					<div id="sermons-slider" class="owl-carousel">
+						<div class="item">
+							<div class="col-md-8" style="overflow:hidden">
+								<img style="height:275px;width:auto!important;max-width: none; margin-left: -155px;" id="latest-sermon__preview" class="img-responsive" src="images/video_preview.png" alt=""/>
 							</div>
-							<ul class="m-ico">
-								<!-- <li><a href="#" class="m-ico1"></a></li> -->
-								<!-- <li><a href="https://livingsaviorlutheran.online.church/" class="m-ico2" data-toggle="modal" data-target="#latestSermonModal"></a></li> -->
-								<li><a href="https://livingsaviorlutheran.online.church/" class="m-ico2"></a></li>
-								<!-- <li><a href="#" class="m-ico3"></a></li> -->
-							</ul>
-							<div class="line"></div>
-							<a href="https://boxcast.tv/channel/yb084uq1ur5eid2jonin" class="hb-more">View Service Archive</a>
+							<div class="col-md-8">
+								<h4>Online Worship</h4>
+								<div class="music-info">
+									<h5 class="latest-sermon__title">Watch Live, 11am Sundays</h5>
+									<p id="latest-sermon__details"></p>
+									<!-- <a href="{{ '/education/sermons/' | prepend: site.baseurl }}" class="hb-more">Watch Part 2 Here</a> -->
+								</div>
+								<ul class="m-ico">
+									<!-- <li><a href="#" class="m-ico1"></a></li> -->
+									<!-- <li><a href="https://livingsaviorlutheran.online.church/" class="m-ico2" data-toggle="modal" data-target="#latestSermonModal"></a></li> -->
+									<li><a href="https://livingsaviorlutheran.online.church/" class="m-ico2"></a></li>
+									<!-- <li><a href="#" class="m-ico3"></a></li> -->
+								</ul>
+								<div class="line"></div>
+								<a href="https://boxcast.tv/channel/yb084uq1ur5eid2jonin" class="hb-more">View Service Archive</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- Sermons Wrap -->
+			<!-- Sermons Wrap -->
 
-		<!-- Events Wrap -->
-		<div class="col-md-8 events-wrap">
-			<ul id="events-container">
+			<!-- Events Wrap -->
+			<div class="col-md-8 events-wrap">
+				<ul id="events-container">
 
-			</ul>
-			<div class="line"></div>
-			<a href="{{ '/events/' | prepend: site.baseurl }}" class="hb-more">See rest of events</a>
+				</ul>
+				<div class="line"></div>
+				<a href="{{ '/events/' | prepend: site.baseurl }}" class="hb-more">See rest of events</a>
+			</div>
+			<!-- Events Wrap -->
 		</div>
-		<!-- Events Wrap -->
 	</div>
-</div>
 
-<!-- <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="latestSermonModal" id="latestSermonModal">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title latest-sermon__title" id="gridSystemModalLabel">SERMON TITLE</h4>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-          <div class="col-md-18">
-
-          	<div id="boxcast-widget-sunday-11-am-worship-914558"></div><script type="text/javascript" charset="utf-8">(function(d, s, c, o) {var js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];var h = (('https:' == document.location.protocol) ? 'https:' : 'http:');js.src = h + '//js.boxcast.com/v3.min.js';js.onload = function() { boxcast.noConflict()('#boxcast-widget-'+c).loadChannel(c, o); };js.charset = 'utf-8';fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'sunday-11-am-worship-914558', {"showTitle":1,"showDescription":1,"showHighlights":1,"showRelated":true,"defaultVideo":"next","market":"unknown","showDocuments":true,"showIndex":true,"showDonations":false,"layout":"playlist-to-right"}));</script>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+	<!-- <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="latestSermonModal" id="latestSermonModal">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title latest-sermon__title" id="gridSystemModalLabel">SERMON TITLE</h4>
 </div>
- -->
-<script src="{{ '/js/sermons.js' | prepend: site.baseurl }}"></script>
-<script src="{{ '/js/calendar.js' | prepend: site.baseurl }}"></script>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<script>
+<div class="modal-body">
+<div class="row">
+<div class="col-md-18">
+
+<div id="boxcast-widget-sunday-11-am-worship-914558"></div><script type="text/javascript" charset="utf-8">(function(d, s, c, o) {var js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];var h = (('https:' == document.location.protocol) ? 'https:' : 'http:');js.src = h + '//js.boxcast.com/v3.min.js';js.onload = function() { boxcast.noConflict()('#boxcast-widget-'+c).loadChannel(c, o); };js.charset = 'utf-8';fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'sunday-11-am-worship-914558', {"showTitle":1,"showDescription":1,"showHighlights":1,"showRelated":true,"defaultVideo":"next","market":"unknown","showDocuments":true,"showIndex":true,"showDonations":false,"layout":"playlist-to-right"}));</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+-->
+	<script src="{{ '/js/sermons.js' | prepend: site.baseurl }}"></script>
+	<script src="{{ '/js/calendar.js' | prepend: site.baseurl }}"></script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<script>
 	$(document).ready(function () {
-		// sermonsRepo.get(3, function (videos) {
-		// 	$sermonContainer = $('#sermons-slider');
-		// 	var latestVideo = videos[0];
+	// sermonsRepo.get(3, function (videos) {
+	// 	$sermonContainer = $('#sermons-slider');
+	// 	var latestVideo = videos[0];
 
-		// 	var dateString = ' / ' + latestVideo.date.format('LL');
+	// 	var dateString = ' / ' + latestVideo.date.format('LL');
 
-		// 	$('.latest-sermon__title').text(latestVideo.title);
-		// 	$sermonContainer.find('#latest-sermon__details').text(latestVideo.speaker + ' ' + dateString + ' ' + latestVideo.passageString);
-		// 	$("#latestSermonModal iframe").attr('src', 'https://player.vimeo.com/video/' + latestVideo.uri.split('/')[2]);
-		// 	$("#latest-sermon__preview").attr('src', latestVideo.pictures.sizes[2].link);
+	// 	$('.latest-sermon__title').text(latestVideo.title);
+	// 	$sermonContainer.find('#latest-sermon__details').text(latestVideo.speaker + ' ' + dateString + ' ' + latestVideo.passageString);
+	// 	$("#latestSermonModal iframe").attr('src', 'https://player.vimeo.com/video/' + latestVideo.uri.split('/')[2]);
+	// 	$("#latest-sermon__preview").attr('src', latestVideo.pictures.sizes[2].link);
 
-		// 	if(sermonsRepo.previewOffsets[latestVideo.uri]){
-		// 		$("#latest-sermon__preview").css('margin-left', sermonsRepo.previewOffsets[latestVideo.uri]);
-		// 	}
-		// });
+	// 	if(sermonsRepo.previewOffsets[latestVideo.uri]){
+	// 		$("#latest-sermon__preview").css('margin-left', sermonsRepo.previewOffsets[latestVideo.uri]);
+	// 	}
+	// });
 
-		calendarRepo.get(3, function (events) {
-			$eventsContainer = $('#events-container');
-			var eventItems = [];
-			$.each(events, function (i, event) {
-				console.log(event.recurringEventId + " : " + event.title);
+	calendarRepo.get(3, function (events) {
+	$eventsContainer = $('#events-container');
+	var eventItems = [];
+	$.each(events, function (i, event) {
+	console.log(event.recurringEventId + " : " + event.title);
 
-				var eventLi = '<li><div class="row"><div class="col-md-16">';
-				eventLi += '<div class="date">' + event.date.day + '<span>' + event.date.month + '</span></div>';
-				eventLi += '<h4>' + event.category + '' + '<span>' + event.title + '</span></h4>';
-				eventLi += '<div class="time">' + event.date.time;
-				if(event.location){
-					eventLi += ' - ' + event.location;
-				}
-				eventLi += '</div>';
-				eventLi += '</div></div></li>';
+	var eventLi = '<li><div class="row"><div class="col-md-16">';
+	eventLi += '<div class="date">' + event.date.day + '<span>' + event.date.month + '</span></div>';
+	eventLi += '<h4>' + event.category + '' + '<span>' + event.title + '</span></h4>';
+	eventLi += '<div class="time">' + event.date.time;
+	if(event.location){
+	eventLi += ' - ' + event.location;
+	}
+	eventLi += '</div>';
+	eventLi += '</div></div></li>';
 
-				eventItems.push(eventLi);
-			});
-			//debugger;
-
-			$eventsContainer.html(eventItems);
-		});
+	eventItems.push(eventLi);
 	});
-</script>
+	//debugger;
+
+	$eventsContainer.html(eventItems);
+	});
+	});
+	</script>
