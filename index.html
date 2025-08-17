@@ -26,13 +26,13 @@ layout: hero
 
 			<h3>Sunday Worship</h3>
 			<p>
-				<span class="strong">Live stream:</span> Sundays at 11 am, available starting at 10:55am. <a
+				<span class="strong">Live stream:</span> <span id="livestream-time">Sundays at 11 am, available starting at 10:55am.</span> <a
 					href="https://livingsaviorlutheran.online.church/">View Livestream</a>
 				<br /><br />
 				<!-- Usual Worship Services -->
 
 				<span class="strong">Worship Services:</span>
-				<br />Every Sunday Morning at 8:30 AM and 11:00 AM. <a
+				<br /><span id="worship-schedule">Every Sunday Morning at 8:30 AM and 11:00 AM.</span> <a
 					href="{{ site.data.bulletins.first.path | prepend:site.baseurl }}">{{
 					site.data.bulletins.first.name}} Bulletin</a>
 				<br /><br />
@@ -219,6 +219,22 @@ layout: hero
 	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 	<script>
 		$(document).ready(function () {
+			// Check if we need to show special schedule for Pastor Andy's farewell service
+			function updateScheduleForFarewellService() {
+				var today = new Date();
+				var farewellDate = new Date('2025-08-31');
+				var oneWeekBefore = new Date(farewellDate.getTime() - (7 * 24 * 60 * 60 * 1000));
+				
+				// Check if current date is within the week leading up to and including Aug 31, 2025
+				if (today >= oneWeekBefore && today <= farewellDate) {
+					$('#worship-schedule').text('Special Service at 10:00 AM only for Pastor Andy\'s Farewell Service.');
+					$('#livestream-time').text('Sunday at 10 am, available starting at 9:55am.');
+				}
+			}
+			
+			// Call the function on page load
+			updateScheduleForFarewellService();
+
 			// sermonsRepo.get(3, function (videos) {
 			// 	$sermonContainer = $('#sermons-slider');
 			// 	var latestVideo = videos[0];
