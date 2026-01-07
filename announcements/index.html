@@ -9,7 +9,7 @@ layout: default
 					<div class="ministries-head">
 						<h5>Recent Announcements <small>Listed by Date Posted</small></h5>
 					</div>
-					{% assign announcements = site.data.announcements | sort:"date" | reverse %}
+					{% assign announcements = site.announcements | sort:"date" | reverse %}
 					<div class="events-wrap events-wrap-big">
 						<ul>
 							{% for announcement in announcements %}
@@ -17,7 +17,7 @@ layout: default
 								<div class="row">
 
 										<!-- <div class="date">{{ announcement.date | date: "%d"}}<span>{{ announcement.date | date: "%b '%y" }}</span></div> -->
-										<p>{{ announcement.message }}</p>
+										<p>{{ announcement.content | markdownify }}</p>
 										<div class="time" style="margin-left:0">Posted {{ announcement.date | date: "%m/%d/%Y" }}</div>
 
 <!-- 									<div class="col-md-4">
@@ -59,4 +59,3 @@ layout: default
 		</div>
 
 	</div>
-

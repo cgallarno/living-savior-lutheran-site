@@ -52,22 +52,22 @@ layout: hero
 		<div class="row" style="margin-top: 20px;">
 			<div class="col-md-4 hb-content">
 				<h3><a href="{{ '/announcements/' | prepend: site.baseurl }}">Announcements</a></h3>
-				{% assign recent_announcements = site.data.announcements | sort: "date" | reverse | slice: 0, 1 %}
+				{% assign recent_announcements = site.announcements | sort: "date" | reverse | slice: 0, 1 %}
 				{% for announcement in recent_announcements %}
-				<p>{{ announcement.message }}</p>
+				<p>{{ announcement.content | markdownify }}</p>
 				{% endfor %}
 				<a href="{{ '/announcements/' | prepend: site.baseurl }}" class="hb-more">View all announcements</a>
 			</div>
 			<div class="col-md-4 hb-content">
-				{% assign recent_announcements = site.data.announcements | sort: "date" | reverse | slice: 1, 1 %}
+				{% assign recent_announcements = site.announcements | sort: "date" | reverse | slice: 1, 1 %}
 				{% for announcement in recent_announcements %}
-				<p>{{ announcement.message }}</p>
+				<p>{{ announcement.content | markdownify }}</p>
 				{% endfor %}
 			</div>
 			<div class="col-md-4 hb-content">
-				{% assign recent_announcements = site.data.announcements | sort: "date" | reverse | slice: 2, 1 %}
+				{% assign recent_announcements = site.announcements | sort: "date" | reverse | slice: 2, 1 %}
 				{% for announcement in recent_announcements %}
-				<p>{{ announcement.message }}</p>
+				<p>{{ announcement.content | markdownify }}</p>
 				{% endfor %}
 			</div>
 		</div>
@@ -99,10 +99,10 @@ layout: hero
 </div>
 <div class="col-md-8">
 <h4>Announcements</h4>
-{% assign announcements = site.data.announcements | sort:"date" | reverse %}
+{% assign announcements = site.announcements | sort:"date" | reverse %}
 
 {% for announcement in announcements %}
-<p class="col-md-2 text-right">{{ announcement.date | date: "%m/%d/%y" }}</p><p class="col-md-13">{{ announcement.message }}</p>
+<p class="col-md-2 text-right">{{ announcement.date | date: "%m/%d/%y" }}</p><p class="col-md-13">{{ announcement.content | markdownify }}</p>
 {% endfor %}
 <div class="clearfix"></div>
 <a href="">More Newsletters ></a></p>
