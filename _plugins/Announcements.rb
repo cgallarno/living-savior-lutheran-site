@@ -47,14 +47,15 @@ module Announcements
 	  end
   
 	  def generate(site)
-		announcements = site.data["announcements"]
+		announcements = site.collections["announcements"]&.docs || []
   
 		# Coerce date into a valid date string
 		announcements.each do |a|
+		  next unless a.data["date"]
 		  begin
-			a["date"] = Date.strptime(a["date"], "%m/%d/%y")
+			a.data["date"] = Date.parse(a.data["date"].to_s)
 		  rescue => e
-			puts "Error parsing date from announcement: #{a.inspect}"
+			puts "Error parsing date from announcement: #{a.data.inspect}"
 			puts e.message
 			raise e # Rethrow the error to stop the build process
 		  end
