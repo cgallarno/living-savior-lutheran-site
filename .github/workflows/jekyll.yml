@@ -26,6 +26,7 @@ jobs:
       run: bundle exec jekyll build
 
     - name: Deploy via FTP
+      if: github.ref == 'refs/heads/master' && github.event_name == 'push'
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ftp.livingsaviorlutheran.org
