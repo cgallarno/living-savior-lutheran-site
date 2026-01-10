@@ -21,6 +21,8 @@ markdown: kramdown
 collections:
   ministries:
     output: false
+  announcements:
+    output: false
 
 defaults:
   - scope:
