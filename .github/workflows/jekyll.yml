@@ -6,15 +6,6 @@ on:
   pull_request:
     branches: [ "master" ]
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -34,7 +25,7 @@ jobs:
     - name: Build Jekyll site
       run: bundle exec jekyll build
 
-    - name: Add noindex robots.txt for PR preview
+    - name: Add noindex robots.txt for preview deploy
       if: github.event_name == 'pull_request'
       run: |
         cat <<'EOF' > ./_site/robots.txt
@@ -42,11 +33,15 @@ jobs:
         Disallow: /
         EOF
 
-    - name: Upload GitHub Pages artifact
+    - name: Deploy preview via FTP
       if: github.event_name == 'pull_request'
-      uses: actions/upload-pages-artifact@v3
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        path: ./_site/
+        server: ftp.livingsaviorlutheran.org
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD  }}
+        local-dir: ./_site/
+        server-dir: /preview.livingsaviorlutheran.org/
 
     - name: Deploy via FTP
       if: github.event_name == 'push' && github.ref == 'refs/heads/master'
@@ -57,16 +52,3 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD  }}
         local-dir: ./_site/
         server-dir: /public_html/
-
-  deploy:
-    if: github.event_name == 'pull_request'
-    runs-on: ubuntu-latest
-    needs: build
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    steps:
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
