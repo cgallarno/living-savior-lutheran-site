@@ -42,6 +42,7 @@ module Announcements
 		{
 		  'name' => "#{date_month} #{date_day}#{day_suffix}",
 		  'path' => "/bulletin/?date=#{date}",
+		  'file_path' => bulletin.relative_path,
 		  'inserts_path' => "/inserts/#{bulletin_name}"
 		}
 	  end
