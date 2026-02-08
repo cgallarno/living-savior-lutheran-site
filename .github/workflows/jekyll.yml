@@ -25,7 +25,26 @@ jobs:
     - name: Build Jekyll site
       run: bundle exec jekyll build
 
+    - name: Add noindex robots.txt for preview deploy
+      if: github.event_name == 'pull_request'
+      run: |
+        cat <<'EOF' > ./_site/robots.txt
+        User-agent: *
+        Disallow: /
+        EOF
+
+    - name: Deploy preview via FTP
+      if: github.event_name == 'pull_request'
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ftp.livingsaviorlutheran.org
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD  }}
+        local-dir: ./_site/
+        server-dir: /preview.livingsaviorlutheran.org/
+
     - name: Deploy via FTP
+      if: github.event_name == 'push' && github.ref == 'refs/heads/master'
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ftp.livingsaviorlutheran.org
