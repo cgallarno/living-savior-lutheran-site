@@ -49,6 +49,13 @@ layout: hero
 				<a href="{{ '/im-new/' | prepend: site.baseurl }}" class="hb-more">Read more</a>
 			</div>
 			<div class="col-md-4 hb-content">
+				<h3>Holy Week Services</h3>
+				<p>
+					<span class="strong">Maundy Thursday with Holy Communion:</span> 7:00 PM<br>
+					<span class="strong">Good Friday:</span> 7:00 PM<br>
+					<span class="strong">Easter Sundrise Service:</span> 6:30 AM<br>
+					<span class="strong">Easter Sunday with Holy Communion:</span> 8:30 AM and 11:00 AM
+				</p>
 				<h3><a href="{{ '/announcements/' | prepend: site.baseurl }}">Announcements</a></h3>
 				{% assign recent_announcements = site.announcements | sort: "date" | reverse | slice: 0, 1 %}
 				{% for announcement in recent_announcements %}
