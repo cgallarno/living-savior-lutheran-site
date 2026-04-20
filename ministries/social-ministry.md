@@ -43,7 +43,7 @@ title: Social Ministry at LSLC
                 <img src="{{ '/images/ministries/social/groceries.png' | prepend: site.baseurl }}" class="img-responsive" alt="Concordia Food Ministry" />
               </div>
               <div class="col-xs-12 col-md-12">
-                <p><span class="strong">Concordia Food Ministry</span><br />Ongoing food drive located outside of Klein Hall to provide non-perishable pantry items to those in need.</p>
+                <p><span class="strong">Concordia Food Ministry</span><br />Ongoing food drive located outside of Klein Hall to provide non-perishable pantry items to those in need. <a href="https://rumble.com/v77vcbw-ark-food-ministry-video-for-lslc.html" target="_blank" rel="noopener">Watch the food &amp; clothing ministry video</a>.</p>
               </div>
             </div>
 
