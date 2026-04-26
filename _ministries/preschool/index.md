@@ -2,7 +2,7 @@
 collection: ministries
 name: preschool
 title: Preschool
-leads: Terri Kiss
+leads: Sarah Lasmanis
 description: >
   At Living Savior Preschool,
   our program offers young children one of the best opportunities for achieving the goals of a Christian education outside of the home.
@@ -10,3 +10,4 @@ description: >
   form values and develop the conscience, feelings,
   and attitudes which build the foundation for a positive self-image and good relationships.
 ---
+<p>Contact: <a href="mailto:preschool@livingsaviorlutheran.org">preschool@livingsaviorlutheran.org</a></p>
