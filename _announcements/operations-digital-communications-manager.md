@@ -1,0 +1,6 @@
+---
+date: 2026-05-21
+title: Now Hiring — Operations & Digital Communications Manager
+---
+
+**Now Hiring: Operations &amp; Digital Communications Manager** — Living Savior is seeking a part-time (about 30 hours/week) Operations &amp; Digital Communications Manager to support the life, ministry, and mission of our congregation. [See the full job description and how to apply](/careers).
